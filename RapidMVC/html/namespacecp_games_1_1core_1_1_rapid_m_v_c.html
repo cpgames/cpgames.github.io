@@ -32,6 +32,7 @@
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">RapidMVC
    </div>
+   <div id="projectbrief">Light IoC/MVC framework for game developers.</div>
   </td>
  </tr>
  </tbody>
@@ -96,7 +97,7 @@ $(document).ready(function(){initNavTree('namespacecp_games_1_1core_1_1_rapid_m_
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
-<tr class="memitem:namespacecp_games_1_1core_1_1_rapid_m_v_c_1_1src"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecp_games_1_1core_1_1_rapid_m_v_c_1_1src.html">src</a></td></tr>
+<tr class="memitem:namespacecp_games_1_1core_1_1_rapid_m_v_c_1_1impl"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecp_games_1_1core_1_1_rapid_m_v_c_1_1impl.html">impl</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
@@ -116,7 +117,7 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add this to your view to determine context to register a view with. If missing, view will register with Root context.  <a href="classcp_games_1_1core_1_1_rapid_m_v_c_1_1_context_attribute.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">interface &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_base_command.html">IBaseCommand</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Commands are used to execute a single action. They need to be added to a signal.  <a href="interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_base_command.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Commands are used to execute actions. They need to be added to a signal, then the signal needs to be dispatched.  <a href="interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_base_command.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">interface &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_binding.html">IBinding</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binding is a map of views with properties matching a unique BindingKey. Binding handles updating values of mapped properties.  <a href="interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_binding.html#details">More...</a><br /></td></tr>
@@ -150,6 +151,7 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Views are registered with Contexts. You can either derive from default <a class="el" href="classcp_games_1_1core_1_1_rapid_m_v_c_1_1_view.html" title="Default View">View</a> or implement your own.  <a href="interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_view.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">interface &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_view_collection.html">IViewCollection</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A collection of views owned by a context.  <a href="interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_view_collection.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><b>Rapid</b></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>

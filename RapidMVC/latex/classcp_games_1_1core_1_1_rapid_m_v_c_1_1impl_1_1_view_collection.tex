@@ -1,0 +1,110 @@
+\hypertarget{classcp_games_1_1core_1_1_rapid_m_v_c_1_1impl_1_1_view_collection}{}\section{cp\+Games.\+core.\+Rapid\+M\+V\+C.\+impl.\+View\+Collection Class Reference}
+\label{classcp_games_1_1core_1_1_rapid_m_v_c_1_1impl_1_1_view_collection}\index{cpGames.core.RapidMVC.impl.ViewCollection@{cpGames.core.RapidMVC.impl.ViewCollection}}
+Inheritance diagram for cp\+Games.\+core.\+Rapid\+M\+V\+C.\+impl.\+View\+Collection\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classcp_games_1_1core_1_1_rapid_m_v_c_1_1impl_1_1_view_collection}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classcp_games_1_1core_1_1_rapid_m_v_c_1_1impl_1_1_view_collection_a654222e061d5dc730992cbc0aa519205}{Register\+View}} (\mbox{\hyperlink{interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_view}{I\+View}} view, out string error\+Message)
+\begin{DoxyCompactList}\small\item\em Register a unique view. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classcp_games_1_1core_1_1_rapid_m_v_c_1_1impl_1_1_view_collection_a5a88bea4fa82d3422364a2e6ba81e1ca}{Unregister\+View}} (\mbox{\hyperlink{interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_view}{I\+View}} view, out string error\+Message)
+\begin{DoxyCompactList}\small\item\em Unregister view. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classcp_games_1_1core_1_1_rapid_m_v_c_1_1impl_1_1_view_collection_a958ac198eae02d710e3abe17aed90205}{Clear\+Views}} (out string error\+Message)
+\begin{DoxyCompactList}\small\item\em Unregister all views. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classcp_games_1_1core_1_1_rapid_m_v_c_1_1impl_1_1_view_collection_afb84f20b6b350eb1895cedc198b37efc}{View\+Count}} =$>$ \+\_\+views.\+Count
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classcp_games_1_1core_1_1_rapid_m_v_c_1_1impl_1_1_view_collection_a958ac198eae02d710e3abe17aed90205}\label{classcp_games_1_1core_1_1_rapid_m_v_c_1_1impl_1_1_view_collection_a958ac198eae02d710e3abe17aed90205}} 
+\index{cpGames.core.RapidMVC.impl.ViewCollection@{cpGames.core.RapidMVC.impl.ViewCollection}!ClearViews@{ClearViews}}
+\index{ClearViews@{ClearViews}!cpGames.core.RapidMVC.impl.ViewCollection@{cpGames.core.RapidMVC.impl.ViewCollection}}
+\subsubsection{\texorpdfstring{ClearViews()}{ClearViews()}}
+{\footnotesize\ttfamily bool cp\+Games.\+core.\+Rapid\+M\+V\+C.\+impl.\+View\+Collection.\+Clear\+Views (\begin{DoxyParamCaption}\item[{out string}]{error\+Message }\end{DoxyParamCaption})}
+
+
+
+Unregister all views. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em error\+Message} & If fails, this explains why.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if successful, otherwise false
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_view_collection_ab7631908f42053edeb586ac79ffbb2c0}{cp\+Games.\+core.\+Rapid\+M\+V\+C.\+I\+View\+Collection}}.
+
+\mbox{\Hypertarget{classcp_games_1_1core_1_1_rapid_m_v_c_1_1impl_1_1_view_collection_a654222e061d5dc730992cbc0aa519205}\label{classcp_games_1_1core_1_1_rapid_m_v_c_1_1impl_1_1_view_collection_a654222e061d5dc730992cbc0aa519205}} 
+\index{cpGames.core.RapidMVC.impl.ViewCollection@{cpGames.core.RapidMVC.impl.ViewCollection}!RegisterView@{RegisterView}}
+\index{RegisterView@{RegisterView}!cpGames.core.RapidMVC.impl.ViewCollection@{cpGames.core.RapidMVC.impl.ViewCollection}}
+\subsubsection{\texorpdfstring{RegisterView()}{RegisterView()}}
+{\footnotesize\ttfamily bool cp\+Games.\+core.\+Rapid\+M\+V\+C.\+impl.\+View\+Collection.\+Register\+View (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_view}{I\+View}}}]{view,  }\item[{out string}]{error\+Message }\end{DoxyParamCaption})}
+
+
+
+Register a unique view. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em view} & \mbox{\hyperlink{classcp_games_1_1core_1_1_rapid_m_v_c_1_1_view}{View}} instance to register.\\
+\hline
+{\em error\+Message} & If fails, this explains why\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if successful, otherwise false.
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_view_collection_aba8465ad92ed63a4ad210c60d50cfc56}{cp\+Games.\+core.\+Rapid\+M\+V\+C.\+I\+View\+Collection}}.
+
+\mbox{\Hypertarget{classcp_games_1_1core_1_1_rapid_m_v_c_1_1impl_1_1_view_collection_a5a88bea4fa82d3422364a2e6ba81e1ca}\label{classcp_games_1_1core_1_1_rapid_m_v_c_1_1impl_1_1_view_collection_a5a88bea4fa82d3422364a2e6ba81e1ca}} 
+\index{cpGames.core.RapidMVC.impl.ViewCollection@{cpGames.core.RapidMVC.impl.ViewCollection}!UnregisterView@{UnregisterView}}
+\index{UnregisterView@{UnregisterView}!cpGames.core.RapidMVC.impl.ViewCollection@{cpGames.core.RapidMVC.impl.ViewCollection}}
+\subsubsection{\texorpdfstring{UnregisterView()}{UnregisterView()}}
+{\footnotesize\ttfamily bool cp\+Games.\+core.\+Rapid\+M\+V\+C.\+impl.\+View\+Collection.\+Unregister\+View (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_view}{I\+View}}}]{view,  }\item[{out string}]{error\+Message }\end{DoxyParamCaption})}
+
+
+
+Unregister view. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em view} & \mbox{\hyperlink{classcp_games_1_1core_1_1_rapid_m_v_c_1_1_view}{View}} instance to unregister.\\
+\hline
+{\em error\+Message} & If fails, this explains why.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if successful, otherwise false.
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_view_collection_acc10b801eec02af0165b9e558a915682}{cp\+Games.\+core.\+Rapid\+M\+V\+C.\+I\+View\+Collection}}.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classcp_games_1_1core_1_1_rapid_m_v_c_1_1impl_1_1_view_collection_afb84f20b6b350eb1895cedc198b37efc}\label{classcp_games_1_1core_1_1_rapid_m_v_c_1_1impl_1_1_view_collection_afb84f20b6b350eb1895cedc198b37efc}} 
+\index{cpGames.core.RapidMVC.impl.ViewCollection@{cpGames.core.RapidMVC.impl.ViewCollection}!ViewCount@{ViewCount}}
+\index{ViewCount@{ViewCount}!cpGames.core.RapidMVC.impl.ViewCollection@{cpGames.core.RapidMVC.impl.ViewCollection}}
+\subsubsection{\texorpdfstring{ViewCount}{ViewCount}}
+{\footnotesize\ttfamily int cp\+Games.\+core.\+Rapid\+M\+V\+C.\+impl.\+View\+Collection.\+View\+Count =$>$ \+\_\+views.\+Count}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_view_collection_8cs}{View\+Collection.\+cs}}\end{DoxyCompactItemize}

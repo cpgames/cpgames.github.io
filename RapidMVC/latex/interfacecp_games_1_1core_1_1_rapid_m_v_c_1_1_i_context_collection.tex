@@ -14,21 +14,21 @@ Inheritance diagram for cp\+Games.\+core.\+Rapid\+M\+V\+C.\+I\+Context\+Collecti
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-bool \mbox{\hyperlink{interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_context_collection_a69e776a5c412ae0659e9df5e208ec374}{Find}} (string name, out \mbox{\hyperlink{interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_context}{I\+Context}} context, out string error\+Message)
-\item 
-bool \mbox{\hyperlink{interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_context_collection_a559611a4cf5c1fc2b00fbc34cbb7a9bc}{Find\+Or\+Create}} (string name, out \mbox{\hyperlink{interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_context}{I\+Context}} context, out string error\+Message)
-\item 
-bool \mbox{\hyperlink{interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_context_collection_a341363d37ac179e4b157d97f6e69404f}{Exists}} (string name)
-\end{DoxyCompactItemize}
+bool \mbox{\hyperlink{interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_context_collection_a1064f8516b93d0a9def640401ab0da26}{Context\+Exists}} (string name)
+\begin{DoxyCompactList}\small\item\em Check if context exists. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_context_collection_a6c71646f1bf15267a72d0b48217eb7bc}{Find\+Context}} (string name, out \mbox{\hyperlink{interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_context}{I\+Context}} context, out string error\+Message)
+\begin{DoxyCompactList}\small\item\em Find context by name, returns false if context does not exist. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_context_collection_acc4e1011e01db9131da699c3faf22726}{Find\+Or\+Create\+Context}} (string name, out \mbox{\hyperlink{interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_context}{I\+Context}} context, out string error\+Message)
+\begin{DoxyCompactList}\small\item\em Find context by name, try to create one if none exists. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Properties}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_context}{I\+Context}} \mbox{\hyperlink{interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_context_collection_a995731ffa92565a90f8b176596a5658a}{Root}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
-\item 
+\begin{DoxyCompactList}\small\item\em Root context. There can only be one of these. \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_context_collection_a3567007696dbd07fa6bd839d4c82fb6b}{Count}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
-\item 
+\begin{DoxyCompactList}\small\item\em Number of local contexts (i.\+e. excluding root context). \end{DoxyCompactList}\item 
 I\+Enumerable$<$ \mbox{\hyperlink{interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_context}{I\+Context}} $>$ \mbox{\hyperlink{interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_context_collection_abac0a1b73a4c00c78860d5b246ba50be}{Contexts}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Enumeration of local contexts. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
@@ -37,35 +37,79 @@ A collection of contexts
 
 
 \subsection{Member Function Documentation}
-\mbox{\Hypertarget{interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_context_collection_a341363d37ac179e4b157d97f6e69404f}\label{interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_context_collection_a341363d37ac179e4b157d97f6e69404f}} 
-\index{cpGames.core.RapidMVC.IContextCollection@{cpGames.core.RapidMVC.IContextCollection}!Exists@{Exists}}
-\index{Exists@{Exists}!cpGames.core.RapidMVC.IContextCollection@{cpGames.core.RapidMVC.IContextCollection}}
-\subsubsection{\texorpdfstring{Exists()}{Exists()}}
-{\footnotesize\ttfamily bool cp\+Games.\+core.\+Rapid\+M\+V\+C.\+I\+Context\+Collection.\+Exists (\begin{DoxyParamCaption}\item[{string}]{name }\end{DoxyParamCaption})}
+\mbox{\Hypertarget{interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_context_collection_a1064f8516b93d0a9def640401ab0da26}\label{interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_context_collection_a1064f8516b93d0a9def640401ab0da26}} 
+\index{cpGames.core.RapidMVC.IContextCollection@{cpGames.core.RapidMVC.IContextCollection}!ContextExists@{ContextExists}}
+\index{ContextExists@{ContextExists}!cpGames.core.RapidMVC.IContextCollection@{cpGames.core.RapidMVC.IContextCollection}}
+\subsubsection{\texorpdfstring{ContextExists()}{ContextExists()}}
+{\footnotesize\ttfamily bool cp\+Games.\+core.\+Rapid\+M\+V\+C.\+I\+Context\+Collection.\+Context\+Exists (\begin{DoxyParamCaption}\item[{string}]{name }\end{DoxyParamCaption})}
 
 
 
-Implemented in \mbox{\hyperlink{classcp_games_1_1core_1_1_rapid_m_v_c_1_1src_1_1_context_collection_a298bbb09a2a4be911a460c436b1a913a}{cp\+Games.\+core.\+Rapid\+M\+V\+C.\+src.\+Context\+Collection}}.
-
-\mbox{\Hypertarget{interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_context_collection_a69e776a5c412ae0659e9df5e208ec374}\label{interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_context_collection_a69e776a5c412ae0659e9df5e208ec374}} 
-\index{cpGames.core.RapidMVC.IContextCollection@{cpGames.core.RapidMVC.IContextCollection}!Find@{Find}}
-\index{Find@{Find}!cpGames.core.RapidMVC.IContextCollection@{cpGames.core.RapidMVC.IContextCollection}}
-\subsubsection{\texorpdfstring{Find()}{Find()}}
-{\footnotesize\ttfamily bool cp\+Games.\+core.\+Rapid\+M\+V\+C.\+I\+Context\+Collection.\+Find (\begin{DoxyParamCaption}\item[{string}]{name,  }\item[{out \mbox{\hyperlink{interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_context}{I\+Context}}}]{context,  }\item[{out string}]{error\+Message }\end{DoxyParamCaption})}
+Check if context exists. 
 
 
-
-Implemented in \mbox{\hyperlink{classcp_games_1_1core_1_1_rapid_m_v_c_1_1src_1_1_context_collection_a02fb5263a77b5b36b5f3e32a98686b12}{cp\+Games.\+core.\+Rapid\+M\+V\+C.\+src.\+Context\+Collection}}.
-
-\mbox{\Hypertarget{interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_context_collection_a559611a4cf5c1fc2b00fbc34cbb7a9bc}\label{interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_context_collection_a559611a4cf5c1fc2b00fbc34cbb7a9bc}} 
-\index{cpGames.core.RapidMVC.IContextCollection@{cpGames.core.RapidMVC.IContextCollection}!FindOrCreate@{FindOrCreate}}
-\index{FindOrCreate@{FindOrCreate}!cpGames.core.RapidMVC.IContextCollection@{cpGames.core.RapidMVC.IContextCollection}}
-\subsubsection{\texorpdfstring{FindOrCreate()}{FindOrCreate()}}
-{\footnotesize\ttfamily bool cp\+Games.\+core.\+Rapid\+M\+V\+C.\+I\+Context\+Collection.\+Find\+Or\+Create (\begin{DoxyParamCaption}\item[{string}]{name,  }\item[{out \mbox{\hyperlink{interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_context}{I\+Context}}}]{context,  }\item[{out string}]{error\+Message }\end{DoxyParamCaption})}
-
+\begin{DoxyParams}{Parameters}
+{\em name} & $>$Unique name for context.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+rue if exists, otherwise false.
+\end{DoxyReturn}
 
 
-Implemented in \mbox{\hyperlink{classcp_games_1_1core_1_1_rapid_m_v_c_1_1src_1_1_context_collection_ad7d4663f1d96310bfba100e9140b11b8}{cp\+Games.\+core.\+Rapid\+M\+V\+C.\+src.\+Context\+Collection}}.
+Implemented in \mbox{\hyperlink{classcp_games_1_1core_1_1_rapid_m_v_c_1_1impl_1_1_context_collection_a288b7ee5d4388b498e8b213694761b4a}{cp\+Games.\+core.\+Rapid\+M\+V\+C.\+impl.\+Context\+Collection}}.
+
+\mbox{\Hypertarget{interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_context_collection_a6c71646f1bf15267a72d0b48217eb7bc}\label{interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_context_collection_a6c71646f1bf15267a72d0b48217eb7bc}} 
+\index{cpGames.core.RapidMVC.IContextCollection@{cpGames.core.RapidMVC.IContextCollection}!FindContext@{FindContext}}
+\index{FindContext@{FindContext}!cpGames.core.RapidMVC.IContextCollection@{cpGames.core.RapidMVC.IContextCollection}}
+\subsubsection{\texorpdfstring{FindContext()}{FindContext()}}
+{\footnotesize\ttfamily bool cp\+Games.\+core.\+Rapid\+M\+V\+C.\+I\+Context\+Collection.\+Find\+Context (\begin{DoxyParamCaption}\item[{string}]{name,  }\item[{out \mbox{\hyperlink{interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_context}{I\+Context}}}]{context,  }\item[{out string}]{error\+Message }\end{DoxyParamCaption})}
+
+
+
+Find context by name, returns false if context does not exist. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & Unique name for context.\\
+\hline
+{\em context} & Context instance if found, otherwise null.\\
+\hline
+{\em error\+Message} & If fails or context not found, this explains why.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if successful, otherwise false.
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classcp_games_1_1core_1_1_rapid_m_v_c_1_1impl_1_1_context_collection_a718fdd345d5be5c3c5386bf2c3eee534}{cp\+Games.\+core.\+Rapid\+M\+V\+C.\+impl.\+Context\+Collection}}.
+
+\mbox{\Hypertarget{interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_context_collection_acc4e1011e01db9131da699c3faf22726}\label{interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_context_collection_acc4e1011e01db9131da699c3faf22726}} 
+\index{cpGames.core.RapidMVC.IContextCollection@{cpGames.core.RapidMVC.IContextCollection}!FindOrCreateContext@{FindOrCreateContext}}
+\index{FindOrCreateContext@{FindOrCreateContext}!cpGames.core.RapidMVC.IContextCollection@{cpGames.core.RapidMVC.IContextCollection}}
+\subsubsection{\texorpdfstring{FindOrCreateContext()}{FindOrCreateContext()}}
+{\footnotesize\ttfamily bool cp\+Games.\+core.\+Rapid\+M\+V\+C.\+I\+Context\+Collection.\+Find\+Or\+Create\+Context (\begin{DoxyParamCaption}\item[{string}]{name,  }\item[{out \mbox{\hyperlink{interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_context}{I\+Context}}}]{context,  }\item[{out string}]{error\+Message }\end{DoxyParamCaption})}
+
+
+
+Find context by name, try to create one if none exists. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & Unique name for context.\\
+\hline
+{\em context} & Context instance if found, otherwise null.\\
+\hline
+{\em error\+Message} & If fails, this explains why.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if successful, otherwise false.
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classcp_games_1_1core_1_1_rapid_m_v_c_1_1impl_1_1_context_collection_abea4cb0d9ab2aad732b862b8f2a9dd2a}{cp\+Games.\+core.\+Rapid\+M\+V\+C.\+impl.\+Context\+Collection}}.
 
 
 
@@ -76,11 +120,19 @@ Implemented in \mbox{\hyperlink{classcp_games_1_1core_1_1_rapid_m_v_c_1_1src_1_1
 \subsubsection{\texorpdfstring{Contexts}{Contexts}}
 {\footnotesize\ttfamily I\+Enumerable$<$\mbox{\hyperlink{interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_context}{I\+Context}}$>$ cp\+Games.\+core.\+Rapid\+M\+V\+C.\+I\+Context\+Collection.\+Contexts\hspace{0.3cm}{\ttfamily [get]}}
 
+
+
+Enumeration of local contexts. 
+
 \mbox{\Hypertarget{interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_context_collection_a3567007696dbd07fa6bd839d4c82fb6b}\label{interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_context_collection_a3567007696dbd07fa6bd839d4c82fb6b}} 
 \index{cpGames.core.RapidMVC.IContextCollection@{cpGames.core.RapidMVC.IContextCollection}!Count@{Count}}
 \index{Count@{Count}!cpGames.core.RapidMVC.IContextCollection@{cpGames.core.RapidMVC.IContextCollection}}
 \subsubsection{\texorpdfstring{Count}{Count}}
 {\footnotesize\ttfamily int cp\+Games.\+core.\+Rapid\+M\+V\+C.\+I\+Context\+Collection.\+Count\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Number of local contexts (i.\+e. excluding root context). 
 
 \mbox{\Hypertarget{interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_context_collection_a995731ffa92565a90f8b176596a5658a}\label{interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_context_collection_a995731ffa92565a90f8b176596a5658a}} 
 \index{cpGames.core.RapidMVC.IContextCollection@{cpGames.core.RapidMVC.IContextCollection}!Root@{Root}}
@@ -90,6 +142,10 @@ Implemented in \mbox{\hyperlink{classcp_games_1_1core_1_1_rapid_m_v_c_1_1src_1_1
 
 
 
+Root context. There can only be one of these. 
+
+
+
 The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-C\+:/\+Users/\+Misha/\+Documents/\+Game\+Projects/cpgames/core/\+Rapid\+M\+V\+C/\+Rapid\+M\+V\+C\+Lib/\+Rapid\+M\+V\+C/api/context/\mbox{\hyperlink{_i_context_collection_8cs}{I\+Context\+Collection.\+cs}}\end{DoxyCompactItemize}
+\mbox{\hyperlink{_i_context_collection_8cs}{I\+Context\+Collection.\+cs}}\end{DoxyCompactItemize}

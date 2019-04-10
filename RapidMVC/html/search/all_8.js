@@ -23,7 +23,7 @@ var searchData=
   ['iinstantiator_2ecs',['IInstantiator.cs',['../_i_instantiator_8cs.html',1,'']]],
   ['injectattribute',['InjectAttribute',['../classcp_games_1_1core_1_1_rapid_m_v_c_1_1_inject_attribute.html',1,'cpGames.core.RapidMVC.InjectAttribute'],['../classcp_games_1_1core_1_1_rapid_m_v_c_1_1_inject_attribute.html#a0c4bfc820f7eb0089bbff9b2ab45c7d0',1,'cpGames.core.RapidMVC.InjectAttribute.InjectAttribute()'],['../classcp_games_1_1core_1_1_rapid_m_v_c_1_1_inject_attribute.html#af731787df83cc1c0e664c2f97c97170c',1,'cpGames.core.RapidMVC.InjectAttribute.InjectAttribute(object key)']]],
   ['instantiator_2ecs',['Instantiator.cs',['../_instantiator_8cs.html',1,'']]],
-  ['isroot',['IsRoot',['../interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_context.html#ac7e05700419090786a56b92d64a35728',1,'cpGames.core.RapidMVC.IContext.IsRoot()'],['../classcp_games_1_1core_1_1_rapid_m_v_c_1_1src_1_1_context.html#a177c09f7544a9a9bb841819d858e1f20',1,'cpGames.core.RapidMVC.src.Context.IsRoot()']]],
+  ['isroot',['IsRoot',['../interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_context.html#ac7e05700419090786a56b92d64a35728',1,'cpGames.core.RapidMVC.IContext.IsRoot()'],['../classcp_games_1_1core_1_1_rapid_m_v_c_1_1impl_1_1_context.html#a680ba0ad31bb053424a5686c8677b8e5',1,'cpGames.core.RapidMVC.impl.Context.IsRoot()']]],
   ['iview',['IView',['../interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_view.html',1,'cpGames::core::RapidMVC']]],
   ['iview_2ecs',['IView.cs',['../_i_view_8cs.html',1,'']]],
   ['iviewcollection',['IViewCollection',['../interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_view_collection.html',1,'cpGames::core::RapidMVC']]],

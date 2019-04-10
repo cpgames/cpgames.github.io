@@ -32,6 +32,7 @@
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">RapidMVC
    </div>
+   <div id="projectbrief">Light IoC/MVC framework for game developers.</div>
   </td>
  </tr>
  </tbody>
@@ -103,119 +104,78 @@ Inheritance diagram for cpGames.core.RapidMVC.IContext:</div>
  <div class="center">
   <img src="interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_context.png" usemap="#cpGames.core.RapidMVC.IContext_map" alt=""/>
   <map id="cpGames.core.RapidMVC.IContext_map" name="cpGames.core.RapidMVC.IContext_map">
-<area href="classcp_games_1_1core_1_1_rapid_m_v_c_1_1src_1_1_context.html" alt="cpGames.core.RapidMVC.src.Context" shape="rect" coords="0,56,227,80"/>
+<area href="interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_view_collection.html" title="A collection of views owned by a context." alt="cpGames.core.RapidMVC.IViewCollection" shape="rect" coords="0,0,264,24"/>
+<area href="interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_binding_collection.html" title="Collection of bindings. Typically you want one binding collection/context." alt="cpGames.core.RapidMVC.IBindingCollection" shape="rect" coords="274,0,538,24"/>
+<area href="classcp_games_1_1core_1_1_rapid_m_v_c_1_1impl_1_1_context.html" alt="cpGames.core.RapidMVC.impl.Context" shape="rect" coords="137,112,401,136"/>
   </map>
 </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a975a12d7037f6425755b27feeeafb155"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_context.html#a975a12d7037f6425755b27feeeafb155">RegisterView</a> (<a class="el" href="interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_view.html">IView</a> view, out string errorMessage)</td></tr>
-<tr class="separator:a975a12d7037f6425755b27feeeafb155"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a86f05401110f08cbc79a83fd4366d505"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_context.html#a86f05401110f08cbc79a83fd4366d505">UnregisterView</a> (<a class="el" href="interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_view.html">IView</a> view, out string errorMessage)</td></tr>
-<tr class="separator:a86f05401110f08cbc79a83fd4366d505"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5f24672bfe61416bdc05a8e68eb147d0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_context.html#a5f24672bfe61416bdc05a8e68eb147d0">Bind</a> (<a class="el" href="interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_binding_key.html">IBindingKey</a> key, out <a class="el" href="interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_binding.html">IBinding</a> binding, out string errorMessage)</td></tr>
-<tr class="separator:a5f24672bfe61416bdc05a8e68eb147d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abd1373878fbfe20526c96a476e939e9e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_context.html#abd1373878fbfe20526c96a476e939e9e">BindValue</a> (<a class="el" href="interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_binding_key.html">IBindingKey</a> key, object value, out string errorMessage)</td></tr>
-<tr class="separator:abd1373878fbfe20526c96a476e939e9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abfff82911155824da32f84d8647d9e56"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_context.html#abfff82911155824da32f84d8647d9e56">Unbind</a> (<a class="el" href="interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_binding_key.html">IBindingKey</a> key, out string errorMessage)</td></tr>
-<tr class="separator:abfff82911155824da32f84d8647d9e56"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acf8d52b810d6b088bf1999ea980c7705"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_context.html#acf8d52b810d6b088bf1999ea980c7705">Destroy</a> (out string errorMessage)</td></tr>
-<tr class="separator:acf8d52b810d6b088bf1999ea980c7705"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0fae0753ef27d6972af6cdddabbec0d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_context.html#ad0fae0753ef27d6972af6cdddabbec0d">DestroyContext</a> (out string errorMessage)</td></tr>
+<tr class="memdesc:ad0fae0753ef27d6972af6cdddabbec0d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unregister any views belonging to this context and clear local bindings and destroy it.  <a href="#ad0fae0753ef27d6972af6cdddabbec0d">More...</a><br /></td></tr>
+<tr class="separator:ad0fae0753ef27d6972af6cdddabbec0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_view_collection"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_view_collection')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_view_collection.html">cpGames.core.RapidMVC.IViewCollection</a></td></tr>
+<tr class="memitem:aba8465ad92ed63a4ad210c60d50cfc56 inherit pub_methods_interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_view_collection"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_view_collection.html#aba8465ad92ed63a4ad210c60d50cfc56">RegisterView</a> (<a class="el" href="interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_view.html">IView</a> view, out string errorMessage)</td></tr>
+<tr class="memdesc:aba8465ad92ed63a4ad210c60d50cfc56 inherit pub_methods_interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_view_collection"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register a unique view.  <a href="interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_view_collection.html#aba8465ad92ed63a4ad210c60d50cfc56">More...</a><br /></td></tr>
+<tr class="separator:aba8465ad92ed63a4ad210c60d50cfc56 inherit pub_methods_interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_view_collection"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc10b801eec02af0165b9e558a915682 inherit pub_methods_interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_view_collection"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_view_collection.html#acc10b801eec02af0165b9e558a915682">UnregisterView</a> (<a class="el" href="interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_view.html">IView</a> view, out string errorMessage)</td></tr>
+<tr class="memdesc:acc10b801eec02af0165b9e558a915682 inherit pub_methods_interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_view_collection"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unregister view.  <a href="interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_view_collection.html#acc10b801eec02af0165b9e558a915682">More...</a><br /></td></tr>
+<tr class="separator:acc10b801eec02af0165b9e558a915682 inherit pub_methods_interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_view_collection"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7631908f42053edeb586ac79ffbb2c0 inherit pub_methods_interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_view_collection"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_view_collection.html#ab7631908f42053edeb586ac79ffbb2c0">ClearViews</a> (out string errorMessage)</td></tr>
+<tr class="memdesc:ab7631908f42053edeb586ac79ffbb2c0 inherit pub_methods_interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_view_collection"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unregister all views.  <a href="interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_view_collection.html#ab7631908f42053edeb586ac79ffbb2c0">More...</a><br /></td></tr>
+<tr class="separator:ab7631908f42053edeb586ac79ffbb2c0 inherit pub_methods_interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_view_collection"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_binding_collection"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_binding_collection')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_binding_collection.html">cpGames.core.RapidMVC.IBindingCollection</a></td></tr>
+<tr class="memitem:a4ca0c71e4a254531712acbbf86e24a00 inherit pub_methods_interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_binding_collection"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_binding_collection.html#a4ca0c71e4a254531712acbbf86e24a00">FindBinding</a> (<a class="el" href="interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_binding_key.html">IBindingKey</a> key, out <a class="el" href="interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_binding.html">IBinding</a> binding, out string errorMessage)</td></tr>
+<tr class="memdesc:a4ca0c71e4a254531712acbbf86e24a00 inherit pub_methods_interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_binding_collection"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find binding by key. Return false if not found.  <a href="interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_binding_collection.html#a4ca0c71e4a254531712acbbf86e24a00">More...</a><br /></td></tr>
+<tr class="separator:a4ca0c71e4a254531712acbbf86e24a00 inherit pub_methods_interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_binding_collection"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39534c8594adf07fb09af75f6d0a0de8 inherit pub_methods_interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_binding_collection"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_binding_collection.html#a39534c8594adf07fb09af75f6d0a0de8">BindingExists</a> (<a class="el" href="interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_binding_key.html">IBindingKey</a> key)</td></tr>
+<tr class="memdesc:a39534c8594adf07fb09af75f6d0a0de8 inherit pub_methods_interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_binding_collection"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if binding exists.  <a href="interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_binding_collection.html#a39534c8594adf07fb09af75f6d0a0de8">More...</a><br /></td></tr>
+<tr class="separator:a39534c8594adf07fb09af75f6d0a0de8 inherit pub_methods_interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_binding_collection"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afff4c2ad2ff9fb25c906864bc28f036f inherit pub_methods_interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_binding_collection"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_binding_collection.html#afff4c2ad2ff9fb25c906864bc28f036f">Bind</a> (<a class="el" href="interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_binding_key.html">IBindingKey</a> key, out <a class="el" href="interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_binding.html">IBinding</a> binding, out string errorMessage)</td></tr>
+<tr class="memdesc:afff4c2ad2ff9fb25c906864bc28f036f inherit pub_methods_interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_binding_collection"><td class="mdescLeft">&#160;</td><td class="mdescRight">If binding does not exist, register new binding. Otherwise return existing one. If registering a binding with root context while at least one local context contains a binding with matching key, this will return false.  <a href="interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_binding_collection.html#afff4c2ad2ff9fb25c906864bc28f036f">More...</a><br /></td></tr>
+<tr class="separator:afff4c2ad2ff9fb25c906864bc28f036f inherit pub_methods_interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_binding_collection"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab20c12c64a91e24e7685780dd64f1d87 inherit pub_methods_interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_binding_collection"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_binding_collection.html#ab20c12c64a91e24e7685780dd64f1d87">Unbind</a> (<a class="el" href="interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_binding_key.html">IBindingKey</a> key, out string errorMessage)</td></tr>
+<tr class="memdesc:ab20c12c64a91e24e7685780dd64f1d87 inherit pub_methods_interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_binding_collection"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove binding by key.  <a href="interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_binding_collection.html#ab20c12c64a91e24e7685780dd64f1d87">More...</a><br /></td></tr>
+<tr class="separator:ab20c12c64a91e24e7685780dd64f1d87 inherit pub_methods_interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_binding_collection"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81689073a35a424a96982276d64a27ad inherit pub_methods_interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_binding_collection"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_binding_collection.html#a81689073a35a424a96982276d64a27ad">ClearBindings</a> (out string errorMessage)</td></tr>
+<tr class="memdesc:a81689073a35a424a96982276d64a27ad inherit pub_methods_interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_binding_collection"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove all local bindings.  <a href="interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_binding_collection.html#a81689073a35a424a96982276d64a27ad">More...</a><br /></td></tr>
+<tr class="separator:a81689073a35a424a96982276d64a27ad inherit pub_methods_interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_binding_collection"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a468c5570b780133763d9592e2c1cb5 inherit pub_methods_interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_binding_collection"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_binding_collection.html#a2a468c5570b780133763d9592e2c1cb5">BindValue</a> (<a class="el" href="interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_binding_key.html">IBindingKey</a> key, object value, out string errorMessage)</td></tr>
+<tr class="memdesc:a2a468c5570b780133763d9592e2c1cb5 inherit pub_methods_interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_binding_collection"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update binding value, update all injected properties of that binding, and notify all owning views.  <a href="interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_binding_collection.html#a2a468c5570b780133763d9592e2c1cb5">More...</a><br /></td></tr>
+<tr class="separator:a2a468c5570b780133763d9592e2c1cb5 inherit pub_methods_interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_binding_collection"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
 Properties</h2></td></tr>
 <tr class="memitem:a75d949e147b0c638729e455a99d361bc"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_context.html#a75d949e147b0c638729e455a99d361bc">Name</a><code> [get]</code></td></tr>
+<tr class="memdesc:a75d949e147b0c638729e455a99d361bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unique name for context.  <a href="#a75d949e147b0c638729e455a99d361bc">More...</a><br /></td></tr>
 <tr class="separator:a75d949e147b0c638729e455a99d361bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac7e05700419090786a56b92d64a35728"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_context.html#ac7e05700419090786a56b92d64a35728">IsRoot</a><code> [get]</code></td></tr>
+<tr class="memdesc:ac7e05700419090786a56b92d64a35728"><td class="mdescLeft">&#160;</td><td class="mdescRight">Root context is a global (cross-context) entity. Typically you want one of these.  <a href="#ac7e05700419090786a56b92d64a35728">More...</a><br /></td></tr>
 <tr class="separator:ac7e05700419090786a56b92d64a35728"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5aba456e160e86d5da856d6d823ac393"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_binding_collection.html">IBindingCollection</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_context.html#a5aba456e160e86d5da856d6d823ac393">Bindings</a><code> [get]</code></td></tr>
-<tr class="separator:a5aba456e160e86d5da856d6d823ac393"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a59f314929b2f01751bdf6f2a00586e80"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classcp_games_1_1core_1_1_rapid_m_v_c_1_1_signal.html">Signal</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_context.html#a59f314929b2f01751bdf6f2a00586e80">DestroyedSignal</a><code> [get]</code></td></tr>
+<tr class="memdesc:a59f314929b2f01751bdf6f2a00586e80"><td class="mdescLeft">&#160;</td><td class="mdescRight">If there are no bindings or views left in the context, it will be automatically deleted and this signal will be dispatched.  <a href="#a59f314929b2f01751bdf6f2a00586e80">More...</a><br /></td></tr>
 <tr class="separator:a59f314929b2f01751bdf6f2a00586e80"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header properties_interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_view_collection"><td colspan="2" onclick="javascript:toggleInherit('properties_interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_view_collection')"><img src="closed.png" alt="-"/>&#160;Properties inherited from <a class="el" href="interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_view_collection.html">cpGames.core.RapidMVC.IViewCollection</a></td></tr>
+<tr class="memitem:a9946bcf9c5c23283b3f21fea41689aca inherit properties_interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_view_collection"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_view_collection.html#a9946bcf9c5c23283b3f21fea41689aca">ViewCount</a><code> [get]</code></td></tr>
+<tr class="memdesc:a9946bcf9c5c23283b3f21fea41689aca inherit properties_interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_view_collection"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of views in the collection.  <a href="interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_view_collection.html#a9946bcf9c5c23283b3f21fea41689aca">More...</a><br /></td></tr>
+<tr class="separator:a9946bcf9c5c23283b3f21fea41689aca inherit properties_interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_view_collection"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header properties_interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_binding_collection"><td colspan="2" onclick="javascript:toggleInherit('properties_interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_binding_collection')"><img src="closed.png" alt="-"/>&#160;Properties inherited from <a class="el" href="interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_binding_collection.html">cpGames.core.RapidMVC.IBindingCollection</a></td></tr>
+<tr class="memitem:ae64df704d272c94fcb9fb16e896bc66b inherit properties_interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_binding_collection"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_binding_collection.html#ae64df704d272c94fcb9fb16e896bc66b">BindingCount</a><code> [get]</code></td></tr>
+<tr class="memdesc:ae64df704d272c94fcb9fb16e896bc66b inherit properties_interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_binding_collection"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of bindings.  <a href="interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_binding_collection.html#ae64df704d272c94fcb9fb16e896bc66b">More...</a><br /></td></tr>
+<tr class="separator:ae64df704d272c94fcb9fb16e896bc66b inherit properties_interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_binding_collection"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Context encapsulates data for a collection of views registered under it. Registering view with context automatically binds injected properties. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a5f24672bfe61416bdc05a8e68eb147d0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5f24672bfe61416bdc05a8e68eb147d0">&#9670;&nbsp;</a></span>Bind()</h2>
+<a id="ad0fae0753ef27d6972af6cdddabbec0d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad0fae0753ef27d6972af6cdddabbec0d">&#9670;&nbsp;</a></span>DestroyContext()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool cpGames.core.RapidMVC.IContext.Bind </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_binding_key.html">IBindingKey</a>&#160;</td>
-          <td class="paramname"><em>key</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">out <a class="el" href="interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_binding.html">IBinding</a>&#160;</td>
-          <td class="paramname"><em>binding</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">out string&#160;</td>
-          <td class="paramname"><em>errorMessage</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Implemented in <a class="el" href="classcp_games_1_1core_1_1_rapid_m_v_c_1_1src_1_1_context.html#a47ae1588b3891b1cd10bd102e2799465">cpGames.core.RapidMVC.src.Context</a>.</p>
-
-</div>
-</div>
-<a id="abd1373878fbfe20526c96a476e939e9e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abd1373878fbfe20526c96a476e939e9e">&#9670;&nbsp;</a></span>BindValue()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool cpGames.core.RapidMVC.IContext.BindValue </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_binding_key.html">IBindingKey</a>&#160;</td>
-          <td class="paramname"><em>key</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">object&#160;</td>
-          <td class="paramname"><em>value</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">out string&#160;</td>
-          <td class="paramname"><em>errorMessage</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Implemented in <a class="el" href="classcp_games_1_1core_1_1_rapid_m_v_c_1_1src_1_1_context.html#afc41dc6765626b99f60958bcbb31cf37">cpGames.core.RapidMVC.src.Context</a>.</p>
-
-</div>
-</div>
-<a id="acf8d52b810d6b088bf1999ea980c7705"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acf8d52b810d6b088bf1999ea980c7705">&#9670;&nbsp;</a></span>Destroy()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool cpGames.core.RapidMVC.IContext.Destroy </td>
+          <td class="memname">bool cpGames.core.RapidMVC.IContext.DestroyContext </td>
           <td>(</td>
           <td class="paramtype">out string&#160;</td>
           <td class="paramname"><em>errorMessage</em></td><td>)</td>
@@ -224,123 +184,20 @@ Properties</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="classcp_games_1_1core_1_1_rapid_m_v_c_1_1src_1_1_context.html#af533afc2087ed95d2c5123a3c69f66c5">cpGames.core.RapidMVC.src.Context</a>.</p>
+<p>Unregister any views belonging to this context and clear local bindings and destroy it. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">errorMessage</td><td>If fails, this explains why.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if successful, otherwise false.</dd></dl>
 
-</div>
-</div>
-<a id="a975a12d7037f6425755b27feeeafb155"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a975a12d7037f6425755b27feeeafb155">&#9670;&nbsp;</a></span>RegisterView()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool cpGames.core.RapidMVC.IContext.RegisterView </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_view.html">IView</a>&#160;</td>
-          <td class="paramname"><em>view</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">out string&#160;</td>
-          <td class="paramname"><em>errorMessage</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Implemented in <a class="el" href="classcp_games_1_1core_1_1_rapid_m_v_c_1_1src_1_1_context.html#a382256a6867b84c58d9c69b995423e63">cpGames.core.RapidMVC.src.Context</a>.</p>
-
-</div>
-</div>
-<a id="abfff82911155824da32f84d8647d9e56"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abfff82911155824da32f84d8647d9e56">&#9670;&nbsp;</a></span>Unbind()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool cpGames.core.RapidMVC.IContext.Unbind </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_binding_key.html">IBindingKey</a>&#160;</td>
-          <td class="paramname"><em>key</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">out string&#160;</td>
-          <td class="paramname"><em>errorMessage</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Implemented in <a class="el" href="classcp_games_1_1core_1_1_rapid_m_v_c_1_1src_1_1_context.html#a7de73496fa8c30c2dfc84cb3e58c7543">cpGames.core.RapidMVC.src.Context</a>.</p>
-
-</div>
-</div>
-<a id="a86f05401110f08cbc79a83fd4366d505"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a86f05401110f08cbc79a83fd4366d505">&#9670;&nbsp;</a></span>UnregisterView()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool cpGames.core.RapidMVC.IContext.UnregisterView </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_view.html">IView</a>&#160;</td>
-          <td class="paramname"><em>view</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">out string&#160;</td>
-          <td class="paramname"><em>errorMessage</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Implemented in <a class="el" href="classcp_games_1_1core_1_1_rapid_m_v_c_1_1src_1_1_context.html#a5f033c640e3b84d53ff2bf330e2baf58">cpGames.core.RapidMVC.src.Context</a>.</p>
+<p>Implemented in <a class="el" href="classcp_games_1_1core_1_1_rapid_m_v_c_1_1impl_1_1_context.html#ab8b1ac2f255993564212c4055944f372">cpGames.core.RapidMVC.impl.Context</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Property Documentation</h2>
-<a id="a5aba456e160e86d5da856d6d823ac393"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5aba456e160e86d5da856d6d823ac393">&#9670;&nbsp;</a></span>Bindings</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_binding_collection.html">IBindingCollection</a> cpGames.core.RapidMVC.IContext.Bindings</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">get</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a59f314929b2f01751bdf6f2a00586e80"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a59f314929b2f01751bdf6f2a00586e80">&#9670;&nbsp;</a></span>DestroyedSignal</h2>
 
@@ -360,6 +217,8 @@ Properties</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>If there are no bindings or views left in the context, it will be automatically deleted and this signal will be dispatched. </p>
 
 </div>
 </div>
@@ -383,6 +242,8 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Root context is a global (cross-context) entity. Typically you want one of these. </p>
+
 </div>
 </div>
 <a id="a75d949e147b0c638729e455a99d361bc"></a>
@@ -405,10 +266,12 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Unique name for context. </p>
+
 </div>
 </div>
 <hr/>The documentation for this interface was generated from the following file:<ul>
-<li>C:/Users/Misha/Documents/GameProjects/cpgames/core/RapidMVC/RapidMVCLib/RapidMVC/api/context/<a class="el" href="_i_context_8cs.html">IContext.cs</a></li>
+<li><a class="el" href="_i_context_8cs.html">IContext.cs</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

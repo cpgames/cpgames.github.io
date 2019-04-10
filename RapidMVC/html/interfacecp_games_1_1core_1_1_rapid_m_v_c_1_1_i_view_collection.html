@@ -32,6 +32,7 @@
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">RapidMVC
    </div>
+   <div id="projectbrief">Light IoC/MVC framework for game developers.</div>
   </td>
  </tr>
  </tbody>
@@ -94,22 +95,71 @@ $(document).ready(function(){initNavTree('interfacecp_games_1_1core_1_1_rapid_m_
 <div class="title">cpGames.core.RapidMVC.IViewCollection Interface Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>A collection of views owned by a context.  
+ <a href="interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_view_collection.html#details">More...</a></p>
+<div class="dynheader">
+Inheritance diagram for cpGames.core.RapidMVC.IViewCollection:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_view_collection.png" usemap="#cpGames.core.RapidMVC.IViewCollection_map" alt=""/>
+  <map id="cpGames.core.RapidMVC.IViewCollection_map" name="cpGames.core.RapidMVC.IViewCollection_map">
+<area href="interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_context.html" title="Context encapsulates data for a collection of views registered under it. Registering view with contex..." alt="cpGames.core.RapidMVC.IContext" shape="rect" coords="0,56,273,80"/>
+<area href="classcp_games_1_1core_1_1_rapid_m_v_c_1_1impl_1_1_view_collection.html" alt="cpGames.core.RapidMVC.impl.ViewCollection" shape="rect" coords="283,56,556,80"/>
+<area href="classcp_games_1_1core_1_1_rapid_m_v_c_1_1impl_1_1_context.html" alt="cpGames.core.RapidMVC.impl.Context" shape="rect" coords="0,112,273,136"/>
+  </map>
+</div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:aba8465ad92ed63a4ad210c60d50cfc56"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_view_collection.html#aba8465ad92ed63a4ad210c60d50cfc56">RegisterView</a> (<a class="el" href="interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_view.html">IView</a> view, out string errorMessage)</td></tr>
-<tr class="memdesc:aba8465ad92ed63a4ad210c60d50cfc56"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register a unique view. Returns false if view instance is already registered.  <a href="#aba8465ad92ed63a4ad210c60d50cfc56">More...</a><br /></td></tr>
+<tr class="memdesc:aba8465ad92ed63a4ad210c60d50cfc56"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register a unique view.  <a href="#aba8465ad92ed63a4ad210c60d50cfc56">More...</a><br /></td></tr>
 <tr class="separator:aba8465ad92ed63a4ad210c60d50cfc56"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acc10b801eec02af0165b9e558a915682"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_view_collection.html#acc10b801eec02af0165b9e558a915682">UnregisterView</a> (<a class="el" href="interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_view.html">IView</a> view, out string errorMessage)</td></tr>
+<tr class="memdesc:acc10b801eec02af0165b9e558a915682"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unregister view.  <a href="#acc10b801eec02af0165b9e558a915682">More...</a><br /></td></tr>
 <tr class="separator:acc10b801eec02af0165b9e558a915682"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7631908f42053edeb586ac79ffbb2c0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_view_collection.html#ab7631908f42053edeb586ac79ffbb2c0">ClearViews</a> (out string errorMessage)</td></tr>
+<tr class="memdesc:ab7631908f42053edeb586ac79ffbb2c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unregister all views.  <a href="#ab7631908f42053edeb586ac79ffbb2c0">More...</a><br /></td></tr>
+<tr class="separator:ab7631908f42053edeb586ac79ffbb2c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
 Properties</h2></td></tr>
-<tr class="memitem:a695e9747a76ed53cb845020e4171953a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_view_collection.html#a695e9747a76ed53cb845020e4171953a">Count</a><code> [get]</code></td></tr>
-<tr class="memdesc:a695e9747a76ed53cb845020e4171953a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of views in the collection.  <a href="#a695e9747a76ed53cb845020e4171953a">More...</a><br /></td></tr>
-<tr class="separator:a695e9747a76ed53cb845020e4171953a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9946bcf9c5c23283b3f21fea41689aca"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_view_collection.html#a9946bcf9c5c23283b3f21fea41689aca">ViewCount</a><code> [get]</code></td></tr>
+<tr class="memdesc:a9946bcf9c5c23283b3f21fea41689aca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of views in the collection.  <a href="#a9946bcf9c5c23283b3f21fea41689aca">More...</a><br /></td></tr>
+<tr class="separator:a9946bcf9c5c23283b3f21fea41689aca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>A collection of views owned by a context. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="ab7631908f42053edeb586ac79ffbb2c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab7631908f42053edeb586ac79ffbb2c0">&#9670;&nbsp;</a></span>ClearViews()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool cpGames.core.RapidMVC.IViewCollection.ClearViews </td>
+          <td>(</td>
+          <td class="paramtype">out string&#160;</td>
+          <td class="paramname"><em>errorMessage</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Unregister all views. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">errorMessage</td><td>If fails, this explains why.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if successful, otherwise false</dd></dl>
+
+<p>Implemented in <a class="el" href="classcp_games_1_1core_1_1_rapid_m_v_c_1_1impl_1_1_context.html#aa35849819d74cafb71b0056f370872e2">cpGames.core.RapidMVC.impl.Context</a>, and <a class="el" href="classcp_games_1_1core_1_1_rapid_m_v_c_1_1impl_1_1_view_collection.html#a958ac198eae02d710e3abe17aed90205">cpGames.core.RapidMVC.impl.ViewCollection</a>.</p>
+
+</div>
+</div>
 <a id="aba8465ad92ed63a4ad210c60d50cfc56"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aba8465ad92ed63a4ad210c60d50cfc56">&#9670;&nbsp;</a></span>RegisterView()</h2>
 
@@ -136,15 +186,17 @@ Properties</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Register a unique view. Returns false if view instance is already registered. </p>
+<p>Register a unique view. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">view</td><td><a class="el" href="classcp_games_1_1core_1_1_rapid_m_v_c_1_1_view.html" title="Default View">View</a> instance to register.</td></tr>
-    <tr><td class="paramname">errorMessage</td><td>If registration fails, this contains a reason why.</td></tr>
+    <tr><td class="paramname">errorMessage</td><td>If fails, this explains why</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>True if view registered, otherwise false. See errorMessage for details.</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>True if successful, otherwise false.</dd></dl>
+
+<p>Implemented in <a class="el" href="classcp_games_1_1core_1_1_rapid_m_v_c_1_1impl_1_1_context.html#aaca630e99979716757f6b028b8b4aa0c">cpGames.core.RapidMVC.impl.Context</a>, and <a class="el" href="classcp_games_1_1core_1_1_rapid_m_v_c_1_1impl_1_1_view_collection.html#a654222e061d5dc730992cbc0aa519205">cpGames.core.RapidMVC.impl.ViewCollection</a>.</p>
 
 </div>
 </div>
@@ -174,11 +226,23 @@ Properties</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Unregister view. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">view</td><td><a class="el" href="classcp_games_1_1core_1_1_rapid_m_v_c_1_1_view.html" title="Default View">View</a> instance to unregister.</td></tr>
+    <tr><td class="paramname">errorMessage</td><td>If fails, this explains why.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if successful, otherwise false.</dd></dl>
+
+<p>Implemented in <a class="el" href="classcp_games_1_1core_1_1_rapid_m_v_c_1_1impl_1_1_context.html#aa1b62f966c4cf9b70e12e4db3bd80903">cpGames.core.RapidMVC.impl.Context</a>, and <a class="el" href="classcp_games_1_1core_1_1_rapid_m_v_c_1_1impl_1_1_view_collection.html#a5a88bea4fa82d3422364a2e6ba81e1ca">cpGames.core.RapidMVC.impl.ViewCollection</a>.</p>
+
 </div>
 </div>
 <h2 class="groupheader">Property Documentation</h2>
-<a id="a695e9747a76ed53cb845020e4171953a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a695e9747a76ed53cb845020e4171953a">&#9670;&nbsp;</a></span>Count</h2>
+<a id="a9946bcf9c5c23283b3f21fea41689aca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9946bcf9c5c23283b3f21fea41689aca">&#9670;&nbsp;</a></span>ViewCount</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -187,7 +251,7 @@ Properties</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int cpGames.core.RapidMVC.IViewCollection.Count</td>
+          <td class="memname">int cpGames.core.RapidMVC.IViewCollection.ViewCount</td>
         </tr>
       </table>
   </td>
@@ -202,7 +266,7 @@ Properties</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this interface was generated from the following file:<ul>
-<li>C:/Users/Misha/Documents/GameProjects/cpgames/core/RapidMVC/RapidMVCLib/RapidMVC/src/view/<a class="el" href="_i_view_collection_8cs.html">IViewCollection.cs</a></li>
+<li><a class="el" href="_i_view_collection_8cs.html">IViewCollection.cs</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

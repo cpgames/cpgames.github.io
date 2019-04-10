@@ -32,6 +32,7 @@
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">RapidMVC
    </div>
+   <div id="projectbrief">Light IoC/MVC framework for game developers.</div>
   </td>
  </tr>
  </tbody>
@@ -94,7 +95,7 @@ $(document).ready(function(){initNavTree('interfacecp_games_1_1core_1_1_rapid_m_
 </div><!--header-->
 <div class="contents">
 
-<p>Commands are used to execute a single action. They need to be added to a signal.  
+<p>Commands are used to execute actions. They need to be added to a signal, then the signal needs to be dispatched.  
  <a href="interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_base_command.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for cpGames.core.RapidMVC.IBaseCommand:</div>
@@ -119,10 +120,11 @@ Inheritance diagram for cpGames.core.RapidMVC.IBaseCommand:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:aaf935c8b144d93bffac5b2e4fbe9881b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_base_command.html#aaf935c8b144d93bffac5b2e4fbe9881b">Release</a> ()</td></tr>
+<tr class="memdesc:aaf935c8b144d93bffac5b2e4fbe9881b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Release command resources after command finished executing.  <a href="#aaf935c8b144d93bffac5b2e4fbe9881b">More...</a><br /></td></tr>
 <tr class="separator:aaf935c8b144d93bffac5b2e4fbe9881b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Commands are used to execute a single action. They need to be added to a signal. </p>
+<div class="textblock"><p>Commands are used to execute actions. They need to be added to a signal, then the signal needs to be dispatched. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="aaf935c8b144d93bffac5b2e4fbe9881b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aaf935c8b144d93bffac5b2e4fbe9881b">&#9670;&nbsp;</a></span>Release()</h2>
@@ -139,12 +141,14 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Release command resources after command finished executing. </p>
+
 <p>Implemented in <a class="el" href="classcp_games_1_1core_1_1_rapid_m_v_c_1_1_base_command.html#afa3a355d140a2a088cfa7e5f4d71a07b">cpGames.core.RapidMVC.BaseCommand</a>, and <a class="el" href="classcp_games_1_1core_1_1_rapid_m_v_c_1_1_base_command_view.html#af5c36b96f3c29382b3809bd0c25130c3">cpGames.core.RapidMVC.BaseCommandView</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this interface was generated from the following file:<ul>
-<li>C:/Users/Misha/Documents/GameProjects/cpgames/core/RapidMVC/RapidMVCLib/RapidMVC/api/command/<a class="el" href="_i_command_8cs.html">ICommand.cs</a></li>
+<li><a class="el" href="_i_command_8cs.html">ICommand.cs</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

@@ -32,6 +32,7 @@
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">RapidMVC
    </div>
+   <div id="projectbrief">Light IoC/MVC framework for game developers.</div>
   </td>
  </tr>
  </tbody>
@@ -103,39 +104,45 @@ Inheritance diagram for cpGames.core.RapidMVC.IContextCollection:</div>
  <div class="center">
   <img src="interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_context_collection.png" usemap="#cpGames.core.RapidMVC.IContextCollection_map" alt=""/>
   <map id="cpGames.core.RapidMVC.IContextCollection_map" name="cpGames.core.RapidMVC.IContextCollection_map">
-<area href="classcp_games_1_1core_1_1_rapid_m_v_c_1_1src_1_1_context_collection.html" alt="cpGames.core.RapidMVC.src.ContextCollection" shape="rect" coords="0,56,283,80"/>
+<area href="classcp_games_1_1core_1_1_rapid_m_v_c_1_1impl_1_1_context_collection.html" alt="cpGames.core.RapidMVC.impl.ContextCollection" shape="rect" coords="0,56,287,80"/>
   </map>
 </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a69e776a5c412ae0659e9df5e208ec374"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_context_collection.html#a69e776a5c412ae0659e9df5e208ec374">Find</a> (string name, out <a class="el" href="interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_context.html">IContext</a> context, out string errorMessage)</td></tr>
-<tr class="separator:a69e776a5c412ae0659e9df5e208ec374"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a559611a4cf5c1fc2b00fbc34cbb7a9bc"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_context_collection.html#a559611a4cf5c1fc2b00fbc34cbb7a9bc">FindOrCreate</a> (string name, out <a class="el" href="interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_context.html">IContext</a> context, out string errorMessage)</td></tr>
-<tr class="separator:a559611a4cf5c1fc2b00fbc34cbb7a9bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a341363d37ac179e4b157d97f6e69404f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_context_collection.html#a341363d37ac179e4b157d97f6e69404f">Exists</a> (string name)</td></tr>
-<tr class="separator:a341363d37ac179e4b157d97f6e69404f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1064f8516b93d0a9def640401ab0da26"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_context_collection.html#a1064f8516b93d0a9def640401ab0da26">ContextExists</a> (string name)</td></tr>
+<tr class="memdesc:a1064f8516b93d0a9def640401ab0da26"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if context exists.  <a href="#a1064f8516b93d0a9def640401ab0da26">More...</a><br /></td></tr>
+<tr class="separator:a1064f8516b93d0a9def640401ab0da26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c71646f1bf15267a72d0b48217eb7bc"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_context_collection.html#a6c71646f1bf15267a72d0b48217eb7bc">FindContext</a> (string name, out <a class="el" href="interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_context.html">IContext</a> context, out string errorMessage)</td></tr>
+<tr class="memdesc:a6c71646f1bf15267a72d0b48217eb7bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find context by name, returns false if context does not exist.  <a href="#a6c71646f1bf15267a72d0b48217eb7bc">More...</a><br /></td></tr>
+<tr class="separator:a6c71646f1bf15267a72d0b48217eb7bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc4e1011e01db9131da699c3faf22726"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_context_collection.html#acc4e1011e01db9131da699c3faf22726">FindOrCreateContext</a> (string name, out <a class="el" href="interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_context.html">IContext</a> context, out string errorMessage)</td></tr>
+<tr class="memdesc:acc4e1011e01db9131da699c3faf22726"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find context by name, try to create one if none exists.  <a href="#acc4e1011e01db9131da699c3faf22726">More...</a><br /></td></tr>
+<tr class="separator:acc4e1011e01db9131da699c3faf22726"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
 Properties</h2></td></tr>
 <tr class="memitem:a995731ffa92565a90f8b176596a5658a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_context.html">IContext</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_context_collection.html#a995731ffa92565a90f8b176596a5658a">Root</a><code> [get]</code></td></tr>
+<tr class="memdesc:a995731ffa92565a90f8b176596a5658a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Root context. There can only be one of these.  <a href="#a995731ffa92565a90f8b176596a5658a">More...</a><br /></td></tr>
 <tr class="separator:a995731ffa92565a90f8b176596a5658a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3567007696dbd07fa6bd839d4c82fb6b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_context_collection.html#a3567007696dbd07fa6bd839d4c82fb6b">Count</a><code> [get]</code></td></tr>
+<tr class="memdesc:a3567007696dbd07fa6bd839d4c82fb6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of local contexts (i.e. excluding root context).  <a href="#a3567007696dbd07fa6bd839d4c82fb6b">More...</a><br /></td></tr>
 <tr class="separator:a3567007696dbd07fa6bd839d4c82fb6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abac0a1b73a4c00c78860d5b246ba50be"><td class="memItemLeft" align="right" valign="top">IEnumerable&lt; <a class="el" href="interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_context.html">IContext</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_context_collection.html#abac0a1b73a4c00c78860d5b246ba50be">Contexts</a><code> [get]</code></td></tr>
+<tr class="memdesc:abac0a1b73a4c00c78860d5b246ba50be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enumeration of local contexts.  <a href="#abac0a1b73a4c00c78860d5b246ba50be">More...</a><br /></td></tr>
 <tr class="separator:abac0a1b73a4c00c78860d5b246ba50be"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A collection of contexts </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a341363d37ac179e4b157d97f6e69404f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a341363d37ac179e4b157d97f6e69404f">&#9670;&nbsp;</a></span>Exists()</h2>
+<a id="a1064f8516b93d0a9def640401ab0da26"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1064f8516b93d0a9def640401ab0da26">&#9670;&nbsp;</a></span>ContextExists()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool cpGames.core.RapidMVC.IContextCollection.Exists </td>
+          <td class="memname">bool cpGames.core.RapidMVC.IContextCollection.ContextExists </td>
           <td>(</td>
           <td class="paramtype">string&#160;</td>
           <td class="paramname"><em>name</em></td><td>)</td>
@@ -144,18 +151,27 @@ Properties</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="classcp_games_1_1core_1_1_rapid_m_v_c_1_1src_1_1_context_collection.html#a298bbb09a2a4be911a460c436b1a913a">cpGames.core.RapidMVC.src.ContextCollection</a>.</p>
+<p>Check if context exists. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>&gt;Unique name for context.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>rue if exists, otherwise false.</dd></dl>
+
+<p>Implemented in <a class="el" href="classcp_games_1_1core_1_1_rapid_m_v_c_1_1impl_1_1_context_collection.html#a288b7ee5d4388b498e8b213694761b4a">cpGames.core.RapidMVC.impl.ContextCollection</a>.</p>
 
 </div>
 </div>
-<a id="a69e776a5c412ae0659e9df5e208ec374"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a69e776a5c412ae0659e9df5e208ec374">&#9670;&nbsp;</a></span>Find()</h2>
+<a id="a6c71646f1bf15267a72d0b48217eb7bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6c71646f1bf15267a72d0b48217eb7bc">&#9670;&nbsp;</a></span>FindContext()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool cpGames.core.RapidMVC.IContextCollection.Find </td>
+          <td class="memname">bool cpGames.core.RapidMVC.IContextCollection.FindContext </td>
           <td>(</td>
           <td class="paramtype">string&#160;</td>
           <td class="paramname"><em>name</em>, </td>
@@ -180,18 +196,29 @@ Properties</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="classcp_games_1_1core_1_1_rapid_m_v_c_1_1src_1_1_context_collection.html#a02fb5263a77b5b36b5f3e32a98686b12">cpGames.core.RapidMVC.src.ContextCollection</a>.</p>
+<p>Find context by name, returns false if context does not exist. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>Unique name for context.</td></tr>
+    <tr><td class="paramname">context</td><td>Context instance if found, otherwise null.</td></tr>
+    <tr><td class="paramname">errorMessage</td><td>If fails or context not found, this explains why.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if successful, otherwise false.</dd></dl>
+
+<p>Implemented in <a class="el" href="classcp_games_1_1core_1_1_rapid_m_v_c_1_1impl_1_1_context_collection.html#a718fdd345d5be5c3c5386bf2c3eee534">cpGames.core.RapidMVC.impl.ContextCollection</a>.</p>
 
 </div>
 </div>
-<a id="a559611a4cf5c1fc2b00fbc34cbb7a9bc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a559611a4cf5c1fc2b00fbc34cbb7a9bc">&#9670;&nbsp;</a></span>FindOrCreate()</h2>
+<a id="acc4e1011e01db9131da699c3faf22726"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc4e1011e01db9131da699c3faf22726">&#9670;&nbsp;</a></span>FindOrCreateContext()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool cpGames.core.RapidMVC.IContextCollection.FindOrCreate </td>
+          <td class="memname">bool cpGames.core.RapidMVC.IContextCollection.FindOrCreateContext </td>
           <td>(</td>
           <td class="paramtype">string&#160;</td>
           <td class="paramname"><em>name</em>, </td>
@@ -216,7 +243,18 @@ Properties</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="classcp_games_1_1core_1_1_rapid_m_v_c_1_1src_1_1_context_collection.html#ad7d4663f1d96310bfba100e9140b11b8">cpGames.core.RapidMVC.src.ContextCollection</a>.</p>
+<p>Find context by name, try to create one if none exists. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>Unique name for context.</td></tr>
+    <tr><td class="paramname">context</td><td>Context instance if found, otherwise null.</td></tr>
+    <tr><td class="paramname">errorMessage</td><td>If fails, this explains why.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if successful, otherwise false.</dd></dl>
+
+<p>Implemented in <a class="el" href="classcp_games_1_1core_1_1_rapid_m_v_c_1_1impl_1_1_context_collection.html#abea4cb0d9ab2aad732b862b8f2a9dd2a">cpGames.core.RapidMVC.impl.ContextCollection</a>.</p>
 
 </div>
 </div>
@@ -241,6 +279,8 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Enumeration of local contexts. </p>
+
 </div>
 </div>
 <a id="a3567007696dbd07fa6bd839d4c82fb6b"></a>
@@ -262,6 +302,8 @@ Properties</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Number of local contexts (i.e. excluding root context). </p>
 
 </div>
 </div>
@@ -285,10 +327,12 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Root context. There can only be one of these. </p>
+
 </div>
 </div>
 <hr/>The documentation for this interface was generated from the following file:<ul>
-<li>C:/Users/Misha/Documents/GameProjects/cpgames/core/RapidMVC/RapidMVCLib/RapidMVC/api/context/<a class="el" href="_i_context_collection_8cs.html">IContextCollection.cs</a></li>
+<li><a class="el" href="_i_context_collection_8cs.html">IContextCollection.cs</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

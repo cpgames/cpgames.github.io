@@ -8,29 +8,29 @@ Collection of bindings. Typically you want one binding collection/context.
 Inheritance diagram for cp\+Games.\+core.\+Rapid\+M\+V\+C.\+I\+Binding\+Collection\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[height=2.000000cm]{interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_binding_collection}
+\includegraphics[height=2.847458cm]{interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_binding_collection}
 \end{center}
 \end{figure}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-bool \mbox{\hyperlink{interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_binding_collection_a7c6b93ad95ca21419be73882d1156458}{Find}} (\mbox{\hyperlink{interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_binding_key}{I\+Binding\+Key}} key, out \mbox{\hyperlink{interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_binding}{I\+Binding}} binding, out string error\+Message)
-\item 
-bool \mbox{\hyperlink{interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_binding_collection_affd71123e4a9ce2af8013c57b216332c}{Exists}} (\mbox{\hyperlink{interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_binding_key}{I\+Binding\+Key}} key, out string error\+Message)
-\item 
+bool \mbox{\hyperlink{interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_binding_collection_a4ca0c71e4a254531712acbbf86e24a00}{Find\+Binding}} (\mbox{\hyperlink{interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_binding_key}{I\+Binding\+Key}} key, out \mbox{\hyperlink{interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_binding}{I\+Binding}} binding, out string error\+Message)
+\begin{DoxyCompactList}\small\item\em Find binding by key. Return false if not found. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_binding_collection_a39534c8594adf07fb09af75f6d0a0de8}{Binding\+Exists}} (\mbox{\hyperlink{interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_binding_key}{I\+Binding\+Key}} key)
+\begin{DoxyCompactList}\small\item\em Check if binding exists. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_binding_collection_afff4c2ad2ff9fb25c906864bc28f036f}{Bind}} (\mbox{\hyperlink{interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_binding_key}{I\+Binding\+Key}} key, out \mbox{\hyperlink{interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_binding}{I\+Binding}} binding, out string error\+Message)
-\item 
+\begin{DoxyCompactList}\small\item\em If binding does not exist, register new binding. Otherwise return existing one. If registering a binding with root context while at least one local context contains a binding with matching key, this will return false. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_binding_collection_ab20c12c64a91e24e7685780dd64f1d87}{Unbind}} (\mbox{\hyperlink{interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_binding_key}{I\+Binding\+Key}} key, out string error\+Message)
-\item 
-void \mbox{\hyperlink{interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_binding_collection_ac77dd990cf638c604bb90646e2fed55d}{Clear}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Remove binding by key. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_binding_collection_a81689073a35a424a96982276d64a27ad}{Clear\+Bindings}} (out string error\+Message)
+\begin{DoxyCompactList}\small\item\em Remove all local bindings. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_binding_collection_a2a468c5570b780133763d9592e2c1cb5}{Bind\+Value}} (\mbox{\hyperlink{interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_binding_key}{I\+Binding\+Key}} key, object value, out string error\+Message)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Update binding value, update all injected properties of that binding, and notify all owning views. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Properties}
 \begin{DoxyCompactItemize}
 \item 
-int \mbox{\hyperlink{interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_binding_collection_a9365956363826896a1a7caaeb494d0a1}{Count}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
-\end{DoxyCompactItemize}
+int \mbox{\hyperlink{interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_binding_collection_ae64df704d272c94fcb9fb16e896bc66b}{Binding\+Count}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Number of bindings. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
@@ -47,7 +47,45 @@ Collection of bindings. Typically you want one binding collection/context.
 
 
 
-Implemented in \mbox{\hyperlink{classcp_games_1_1core_1_1_rapid_m_v_c_1_1src_1_1_binding_collection_a766bda0a58edf276bb1eaf3185fa6317}{cp\+Games.\+core.\+Rapid\+M\+V\+C.\+src.\+Binding\+Collection}}.
+If binding does not exist, register new binding. Otherwise return existing one. If registering a binding with root context while at least one local context contains a binding with matching key, this will return false. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & Unique binding key.\\
+\hline
+{\em binding} & Binding instance if found or created, otherwise null.\\
+\hline
+{\em error\+Message} & If fails, this explains why.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if success, otherwise false.
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classcp_games_1_1core_1_1_rapid_m_v_c_1_1impl_1_1_context_ab1eb6b57dc793894038e54db71cd9f3c}{cp\+Games.\+core.\+Rapid\+M\+V\+C.\+impl.\+Context}}, and \mbox{\hyperlink{classcp_games_1_1core_1_1_rapid_m_v_c_1_1impl_1_1_binding_collection_aac34e91512dc87adf4cfd7196093dd5b}{cp\+Games.\+core.\+Rapid\+M\+V\+C.\+impl.\+Binding\+Collection}}.
+
+\mbox{\Hypertarget{interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_binding_collection_a39534c8594adf07fb09af75f6d0a0de8}\label{interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_binding_collection_a39534c8594adf07fb09af75f6d0a0de8}} 
+\index{cpGames.core.RapidMVC.IBindingCollection@{cpGames.core.RapidMVC.IBindingCollection}!BindingExists@{BindingExists}}
+\index{BindingExists@{BindingExists}!cpGames.core.RapidMVC.IBindingCollection@{cpGames.core.RapidMVC.IBindingCollection}}
+\subsubsection{\texorpdfstring{BindingExists()}{BindingExists()}}
+{\footnotesize\ttfamily bool cp\+Games.\+core.\+Rapid\+M\+V\+C.\+I\+Binding\+Collection.\+Binding\+Exists (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_binding_key}{I\+Binding\+Key}}}]{key }\end{DoxyParamCaption})}
+
+
+
+Check if binding exists. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & Unique binding key.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if binding exists, otherwise false.
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classcp_games_1_1core_1_1_rapid_m_v_c_1_1impl_1_1_context_a57ed228fbab80263bf2197dd27eadbbd}{cp\+Games.\+core.\+Rapid\+M\+V\+C.\+impl.\+Context}}, and \mbox{\hyperlink{classcp_games_1_1core_1_1_rapid_m_v_c_1_1impl_1_1_binding_collection_a0ea0895570b8a80afacfe4786df4954b}{cp\+Games.\+core.\+Rapid\+M\+V\+C.\+impl.\+Binding\+Collection}}.
 
 \mbox{\Hypertarget{interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_binding_collection_a2a468c5570b780133763d9592e2c1cb5}\label{interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_binding_collection_a2a468c5570b780133763d9592e2c1cb5}} 
 \index{cpGames.core.RapidMVC.IBindingCollection@{cpGames.core.RapidMVC.IBindingCollection}!BindValue@{BindValue}}
@@ -57,37 +95,71 @@ Implemented in \mbox{\hyperlink{classcp_games_1_1core_1_1_rapid_m_v_c_1_1src_1_1
 
 
 
-Implemented in \mbox{\hyperlink{classcp_games_1_1core_1_1_rapid_m_v_c_1_1src_1_1_binding_collection_afb78998cb899e8a918b654505d521f7b}{cp\+Games.\+core.\+Rapid\+M\+V\+C.\+src.\+Binding\+Collection}}.
-
-\mbox{\Hypertarget{interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_binding_collection_ac77dd990cf638c604bb90646e2fed55d}\label{interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_binding_collection_ac77dd990cf638c604bb90646e2fed55d}} 
-\index{cpGames.core.RapidMVC.IBindingCollection@{cpGames.core.RapidMVC.IBindingCollection}!Clear@{Clear}}
-\index{Clear@{Clear}!cpGames.core.RapidMVC.IBindingCollection@{cpGames.core.RapidMVC.IBindingCollection}}
-\subsubsection{\texorpdfstring{Clear()}{Clear()}}
-{\footnotesize\ttfamily void cp\+Games.\+core.\+Rapid\+M\+V\+C.\+I\+Binding\+Collection.\+Clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+Update binding value, update all injected properties of that binding, and notify all owning views. 
 
 
+\begin{DoxyParams}{Parameters}
+{\em key} & Unique binding key.\\
+\hline
+{\em value} & New value to assign to binding.\\
+\hline
+{\em error\+Message} & True if success, otherwise false.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if success, otherwise false.
+\end{DoxyReturn}
 
-Implemented in \mbox{\hyperlink{classcp_games_1_1core_1_1_rapid_m_v_c_1_1src_1_1_binding_collection_a7c3b2155a17bdb3f1d94a1e003fbb3c7}{cp\+Games.\+core.\+Rapid\+M\+V\+C.\+src.\+Binding\+Collection}}.
 
-\mbox{\Hypertarget{interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_binding_collection_affd71123e4a9ce2af8013c57b216332c}\label{interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_binding_collection_affd71123e4a9ce2af8013c57b216332c}} 
-\index{cpGames.core.RapidMVC.IBindingCollection@{cpGames.core.RapidMVC.IBindingCollection}!Exists@{Exists}}
-\index{Exists@{Exists}!cpGames.core.RapidMVC.IBindingCollection@{cpGames.core.RapidMVC.IBindingCollection}}
-\subsubsection{\texorpdfstring{Exists()}{Exists()}}
-{\footnotesize\ttfamily bool cp\+Games.\+core.\+Rapid\+M\+V\+C.\+I\+Binding\+Collection.\+Exists (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_binding_key}{I\+Binding\+Key}}}]{key,  }\item[{out string}]{error\+Message }\end{DoxyParamCaption})}
+Implemented in \mbox{\hyperlink{classcp_games_1_1core_1_1_rapid_m_v_c_1_1impl_1_1_context_a7b95216e2e1d82d2623c0d8754883328}{cp\+Games.\+core.\+Rapid\+M\+V\+C.\+impl.\+Context}}, and \mbox{\hyperlink{classcp_games_1_1core_1_1_rapid_m_v_c_1_1impl_1_1_binding_collection_ad0ee480ebb515c5b6d87336f953cd845}{cp\+Games.\+core.\+Rapid\+M\+V\+C.\+impl.\+Binding\+Collection}}.
 
-
-
-Implemented in \mbox{\hyperlink{classcp_games_1_1core_1_1_rapid_m_v_c_1_1src_1_1_binding_collection_ac8b4fb2a303f8c8755d36bf90d989453}{cp\+Games.\+core.\+Rapid\+M\+V\+C.\+src.\+Binding\+Collection}}.
-
-\mbox{\Hypertarget{interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_binding_collection_a7c6b93ad95ca21419be73882d1156458}\label{interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_binding_collection_a7c6b93ad95ca21419be73882d1156458}} 
-\index{cpGames.core.RapidMVC.IBindingCollection@{cpGames.core.RapidMVC.IBindingCollection}!Find@{Find}}
-\index{Find@{Find}!cpGames.core.RapidMVC.IBindingCollection@{cpGames.core.RapidMVC.IBindingCollection}}
-\subsubsection{\texorpdfstring{Find()}{Find()}}
-{\footnotesize\ttfamily bool cp\+Games.\+core.\+Rapid\+M\+V\+C.\+I\+Binding\+Collection.\+Find (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_binding_key}{I\+Binding\+Key}}}]{key,  }\item[{out \mbox{\hyperlink{interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_binding}{I\+Binding}}}]{binding,  }\item[{out string}]{error\+Message }\end{DoxyParamCaption})}
+\mbox{\Hypertarget{interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_binding_collection_a81689073a35a424a96982276d64a27ad}\label{interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_binding_collection_a81689073a35a424a96982276d64a27ad}} 
+\index{cpGames.core.RapidMVC.IBindingCollection@{cpGames.core.RapidMVC.IBindingCollection}!ClearBindings@{ClearBindings}}
+\index{ClearBindings@{ClearBindings}!cpGames.core.RapidMVC.IBindingCollection@{cpGames.core.RapidMVC.IBindingCollection}}
+\subsubsection{\texorpdfstring{ClearBindings()}{ClearBindings()}}
+{\footnotesize\ttfamily bool cp\+Games.\+core.\+Rapid\+M\+V\+C.\+I\+Binding\+Collection.\+Clear\+Bindings (\begin{DoxyParamCaption}\item[{out string}]{error\+Message }\end{DoxyParamCaption})}
 
 
 
-Implemented in \mbox{\hyperlink{classcp_games_1_1core_1_1_rapid_m_v_c_1_1src_1_1_binding_collection_a7d08f6f549f95ec651486e5295f985c8}{cp\+Games.\+core.\+Rapid\+M\+V\+C.\+src.\+Binding\+Collection}}.
+Remove all local bindings. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em error\+Message} & If fails, this explains why.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if success, otherwise false.
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classcp_games_1_1core_1_1_rapid_m_v_c_1_1impl_1_1_context_a9b9addc7fdd8ac5f44c9ce5e5cd5e49d}{cp\+Games.\+core.\+Rapid\+M\+V\+C.\+impl.\+Context}}, and \mbox{\hyperlink{classcp_games_1_1core_1_1_rapid_m_v_c_1_1impl_1_1_binding_collection_a131a853ccd88179353f3a875cccc7637}{cp\+Games.\+core.\+Rapid\+M\+V\+C.\+impl.\+Binding\+Collection}}.
+
+\mbox{\Hypertarget{interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_binding_collection_a4ca0c71e4a254531712acbbf86e24a00}\label{interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_binding_collection_a4ca0c71e4a254531712acbbf86e24a00}} 
+\index{cpGames.core.RapidMVC.IBindingCollection@{cpGames.core.RapidMVC.IBindingCollection}!FindBinding@{FindBinding}}
+\index{FindBinding@{FindBinding}!cpGames.core.RapidMVC.IBindingCollection@{cpGames.core.RapidMVC.IBindingCollection}}
+\subsubsection{\texorpdfstring{FindBinding()}{FindBinding()}}
+{\footnotesize\ttfamily bool cp\+Games.\+core.\+Rapid\+M\+V\+C.\+I\+Binding\+Collection.\+Find\+Binding (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_binding_key}{I\+Binding\+Key}}}]{key,  }\item[{out \mbox{\hyperlink{interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_binding}{I\+Binding}}}]{binding,  }\item[{out string}]{error\+Message }\end{DoxyParamCaption})}
+
+
+
+Find binding by key. Return false if not found. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & Unique binding key.\\
+\hline
+{\em binding} & Binding instance if found, otherwise null.\\
+\hline
+{\em error\+Message} & If fails or binding not found, this explains why.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if binding found, otherwise false.
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classcp_games_1_1core_1_1_rapid_m_v_c_1_1impl_1_1_context_a22e05dce728f0684c16a3d4f3735b221}{cp\+Games.\+core.\+Rapid\+M\+V\+C.\+impl.\+Context}}, and \mbox{\hyperlink{classcp_games_1_1core_1_1_rapid_m_v_c_1_1impl_1_1_binding_collection_a8678a2a0afd24bc6137ec2a44eea6cea}{cp\+Games.\+core.\+Rapid\+M\+V\+C.\+impl.\+Binding\+Collection}}.
 
 \mbox{\Hypertarget{interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_binding_collection_ab20c12c64a91e24e7685780dd64f1d87}\label{interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_binding_collection_ab20c12c64a91e24e7685780dd64f1d87}} 
 \index{cpGames.core.RapidMVC.IBindingCollection@{cpGames.core.RapidMVC.IBindingCollection}!Unbind@{Unbind}}
@@ -97,19 +169,37 @@ Implemented in \mbox{\hyperlink{classcp_games_1_1core_1_1_rapid_m_v_c_1_1src_1_1
 
 
 
-Implemented in \mbox{\hyperlink{classcp_games_1_1core_1_1_rapid_m_v_c_1_1src_1_1_binding_collection_a09aab47e05fb2aac72f9dbcb4797a6c2}{cp\+Games.\+core.\+Rapid\+M\+V\+C.\+src.\+Binding\+Collection}}.
+Remove binding by key. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & Unique binding key.\\
+\hline
+{\em error\+Message} & If fails or binding does not exist, this explains why.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if success, otherwise false.
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classcp_games_1_1core_1_1_rapid_m_v_c_1_1impl_1_1_context_a7cf9cfaa3957b4e48fdaccd726cbd8aa}{cp\+Games.\+core.\+Rapid\+M\+V\+C.\+impl.\+Context}}, and \mbox{\hyperlink{classcp_games_1_1core_1_1_rapid_m_v_c_1_1impl_1_1_binding_collection_a86fc516a730e0862d18c5a9cfb561f3c}{cp\+Games.\+core.\+Rapid\+M\+V\+C.\+impl.\+Binding\+Collection}}.
 
 
 
 \subsection{Property Documentation}
-\mbox{\Hypertarget{interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_binding_collection_a9365956363826896a1a7caaeb494d0a1}\label{interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_binding_collection_a9365956363826896a1a7caaeb494d0a1}} 
-\index{cpGames.core.RapidMVC.IBindingCollection@{cpGames.core.RapidMVC.IBindingCollection}!Count@{Count}}
-\index{Count@{Count}!cpGames.core.RapidMVC.IBindingCollection@{cpGames.core.RapidMVC.IBindingCollection}}
-\subsubsection{\texorpdfstring{Count}{Count}}
-{\footnotesize\ttfamily int cp\+Games.\+core.\+Rapid\+M\+V\+C.\+I\+Binding\+Collection.\+Count\hspace{0.3cm}{\ttfamily [get]}}
+\mbox{\Hypertarget{interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_binding_collection_ae64df704d272c94fcb9fb16e896bc66b}\label{interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_binding_collection_ae64df704d272c94fcb9fb16e896bc66b}} 
+\index{cpGames.core.RapidMVC.IBindingCollection@{cpGames.core.RapidMVC.IBindingCollection}!BindingCount@{BindingCount}}
+\index{BindingCount@{BindingCount}!cpGames.core.RapidMVC.IBindingCollection@{cpGames.core.RapidMVC.IBindingCollection}}
+\subsubsection{\texorpdfstring{BindingCount}{BindingCount}}
+{\footnotesize\ttfamily int cp\+Games.\+core.\+Rapid\+M\+V\+C.\+I\+Binding\+Collection.\+Binding\+Count\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Number of bindings. 
 
 
 
 The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-C\+:/\+Users/\+Misha/\+Documents/\+Game\+Projects/cpgames/core/\+Rapid\+M\+V\+C/\+Rapid\+M\+V\+C\+Lib/\+Rapid\+M\+V\+C/api/binding/\mbox{\hyperlink{_i_binding_collection_8cs}{I\+Binding\+Collection.\+cs}}\end{DoxyCompactItemize}
+\mbox{\hyperlink{_i_binding_collection_8cs}{I\+Binding\+Collection.\+cs}}\end{DoxyCompactItemize}

@@ -32,6 +32,7 @@
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">RapidMVC
    </div>
+   <div id="projectbrief">Light IoC/MVC framework for game developers.</div>
   </td>
  </tr>
  </tbody>
@@ -103,29 +104,38 @@ Inheritance diagram for cpGames.core.RapidMVC.IBindingCollection:</div>
  <div class="center">
   <img src="interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_binding_collection.png" usemap="#cpGames.core.RapidMVC.IBindingCollection_map" alt=""/>
   <map id="cpGames.core.RapidMVC.IBindingCollection_map" name="cpGames.core.RapidMVC.IBindingCollection_map">
-<area href="classcp_games_1_1core_1_1_rapid_m_v_c_1_1src_1_1_binding_collection.html" alt="cpGames.core.RapidMVC.src.BindingCollection" shape="rect" coords="0,56,283,80"/>
+<area href="interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_context.html" title="Context encapsulates data for a collection of views registered under it. Registering view with contex..." alt="cpGames.core.RapidMVC.IContext" shape="rect" coords="0,56,287,80"/>
+<area href="classcp_games_1_1core_1_1_rapid_m_v_c_1_1impl_1_1_binding_collection.html" alt="cpGames.core.RapidMVC.impl.BindingCollection" shape="rect" coords="297,56,584,80"/>
+<area href="classcp_games_1_1core_1_1_rapid_m_v_c_1_1impl_1_1_context.html" alt="cpGames.core.RapidMVC.impl.Context" shape="rect" coords="0,112,287,136"/>
   </map>
 </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a7c6b93ad95ca21419be73882d1156458"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_binding_collection.html#a7c6b93ad95ca21419be73882d1156458">Find</a> (<a class="el" href="interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_binding_key.html">IBindingKey</a> key, out <a class="el" href="interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_binding.html">IBinding</a> binding, out string errorMessage)</td></tr>
-<tr class="separator:a7c6b93ad95ca21419be73882d1156458"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:affd71123e4a9ce2af8013c57b216332c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_binding_collection.html#affd71123e4a9ce2af8013c57b216332c">Exists</a> (<a class="el" href="interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_binding_key.html">IBindingKey</a> key, out string errorMessage)</td></tr>
-<tr class="separator:affd71123e4a9ce2af8013c57b216332c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ca0c71e4a254531712acbbf86e24a00"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_binding_collection.html#a4ca0c71e4a254531712acbbf86e24a00">FindBinding</a> (<a class="el" href="interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_binding_key.html">IBindingKey</a> key, out <a class="el" href="interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_binding.html">IBinding</a> binding, out string errorMessage)</td></tr>
+<tr class="memdesc:a4ca0c71e4a254531712acbbf86e24a00"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find binding by key. Return false if not found.  <a href="#a4ca0c71e4a254531712acbbf86e24a00">More...</a><br /></td></tr>
+<tr class="separator:a4ca0c71e4a254531712acbbf86e24a00"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39534c8594adf07fb09af75f6d0a0de8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_binding_collection.html#a39534c8594adf07fb09af75f6d0a0de8">BindingExists</a> (<a class="el" href="interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_binding_key.html">IBindingKey</a> key)</td></tr>
+<tr class="memdesc:a39534c8594adf07fb09af75f6d0a0de8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if binding exists.  <a href="#a39534c8594adf07fb09af75f6d0a0de8">More...</a><br /></td></tr>
+<tr class="separator:a39534c8594adf07fb09af75f6d0a0de8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afff4c2ad2ff9fb25c906864bc28f036f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_binding_collection.html#afff4c2ad2ff9fb25c906864bc28f036f">Bind</a> (<a class="el" href="interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_binding_key.html">IBindingKey</a> key, out <a class="el" href="interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_binding.html">IBinding</a> binding, out string errorMessage)</td></tr>
+<tr class="memdesc:afff4c2ad2ff9fb25c906864bc28f036f"><td class="mdescLeft">&#160;</td><td class="mdescRight">If binding does not exist, register new binding. Otherwise return existing one. If registering a binding with root context while at least one local context contains a binding with matching key, this will return false.  <a href="#afff4c2ad2ff9fb25c906864bc28f036f">More...</a><br /></td></tr>
 <tr class="separator:afff4c2ad2ff9fb25c906864bc28f036f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab20c12c64a91e24e7685780dd64f1d87"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_binding_collection.html#ab20c12c64a91e24e7685780dd64f1d87">Unbind</a> (<a class="el" href="interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_binding_key.html">IBindingKey</a> key, out string errorMessage)</td></tr>
+<tr class="memdesc:ab20c12c64a91e24e7685780dd64f1d87"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove binding by key.  <a href="#ab20c12c64a91e24e7685780dd64f1d87">More...</a><br /></td></tr>
 <tr class="separator:ab20c12c64a91e24e7685780dd64f1d87"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac77dd990cf638c604bb90646e2fed55d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_binding_collection.html#ac77dd990cf638c604bb90646e2fed55d">Clear</a> ()</td></tr>
-<tr class="separator:ac77dd990cf638c604bb90646e2fed55d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81689073a35a424a96982276d64a27ad"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_binding_collection.html#a81689073a35a424a96982276d64a27ad">ClearBindings</a> (out string errorMessage)</td></tr>
+<tr class="memdesc:a81689073a35a424a96982276d64a27ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove all local bindings.  <a href="#a81689073a35a424a96982276d64a27ad">More...</a><br /></td></tr>
+<tr class="separator:a81689073a35a424a96982276d64a27ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2a468c5570b780133763d9592e2c1cb5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_binding_collection.html#a2a468c5570b780133763d9592e2c1cb5">BindValue</a> (<a class="el" href="interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_binding_key.html">IBindingKey</a> key, object value, out string errorMessage)</td></tr>
+<tr class="memdesc:a2a468c5570b780133763d9592e2c1cb5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update binding value, update all injected properties of that binding, and notify all owning views.  <a href="#a2a468c5570b780133763d9592e2c1cb5">More...</a><br /></td></tr>
 <tr class="separator:a2a468c5570b780133763d9592e2c1cb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
 Properties</h2></td></tr>
-<tr class="memitem:a9365956363826896a1a7caaeb494d0a1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_binding_collection.html#a9365956363826896a1a7caaeb494d0a1">Count</a><code> [get]</code></td></tr>
-<tr class="separator:a9365956363826896a1a7caaeb494d0a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae64df704d272c94fcb9fb16e896bc66b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_binding_collection.html#ae64df704d272c94fcb9fb16e896bc66b">BindingCount</a><code> [get]</code></td></tr>
+<tr class="memdesc:ae64df704d272c94fcb9fb16e896bc66b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of bindings.  <a href="#ae64df704d272c94fcb9fb16e896bc66b">More...</a><br /></td></tr>
+<tr class="separator:ae64df704d272c94fcb9fb16e896bc66b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Collection of bindings. Typically you want one binding collection/context. </p>
@@ -162,7 +172,47 @@ Properties</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="classcp_games_1_1core_1_1_rapid_m_v_c_1_1src_1_1_binding_collection.html#a766bda0a58edf276bb1eaf3185fa6317">cpGames.core.RapidMVC.src.BindingCollection</a>.</p>
+<p>If binding does not exist, register new binding. Otherwise return existing one. If registering a binding with root context while at least one local context contains a binding with matching key, this will return false. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">key</td><td>Unique binding key.</td></tr>
+    <tr><td class="paramname">binding</td><td>Binding instance if found or created, otherwise null.</td></tr>
+    <tr><td class="paramname">errorMessage</td><td>If fails, this explains why.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if success, otherwise false.</dd></dl>
+
+<p>Implemented in <a class="el" href="classcp_games_1_1core_1_1_rapid_m_v_c_1_1impl_1_1_context.html#ab1eb6b57dc793894038e54db71cd9f3c">cpGames.core.RapidMVC.impl.Context</a>, and <a class="el" href="classcp_games_1_1core_1_1_rapid_m_v_c_1_1impl_1_1_binding_collection.html#aac34e91512dc87adf4cfd7196093dd5b">cpGames.core.RapidMVC.impl.BindingCollection</a>.</p>
+
+</div>
+</div>
+<a id="a39534c8594adf07fb09af75f6d0a0de8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a39534c8594adf07fb09af75f6d0a0de8">&#9670;&nbsp;</a></span>BindingExists()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool cpGames.core.RapidMVC.IBindingCollection.BindingExists </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_binding_key.html">IBindingKey</a>&#160;</td>
+          <td class="paramname"><em>key</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Check if binding exists. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">key</td><td>Unique binding key.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if binding exists, otherwise false.</dd></dl>
+
+<p>Implemented in <a class="el" href="classcp_games_1_1core_1_1_rapid_m_v_c_1_1impl_1_1_context.html#a57ed228fbab80263bf2197dd27eadbbd">cpGames.core.RapidMVC.impl.Context</a>, and <a class="el" href="classcp_games_1_1core_1_1_rapid_m_v_c_1_1impl_1_1_binding_collection.html#a0ea0895570b8a80afacfe4786df4954b">cpGames.core.RapidMVC.impl.BindingCollection</a>.</p>
 
 </div>
 </div>
@@ -198,67 +248,58 @@ Properties</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="classcp_games_1_1core_1_1_rapid_m_v_c_1_1src_1_1_binding_collection.html#afb78998cb899e8a918b654505d521f7b">cpGames.core.RapidMVC.src.BindingCollection</a>.</p>
+<p>Update binding value, update all injected properties of that binding, and notify all owning views. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">key</td><td>Unique binding key.</td></tr>
+    <tr><td class="paramname">value</td><td>New value to assign to binding.</td></tr>
+    <tr><td class="paramname">errorMessage</td><td>True if success, otherwise false.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if success, otherwise false.</dd></dl>
+
+<p>Implemented in <a class="el" href="classcp_games_1_1core_1_1_rapid_m_v_c_1_1impl_1_1_context.html#a7b95216e2e1d82d2623c0d8754883328">cpGames.core.RapidMVC.impl.Context</a>, and <a class="el" href="classcp_games_1_1core_1_1_rapid_m_v_c_1_1impl_1_1_binding_collection.html#ad0ee480ebb515c5b6d87336f953cd845">cpGames.core.RapidMVC.impl.BindingCollection</a>.</p>
 
 </div>
 </div>
-<a id="ac77dd990cf638c604bb90646e2fed55d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac77dd990cf638c604bb90646e2fed55d">&#9670;&nbsp;</a></span>Clear()</h2>
+<a id="a81689073a35a424a96982276d64a27ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a81689073a35a424a96982276d64a27ad">&#9670;&nbsp;</a></span>ClearBindings()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void cpGames.core.RapidMVC.IBindingCollection.Clear </td>
+          <td class="memname">bool cpGames.core.RapidMVC.IBindingCollection.ClearBindings </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Implemented in <a class="el" href="classcp_games_1_1core_1_1_rapid_m_v_c_1_1src_1_1_binding_collection.html#a7c3b2155a17bdb3f1d94a1e003fbb3c7">cpGames.core.RapidMVC.src.BindingCollection</a>.</p>
-
-</div>
-</div>
-<a id="affd71123e4a9ce2af8013c57b216332c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#affd71123e4a9ce2af8013c57b216332c">&#9670;&nbsp;</a></span>Exists()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool cpGames.core.RapidMVC.IBindingCollection.Exists </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_binding_key.html">IBindingKey</a>&#160;</td>
-          <td class="paramname"><em>key</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype">out string&#160;</td>
-          <td class="paramname"><em>errorMessage</em>&#160;</td>
-        </tr>
-        <tr>
+          <td class="paramname"><em>errorMessage</em></td><td>)</td>
           <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="classcp_games_1_1core_1_1_rapid_m_v_c_1_1src_1_1_binding_collection.html#ac8b4fb2a303f8c8755d36bf90d989453">cpGames.core.RapidMVC.src.BindingCollection</a>.</p>
+<p>Remove all local bindings. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">errorMessage</td><td>If fails, this explains why.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if success, otherwise false.</dd></dl>
+
+<p>Implemented in <a class="el" href="classcp_games_1_1core_1_1_rapid_m_v_c_1_1impl_1_1_context.html#a9b9addc7fdd8ac5f44c9ce5e5cd5e49d">cpGames.core.RapidMVC.impl.Context</a>, and <a class="el" href="classcp_games_1_1core_1_1_rapid_m_v_c_1_1impl_1_1_binding_collection.html#a131a853ccd88179353f3a875cccc7637">cpGames.core.RapidMVC.impl.BindingCollection</a>.</p>
 
 </div>
 </div>
-<a id="a7c6b93ad95ca21419be73882d1156458"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7c6b93ad95ca21419be73882d1156458">&#9670;&nbsp;</a></span>Find()</h2>
+<a id="a4ca0c71e4a254531712acbbf86e24a00"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ca0c71e4a254531712acbbf86e24a00">&#9670;&nbsp;</a></span>FindBinding()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool cpGames.core.RapidMVC.IBindingCollection.Find </td>
+          <td class="memname">bool cpGames.core.RapidMVC.IBindingCollection.FindBinding </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_binding_key.html">IBindingKey</a>&#160;</td>
           <td class="paramname"><em>key</em>, </td>
@@ -283,7 +324,18 @@ Properties</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="classcp_games_1_1core_1_1_rapid_m_v_c_1_1src_1_1_binding_collection.html#a7d08f6f549f95ec651486e5295f985c8">cpGames.core.RapidMVC.src.BindingCollection</a>.</p>
+<p>Find binding by key. Return false if not found. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">key</td><td>Unique binding key.</td></tr>
+    <tr><td class="paramname">binding</td><td>Binding instance if found, otherwise null.</td></tr>
+    <tr><td class="paramname">errorMessage</td><td>If fails or binding not found, this explains why.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if binding found, otherwise false.</dd></dl>
+
+<p>Implemented in <a class="el" href="classcp_games_1_1core_1_1_rapid_m_v_c_1_1impl_1_1_context.html#a22e05dce728f0684c16a3d4f3735b221">cpGames.core.RapidMVC.impl.Context</a>, and <a class="el" href="classcp_games_1_1core_1_1_rapid_m_v_c_1_1impl_1_1_binding_collection.html#a8678a2a0afd24bc6137ec2a44eea6cea">cpGames.core.RapidMVC.impl.BindingCollection</a>.</p>
 
 </div>
 </div>
@@ -313,13 +365,23 @@ Properties</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="classcp_games_1_1core_1_1_rapid_m_v_c_1_1src_1_1_binding_collection.html#a09aab47e05fb2aac72f9dbcb4797a6c2">cpGames.core.RapidMVC.src.BindingCollection</a>.</p>
+<p>Remove binding by key. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">key</td><td>Unique binding key.</td></tr>
+    <tr><td class="paramname">errorMessage</td><td>If fails or binding does not exist, this explains why.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if success, otherwise false.</dd></dl>
+
+<p>Implemented in <a class="el" href="classcp_games_1_1core_1_1_rapid_m_v_c_1_1impl_1_1_context.html#a7cf9cfaa3957b4e48fdaccd726cbd8aa">cpGames.core.RapidMVC.impl.Context</a>, and <a class="el" href="classcp_games_1_1core_1_1_rapid_m_v_c_1_1impl_1_1_binding_collection.html#a86fc516a730e0862d18c5a9cfb561f3c">cpGames.core.RapidMVC.impl.BindingCollection</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Property Documentation</h2>
-<a id="a9365956363826896a1a7caaeb494d0a1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9365956363826896a1a7caaeb494d0a1">&#9670;&nbsp;</a></span>Count</h2>
+<a id="ae64df704d272c94fcb9fb16e896bc66b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae64df704d272c94fcb9fb16e896bc66b">&#9670;&nbsp;</a></span>BindingCount</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -328,7 +390,7 @@ Properties</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int cpGames.core.RapidMVC.IBindingCollection.Count</td>
+          <td class="memname">int cpGames.core.RapidMVC.IBindingCollection.BindingCount</td>
         </tr>
       </table>
   </td>
@@ -338,10 +400,12 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Number of bindings. </p>
+
 </div>
 </div>
 <hr/>The documentation for this interface was generated from the following file:<ul>
-<li>C:/Users/Misha/Documents/GameProjects/cpgames/core/RapidMVC/RapidMVCLib/RapidMVC/api/binding/<a class="el" href="_i_binding_collection_8cs.html">IBindingCollection.cs</a></li>
+<li><a class="el" href="_i_binding_collection_8cs.html">IBindingCollection.cs</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
