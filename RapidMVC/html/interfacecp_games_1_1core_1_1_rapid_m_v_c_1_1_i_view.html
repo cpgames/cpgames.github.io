@@ -88,6 +88,7 @@ $(document).ready(function(){initNavTree('interfacecp_games_1_1core_1_1_rapid_m_
 
 <div class="header">
   <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#properties">Properties</a> &#124;
 <a href="interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_view-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -95,7 +96,7 @@ $(document).ready(function(){initNavTree('interfacecp_games_1_1core_1_1_rapid_m_
 </div><!--header-->
 <div class="contents">
 
-<p>Views are registered with Contexts. You can either derive from default <a class="el" href="classcp_games_1_1core_1_1_rapid_m_v_c_1_1_view.html" title="Default View">View</a> or implement your own.  
+<p>Views are registered with Contexts. You can either derive from default <a class="el" href="classcp_games_1_1core_1_1_rapid_m_v_c_1_1_view.html" title="Default View">View</a> or implement your own (particularly when your view has its own base class that is not a view).  
  <a href="interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_view.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for cpGames.core.RapidMVC.IView:</div>
@@ -111,14 +112,46 @@ Inheritance diagram for cpGames.core.RapidMVC.IView:</div>
   </map>
 </div></div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a2d09577e2b5475273d73484a8d3ff36d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_view.html#a2d09577e2b5475273d73484a8d3ff36d">UnregisterFromContext</a> ()</td></tr>
+<tr class="memdesc:a2d09577e2b5475273d73484a8d3ff36d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unregister view from context, call this whenever view is destroyed.  <a href="#a2d09577e2b5475273d73484a8d3ff36d">More...</a><br /></td></tr>
+<tr class="separator:a2d09577e2b5475273d73484a8d3ff36d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
 Properties</h2></td></tr>
 <tr class="memitem:ae21e2d124f1e977c79babb40c3e991e8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classcp_games_1_1core_1_1_rapid_m_v_c_1_1_signal.html">Signal</a>&lt; <a class="el" href="interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_binding_key.html">IBindingKey</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_view.html#ae21e2d124f1e977c79babb40c3e991e8">PropertyUpdatedSignal</a><code> [get]</code></td></tr>
+<tr class="memdesc:ae21e2d124f1e977c79babb40c3e991e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">A property belonging to this view with specific key was updated.  <a href="#ae21e2d124f1e977c79babb40c3e991e8">More...</a><br /></td></tr>
 <tr class="separator:ae21e2d124f1e977c79babb40c3e991e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5bd50e4d816c545fd092c59ed14fcbf0"><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1impl_1_1_i_signal_mapping.html">ISignalMapping</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_view.html#a5bd50e4d816c545fd092c59ed14fcbf0">SignalMappings</a><code> [get]</code></td></tr>
+<tr class="memdesc:a5bd50e4d816c545fd092c59ed14fcbf0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Automatically mapped signals to listeners. Used for internal use.  <a href="#a5bd50e4d816c545fd092c59ed14fcbf0">More...</a><br /></td></tr>
+<tr class="separator:a5bd50e4d816c545fd092c59ed14fcbf0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Views are registered with Contexts. You can either derive from default <a class="el" href="classcp_games_1_1core_1_1_rapid_m_v_c_1_1_view.html" title="Default View">View</a> or implement your own. </p>
-</div><h2 class="groupheader">Property Documentation</h2>
+<div class="textblock"><p>Views are registered with Contexts. You can either derive from default <a class="el" href="classcp_games_1_1core_1_1_rapid_m_v_c_1_1_view.html" title="Default View">View</a> or implement your own (particularly when your view has its own base class that is not a view). </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a2d09577e2b5475273d73484a8d3ff36d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d09577e2b5475273d73484a8d3ff36d">&#9670;&nbsp;</a></span>UnregisterFromContext()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void cpGames.core.RapidMVC.IView.UnregisterFromContext </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Unregister view from context, call this whenever view is destroyed. </p>
+
+<p>Implemented in <a class="el" href="classcp_games_1_1core_1_1_rapid_m_v_c_1_1_view.html#a4b7e26a0ea011dac7cf83be10645db4d">cpGames.core.RapidMVC.View</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Property Documentation</h2>
 <a id="ae21e2d124f1e977c79babb40c3e991e8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae21e2d124f1e977c79babb40c3e991e8">&#9670;&nbsp;</a></span>PropertyUpdatedSignal</h2>
 
@@ -138,6 +171,32 @@ Properties</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>A property belonging to this view with specific key was updated. </p>
+
+</div>
+</div>
+<a id="a5bd50e4d816c545fd092c59ed14fcbf0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5bd50e4d816c545fd092c59ed14fcbf0">&#9670;&nbsp;</a></span>SignalMappings</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt;<a class="el" href="interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1impl_1_1_i_signal_mapping.html">ISignalMapping</a>&gt; cpGames.core.RapidMVC.IView.SignalMappings</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Automatically mapped signals to listeners. Used for internal use. </p>
 
 </div>
 </div>

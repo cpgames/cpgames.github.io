@@ -2,7 +2,7 @@
 \label{interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_view}\index{cpGames.core.RapidMVC.IView@{cpGames.core.RapidMVC.IView}}
 
 
-Views are registered with Contexts. You can either derive from default \mbox{\hyperlink{classcp_games_1_1core_1_1_rapid_m_v_c_1_1_view}{View}} or implement your own.  
+Views are registered with Contexts. You can either derive from default \mbox{\hyperlink{classcp_games_1_1core_1_1_rapid_m_v_c_1_1_view}{View}} or implement your own (particularly when your view has its own base class that is not a view).  
 
 
 Inheritance diagram for cp\+Games.\+core.\+Rapid\+M\+V\+C.\+I\+View\+:\begin{figure}[H]
@@ -11,15 +11,39 @@ Inheritance diagram for cp\+Games.\+core.\+Rapid\+M\+V\+C.\+I\+View\+:\begin{fig
 \includegraphics[height=2.472406cm]{interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_view}
 \end{center}
 \end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_view_a2d09577e2b5475273d73484a8d3ff36d}{Unregister\+From\+Context}} ()
+\begin{DoxyCompactList}\small\item\em Unregister view from context, call this whenever view is destroyed. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Properties}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{classcp_games_1_1core_1_1_rapid_m_v_c_1_1_signal}{Signal}}$<$ \mbox{\hyperlink{interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_binding_key}{I\+Binding\+Key}} $>$ \mbox{\hyperlink{interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_view_ae21e2d124f1e977c79babb40c3e991e8}{Property\+Updated\+Signal}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em A property belonging to this view with specific key was updated. \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1impl_1_1_i_signal_mapping}{I\+Signal\+Mapping}} $>$ \mbox{\hyperlink{interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_view_a5bd50e4d816c545fd092c59ed14fcbf0}{Signal\+Mappings}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Automatically mapped signals to listeners. Used for internal use. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
-Views are registered with Contexts. You can either derive from default \mbox{\hyperlink{classcp_games_1_1core_1_1_rapid_m_v_c_1_1_view}{View}} or implement your own. 
+Views are registered with Contexts. You can either derive from default \mbox{\hyperlink{classcp_games_1_1core_1_1_rapid_m_v_c_1_1_view}{View}} or implement your own (particularly when your view has its own base class that is not a view). 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_view_a2d09577e2b5475273d73484a8d3ff36d}\label{interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_view_a2d09577e2b5475273d73484a8d3ff36d}} 
+\index{cpGames.core.RapidMVC.IView@{cpGames.core.RapidMVC.IView}!UnregisterFromContext@{UnregisterFromContext}}
+\index{UnregisterFromContext@{UnregisterFromContext}!cpGames.core.RapidMVC.IView@{cpGames.core.RapidMVC.IView}}
+\subsubsection{\texorpdfstring{UnregisterFromContext()}{UnregisterFromContext()}}
+{\footnotesize\ttfamily void cp\+Games.\+core.\+Rapid\+M\+V\+C.\+I\+View.\+Unregister\+From\+Context (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Unregister view from context, call this whenever view is destroyed. 
+
+
+
+Implemented in \mbox{\hyperlink{classcp_games_1_1core_1_1_rapid_m_v_c_1_1_view_a4b7e26a0ea011dac7cf83be10645db4d}{cp\+Games.\+core.\+Rapid\+M\+V\+C.\+View}}.
 
 
 
@@ -29,6 +53,20 @@ Views are registered with Contexts. You can either derive from default \mbox{\hy
 \index{PropertyUpdatedSignal@{PropertyUpdatedSignal}!cpGames.core.RapidMVC.IView@{cpGames.core.RapidMVC.IView}}
 \subsubsection{\texorpdfstring{PropertyUpdatedSignal}{PropertyUpdatedSignal}}
 {\footnotesize\ttfamily \mbox{\hyperlink{classcp_games_1_1core_1_1_rapid_m_v_c_1_1_signal}{Signal}}$<$\mbox{\hyperlink{interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_binding_key}{I\+Binding\+Key}}$>$ cp\+Games.\+core.\+Rapid\+M\+V\+C.\+I\+View.\+Property\+Updated\+Signal\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+A property belonging to this view with specific key was updated. 
+
+\mbox{\Hypertarget{interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_view_a5bd50e4d816c545fd092c59ed14fcbf0}\label{interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_view_a5bd50e4d816c545fd092c59ed14fcbf0}} 
+\index{cpGames.core.RapidMVC.IView@{cpGames.core.RapidMVC.IView}!SignalMappings@{SignalMappings}}
+\index{SignalMappings@{SignalMappings}!cpGames.core.RapidMVC.IView@{cpGames.core.RapidMVC.IView}}
+\subsubsection{\texorpdfstring{SignalMappings}{SignalMappings}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1impl_1_1_i_signal_mapping}{I\+Signal\+Mapping}}$>$ cp\+Games.\+core.\+Rapid\+M\+V\+C.\+I\+View.\+Signal\+Mappings\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Automatically mapped signals to listeners. Used for internal use. 
 
 
 

@@ -87,6 +87,13 @@ var files_dup =
       [ "Signal", "classcp_games_1_1core_1_1_rapid_m_v_c_1_1_signal.html", null ],
       [ "Signal", "classcp_games_1_1core_1_1_rapid_m_v_c_1_1_signal.html", "classcp_games_1_1core_1_1_rapid_m_v_c_1_1_signal" ]
     ] ],
+    [ "SignalMapping.cs", "_signal_mapping_8cs.html", [
+      [ "ISignalMapping", "interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1impl_1_1_i_signal_mapping.html", "interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1impl_1_1_i_signal_mapping" ],
+      [ "SignalMap", "classcp_games_1_1core_1_1_rapid_m_v_c_1_1impl_1_1_signal_map.html", null ],
+      [ "SignalMap", "classcp_games_1_1core_1_1_rapid_m_v_c_1_1impl_1_1_signal_map.html", null ],
+      [ "SignalMap", "classcp_games_1_1core_1_1_rapid_m_v_c_1_1impl_1_1_signal_map.html", "classcp_games_1_1core_1_1_rapid_m_v_c_1_1impl_1_1_signal_map" ],
+      [ "IgnoreSignalMapAttribute", "classcp_games_1_1core_1_1_rapid_m_v_c_1_1impl_1_1_ignore_signal_map_attribute.html", null ]
+    ] ],
     [ "TypeBindingKey.cs", "_type_binding_key_8cs.html", [
       [ "TypeBindingKeyFactory", "classcp_games_1_1core_1_1_rapid_m_v_c_1_1_type_binding_key_factory.html", "classcp_games_1_1core_1_1_rapid_m_v_c_1_1_type_binding_key_factory" ],
       [ "TypeBindingKey", "classcp_games_1_1core_1_1_rapid_m_v_c_1_1_type_binding_key.html", "classcp_games_1_1core_1_1_rapid_m_v_c_1_1_type_binding_key" ]

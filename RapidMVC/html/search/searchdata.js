@@ -4,9 +4,9 @@ var indexSectionsWithContent =
   1: "abcdinstv",
   2: "c",
   3: "abcinrstv",
-  4: "abcdefginortuv",
+  4: "abcdefginorstuv",
   5: "_bceirv",
-  6: "bcdeiknprtv"
+  6: "bcdeiknprstv"
 };
 
 var indexSectionNames =

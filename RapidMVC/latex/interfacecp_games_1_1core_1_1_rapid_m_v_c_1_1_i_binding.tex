@@ -14,9 +14,9 @@ Inheritance diagram for cp\+Games.\+core.\+Rapid\+M\+V\+C.\+I\+Binding\+:\begin{
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-bool \mbox{\hyperlink{interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_binding_a600504a6b8ba86a81e02ef03c4dc9e53}{Register\+View\+Property}} (\mbox{\hyperlink{interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_view}{I\+View}} view, Property\+Info property, out string error\+Message)
+bool \mbox{\hyperlink{interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_binding_a6137a570057c5f4cce62ac96d1bb83e2}{Subscribe}} (\mbox{\hyperlink{interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_view}{I\+View}} view, Property\+Info property, out string error\+Message)
 \begin{DoxyCompactList}\small\item\em Register a property belonging to a view with this binding. \end{DoxyCompactList}\item 
-bool \mbox{\hyperlink{interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_binding_ab36c868f3a9163935a650c30663f7a97}{Unregister\+View}} (\mbox{\hyperlink{interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_view}{I\+View}} view, out string error\+Message)
+bool \mbox{\hyperlink{interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_binding_a3b7f2243923ce6e478be289326468cfa}{Unsubscribe}} (\mbox{\hyperlink{interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_view}{I\+View}} view, out string error\+Message)
 \begin{DoxyCompactList}\small\item\em Unregister view. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Properties}
 \begin{DoxyCompactItemize}
@@ -26,11 +26,13 @@ bool \mbox{\hyperlink{interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_binding_ab
 object \mbox{\hyperlink{interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_binding_a7ec4a6dc07e378d9ffd775b4d6b387f7}{Value}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
 \begin{DoxyCompactList}\small\item\em Value dynamically set to all registered properties. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_binding_ad4ea0596cb7a0ef820717785e1e5a4ef}{Empty}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
-\begin{DoxyCompactList}\small\item\em If value is null, it is considered empty. It will be cleaned up if no views are registered with it. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em If there are no subscribers, this is true. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{classcp_games_1_1core_1_1_rapid_m_v_c_1_1_signal}{Signal}} \mbox{\hyperlink{interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_binding_afc250797ed507d05b9b611f4d63cd345}{Removed\+Signal}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
 \begin{DoxyCompactList}\small\item\em When binding is removed it notifies owning collection via this signal. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{classcp_games_1_1core_1_1_rapid_m_v_c_1_1_signal}{Signal}} \mbox{\hyperlink{interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_binding_a24032f62e91ba7f08581be9afd09b2c7}{Value\+Updated\+Signal}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
-\begin{DoxyCompactList}\small\item\em When value is updated, this signal is emitted. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em When value is updated, this signal is emitted. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_binding_ae17bd243bf029b3d59f58d48c582737d}{Discarded}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em If unbinded, but still has some subscribers left, it is moved to discarded list and no new subscribers can be added. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
@@ -39,11 +41,11 @@ Binding is a map of views with properties matching a unique Binding\+Key. Bindin
 
 
 \subsection{Member Function Documentation}
-\mbox{\Hypertarget{interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_binding_a600504a6b8ba86a81e02ef03c4dc9e53}\label{interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_binding_a600504a6b8ba86a81e02ef03c4dc9e53}} 
-\index{cpGames.core.RapidMVC.IBinding@{cpGames.core.RapidMVC.IBinding}!RegisterViewProperty@{RegisterViewProperty}}
-\index{RegisterViewProperty@{RegisterViewProperty}!cpGames.core.RapidMVC.IBinding@{cpGames.core.RapidMVC.IBinding}}
-\subsubsection{\texorpdfstring{RegisterViewProperty()}{RegisterViewProperty()}}
-{\footnotesize\ttfamily bool cp\+Games.\+core.\+Rapid\+M\+V\+C.\+I\+Binding.\+Register\+View\+Property (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_view}{I\+View}}}]{view,  }\item[{Property\+Info}]{property,  }\item[{out string}]{error\+Message }\end{DoxyParamCaption})}
+\mbox{\Hypertarget{interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_binding_a6137a570057c5f4cce62ac96d1bb83e2}\label{interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_binding_a6137a570057c5f4cce62ac96d1bb83e2}} 
+\index{cpGames.core.RapidMVC.IBinding@{cpGames.core.RapidMVC.IBinding}!Subscribe@{Subscribe}}
+\index{Subscribe@{Subscribe}!cpGames.core.RapidMVC.IBinding@{cpGames.core.RapidMVC.IBinding}}
+\subsubsection{\texorpdfstring{Subscribe()}{Subscribe()}}
+{\footnotesize\ttfamily bool cp\+Games.\+core.\+Rapid\+M\+V\+C.\+I\+Binding.\+Subscribe (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_view}{I\+View}}}]{view,  }\item[{Property\+Info}]{property,  }\item[{out string}]{error\+Message }\end{DoxyParamCaption})}
 
 
 
@@ -63,13 +65,13 @@ False if view instance was already binded, otherwise true.
 \end{DoxyReturn}
 
 
-Implemented in \mbox{\hyperlink{classcp_games_1_1core_1_1_rapid_m_v_c_1_1impl_1_1_binding_a3cfd038fdadb7a25cd3e37413c083049}{cp\+Games.\+core.\+Rapid\+M\+V\+C.\+impl.\+Binding}}.
+Implemented in \mbox{\hyperlink{classcp_games_1_1core_1_1_rapid_m_v_c_1_1impl_1_1_binding_a151e86bcc928830e09f9f55197b88487}{cp\+Games.\+core.\+Rapid\+M\+V\+C.\+impl.\+Binding}}.
 
-\mbox{\Hypertarget{interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_binding_ab36c868f3a9163935a650c30663f7a97}\label{interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_binding_ab36c868f3a9163935a650c30663f7a97}} 
-\index{cpGames.core.RapidMVC.IBinding@{cpGames.core.RapidMVC.IBinding}!UnregisterView@{UnregisterView}}
-\index{UnregisterView@{UnregisterView}!cpGames.core.RapidMVC.IBinding@{cpGames.core.RapidMVC.IBinding}}
-\subsubsection{\texorpdfstring{UnregisterView()}{UnregisterView()}}
-{\footnotesize\ttfamily bool cp\+Games.\+core.\+Rapid\+M\+V\+C.\+I\+Binding.\+Unregister\+View (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_view}{I\+View}}}]{view,  }\item[{out string}]{error\+Message }\end{DoxyParamCaption})}
+\mbox{\Hypertarget{interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_binding_a3b7f2243923ce6e478be289326468cfa}\label{interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_binding_a3b7f2243923ce6e478be289326468cfa}} 
+\index{cpGames.core.RapidMVC.IBinding@{cpGames.core.RapidMVC.IBinding}!Unsubscribe@{Unsubscribe}}
+\index{Unsubscribe@{Unsubscribe}!cpGames.core.RapidMVC.IBinding@{cpGames.core.RapidMVC.IBinding}}
+\subsubsection{\texorpdfstring{Unsubscribe()}{Unsubscribe()}}
+{\footnotesize\ttfamily bool cp\+Games.\+core.\+Rapid\+M\+V\+C.\+I\+Binding.\+Unsubscribe (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_view}{I\+View}}}]{view,  }\item[{out string}]{error\+Message }\end{DoxyParamCaption})}
 
 
 
@@ -87,11 +89,21 @@ False if view instance was not registered, otherwise true.
 \end{DoxyReturn}
 
 
-Implemented in \mbox{\hyperlink{classcp_games_1_1core_1_1_rapid_m_v_c_1_1impl_1_1_binding_ad7209adda2ba56a242f1016c877d0883}{cp\+Games.\+core.\+Rapid\+M\+V\+C.\+impl.\+Binding}}.
+Implemented in \mbox{\hyperlink{classcp_games_1_1core_1_1_rapid_m_v_c_1_1impl_1_1_binding_a3e96a5bc762f4b4c5ffbc9298da1dfb9}{cp\+Games.\+core.\+Rapid\+M\+V\+C.\+impl.\+Binding}}.
 
 
 
 \subsection{Property Documentation}
+\mbox{\Hypertarget{interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_binding_ae17bd243bf029b3d59f58d48c582737d}\label{interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_binding_ae17bd243bf029b3d59f58d48c582737d}} 
+\index{cpGames.core.RapidMVC.IBinding@{cpGames.core.RapidMVC.IBinding}!Discarded@{Discarded}}
+\index{Discarded@{Discarded}!cpGames.core.RapidMVC.IBinding@{cpGames.core.RapidMVC.IBinding}}
+\subsubsection{\texorpdfstring{Discarded}{Discarded}}
+{\footnotesize\ttfamily bool cp\+Games.\+core.\+Rapid\+M\+V\+C.\+I\+Binding.\+Discarded\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+If unbinded, but still has some subscribers left, it is moved to discarded list and no new subscribers can be added. 
+
 \mbox{\Hypertarget{interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_binding_ad4ea0596cb7a0ef820717785e1e5a4ef}\label{interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_binding_ad4ea0596cb7a0ef820717785e1e5a4ef}} 
 \index{cpGames.core.RapidMVC.IBinding@{cpGames.core.RapidMVC.IBinding}!Empty@{Empty}}
 \index{Empty@{Empty}!cpGames.core.RapidMVC.IBinding@{cpGames.core.RapidMVC.IBinding}}
@@ -100,7 +112,7 @@ Implemented in \mbox{\hyperlink{classcp_games_1_1core_1_1_rapid_m_v_c_1_1impl_1_
 
 
 
-If value is null, it is considered empty. It will be cleaned up if no views are registered with it. 
+If there are no subscribers, this is true. 
 
 \mbox{\Hypertarget{interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_binding_aa61ee9cd1b44e221f1ae28f9552792c7}\label{interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_binding_aa61ee9cd1b44e221f1ae28f9552792c7}} 
 \index{cpGames.core.RapidMVC.IBinding@{cpGames.core.RapidMVC.IBinding}!Key@{Key}}

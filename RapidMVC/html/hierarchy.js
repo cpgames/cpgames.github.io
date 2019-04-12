@@ -4,6 +4,7 @@ var hierarchy =
     [ "cpGames.core.RapidMVC.impl.ActionCommand< T >", "classcp_games_1_1core_1_1_rapid_m_v_c_1_1impl_1_1_action_command.html", null ],
     [ "Attribute", null, [
       [ "cpGames.core.RapidMVC.ContextAttribute", "classcp_games_1_1core_1_1_rapid_m_v_c_1_1_context_attribute.html", null ],
+      [ "cpGames.core.RapidMVC.impl.IgnoreSignalMapAttribute", "classcp_games_1_1core_1_1_rapid_m_v_c_1_1impl_1_1_ignore_signal_map_attribute.html", null ],
       [ "cpGames.core.RapidMVC.InjectAttribute", "classcp_games_1_1core_1_1_rapid_m_v_c_1_1_inject_attribute.html", null ]
     ] ],
     [ "cpGames.core.RapidMVC.BaseSignal", "classcp_games_1_1core_1_1_rapid_m_v_c_1_1_base_signal.html", [
@@ -77,6 +78,11 @@ var hierarchy =
     [ "cpGames.core.RapidMVC.IInstantiator", "interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_instantiator.html", [
       [ "cpGames.core.RapidMVC.impl.DefaultInstantiator< T >", "classcp_games_1_1core_1_1_rapid_m_v_c_1_1impl_1_1_default_instantiator.html", null ]
     ] ],
+    [ "cpGames.core.RapidMVC.impl.ISignalMapping", "interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1impl_1_1_i_signal_mapping.html", [
+      [ "cpGames.core.RapidMVC.impl.SignalMap< T1, T2 >", "classcp_games_1_1core_1_1_rapid_m_v_c_1_1impl_1_1_signal_map.html", null ],
+      [ "cpGames.core.RapidMVC.impl.SignalMap< T1, T2 >", "classcp_games_1_1core_1_1_rapid_m_v_c_1_1impl_1_1_signal_map.html", null ],
+      [ "cpGames.core.RapidMVC.impl.SignalMap< T1, T2 >", "classcp_games_1_1core_1_1_rapid_m_v_c_1_1impl_1_1_signal_map.html", null ]
+    ] ],
     [ "cpGames.core.RapidMVC.IView", "interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_view.html", [
       [ "cpGames.core.RapidMVC.View", "classcp_games_1_1core_1_1_rapid_m_v_c_1_1_view.html", [
         [ "cpGames.core.RapidMVC.BaseCommandView", "classcp_games_1_1core_1_1_rapid_m_v_c_1_1_base_command_view.html", null ]
@@ -87,5 +93,9 @@ var hierarchy =
       [ "cpGames.core.RapidMVC.impl.ViewCollection", "classcp_games_1_1core_1_1_rapid_m_v_c_1_1impl_1_1_view_collection.html", null ]
     ] ],
     [ "cpGames.core.RapidMVC.Signal< T >", "classcp_games_1_1core_1_1_rapid_m_v_c_1_1_signal.html", null ],
-    [ "cpGames.core.RapidMVC.Signal", "classcp_games_1_1core_1_1_rapid_m_v_c_1_1_signal.html", null ]
+    [ "cpGames.core.RapidMVC.Signal", "classcp_games_1_1core_1_1_rapid_m_v_c_1_1_signal.html", null ],
+    [ "cpGames.core.RapidMVC.Signal< T >", "classcp_games_1_1core_1_1_rapid_m_v_c_1_1_signal.html", null ],
+    [ "cpGames.core.RapidMVC.Signal< T1, T2 >", "classcp_games_1_1core_1_1_rapid_m_v_c_1_1_signal.html", null ],
+    [ "cpGames.core.RapidMVC.impl.SignalMap< T >", "classcp_games_1_1core_1_1_rapid_m_v_c_1_1impl_1_1_signal_map.html", null ],
+    [ "cpGames.core.RapidMVC.impl.SignalMap", "classcp_games_1_1core_1_1_rapid_m_v_c_1_1impl_1_1_signal_map.html", null ]
 ];

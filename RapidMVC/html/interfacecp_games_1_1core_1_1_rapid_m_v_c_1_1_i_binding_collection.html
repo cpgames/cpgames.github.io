@@ -112,9 +112,9 @@ Inheritance diagram for cpGames.core.RapidMVC.IBindingCollection:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a4ca0c71e4a254531712acbbf86e24a00"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_binding_collection.html#a4ca0c71e4a254531712acbbf86e24a00">FindBinding</a> (<a class="el" href="interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_binding_key.html">IBindingKey</a> key, out <a class="el" href="interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_binding.html">IBinding</a> binding, out string errorMessage)</td></tr>
-<tr class="memdesc:a4ca0c71e4a254531712acbbf86e24a00"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find binding by key. Return false if not found.  <a href="#a4ca0c71e4a254531712acbbf86e24a00">More...</a><br /></td></tr>
-<tr class="separator:a4ca0c71e4a254531712acbbf86e24a00"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38fe8a92150b2901ed27abeacef14b2e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_binding_collection.html#a38fe8a92150b2901ed27abeacef14b2e">FindBinding</a> (<a class="el" href="interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_binding_key.html">IBindingKey</a> key, bool includeDiscarded, out <a class="el" href="interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_binding.html">IBinding</a> binding, out string errorMessage)</td></tr>
+<tr class="memdesc:a38fe8a92150b2901ed27abeacef14b2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find binding by key. Return false if not found.  <a href="#a38fe8a92150b2901ed27abeacef14b2e">More...</a><br /></td></tr>
+<tr class="separator:a38fe8a92150b2901ed27abeacef14b2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a39534c8594adf07fb09af75f6d0a0de8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_binding_collection.html#a39534c8594adf07fb09af75f6d0a0de8">BindingExists</a> (<a class="el" href="interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_binding_key.html">IBindingKey</a> key)</td></tr>
 <tr class="memdesc:a39534c8594adf07fb09af75f6d0a0de8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if binding exists.  <a href="#a39534c8594adf07fb09af75f6d0a0de8">More...</a><br /></td></tr>
 <tr class="separator:a39534c8594adf07fb09af75f6d0a0de8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -292,8 +292,8 @@ Properties</h2></td></tr>
 
 </div>
 </div>
-<a id="a4ca0c71e4a254531712acbbf86e24a00"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4ca0c71e4a254531712acbbf86e24a00">&#9670;&nbsp;</a></span>FindBinding()</h2>
+<a id="a38fe8a92150b2901ed27abeacef14b2e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a38fe8a92150b2901ed27abeacef14b2e">&#9670;&nbsp;</a></span>FindBinding()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -303,6 +303,12 @@ Properties</h2></td></tr>
           <td>(</td>
           <td class="paramtype"><a class="el" href="interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_binding_key.html">IBindingKey</a>&#160;</td>
           <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>includeDiscarded</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -328,6 +334,7 @@ Properties</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">key</td><td>Unique binding key.</td></tr>
+    <tr><td class="paramname">includeDiscarded</td><td>Search discarded bucket as well.</td></tr>
     <tr><td class="paramname">binding</td><td>Binding instance if found, otherwise null.</td></tr>
     <tr><td class="paramname">errorMessage</td><td>If fails or binding not found, this explains why.</td></tr>
   </table>
@@ -335,7 +342,7 @@ Properties</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>True if binding found, otherwise false.</dd></dl>
 
-<p>Implemented in <a class="el" href="classcp_games_1_1core_1_1_rapid_m_v_c_1_1impl_1_1_context.html#a22e05dce728f0684c16a3d4f3735b221">cpGames.core.RapidMVC.impl.Context</a>, and <a class="el" href="classcp_games_1_1core_1_1_rapid_m_v_c_1_1impl_1_1_binding_collection.html#a8678a2a0afd24bc6137ec2a44eea6cea">cpGames.core.RapidMVC.impl.BindingCollection</a>.</p>
+<p>Implemented in <a class="el" href="classcp_games_1_1core_1_1_rapid_m_v_c_1_1impl_1_1_context.html#a02ac3cc53b35b72269bf8c89d26b93ae">cpGames.core.RapidMVC.impl.Context</a>, and <a class="el" href="classcp_games_1_1core_1_1_rapid_m_v_c_1_1impl_1_1_binding_collection.html#a6bfcca10ac176a8e624072e848412877">cpGames.core.RapidMVC.impl.BindingCollection</a>.</p>
 
 </div>
 </div>

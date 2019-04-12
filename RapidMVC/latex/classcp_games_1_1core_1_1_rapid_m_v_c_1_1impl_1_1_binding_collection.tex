@@ -9,7 +9,7 @@ Inheritance diagram for cp\+Games.\+core.\+Rapid\+M\+V\+C.\+impl.\+Binding\+Coll
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-bool \mbox{\hyperlink{classcp_games_1_1core_1_1_rapid_m_v_c_1_1impl_1_1_binding_collection_a8678a2a0afd24bc6137ec2a44eea6cea}{Find\+Binding}} (\mbox{\hyperlink{interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_binding_key}{I\+Binding\+Key}} key, out \mbox{\hyperlink{interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_binding}{I\+Binding}} binding, out string error\+Message)
+bool \mbox{\hyperlink{classcp_games_1_1core_1_1_rapid_m_v_c_1_1impl_1_1_binding_collection_a6bfcca10ac176a8e624072e848412877}{Find\+Binding}} (\mbox{\hyperlink{interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_binding_key}{I\+Binding\+Key}} key, bool include\+Discarded, out \mbox{\hyperlink{interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_binding}{I\+Binding}} binding, out string error\+Message)
 \begin{DoxyCompactList}\small\item\em Find binding by key. Return false if not found. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{classcp_games_1_1core_1_1_rapid_m_v_c_1_1impl_1_1_binding_collection_a0ea0895570b8a80afacfe4786df4954b}{Binding\+Exists}} (\mbox{\hyperlink{interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_binding_key}{I\+Binding\+Key}} key)
 \begin{DoxyCompactList}\small\item\em Check if binding exists. \end{DoxyCompactList}\item 
@@ -126,11 +126,11 @@ True if success, otherwise false.
 
 Implements \mbox{\hyperlink{interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_binding_collection_a81689073a35a424a96982276d64a27ad}{cp\+Games.\+core.\+Rapid\+M\+V\+C.\+I\+Binding\+Collection}}.
 
-\mbox{\Hypertarget{classcp_games_1_1core_1_1_rapid_m_v_c_1_1impl_1_1_binding_collection_a8678a2a0afd24bc6137ec2a44eea6cea}\label{classcp_games_1_1core_1_1_rapid_m_v_c_1_1impl_1_1_binding_collection_a8678a2a0afd24bc6137ec2a44eea6cea}} 
+\mbox{\Hypertarget{classcp_games_1_1core_1_1_rapid_m_v_c_1_1impl_1_1_binding_collection_a6bfcca10ac176a8e624072e848412877}\label{classcp_games_1_1core_1_1_rapid_m_v_c_1_1impl_1_1_binding_collection_a6bfcca10ac176a8e624072e848412877}} 
 \index{cpGames.core.RapidMVC.impl.BindingCollection@{cpGames.core.RapidMVC.impl.BindingCollection}!FindBinding@{FindBinding}}
 \index{FindBinding@{FindBinding}!cpGames.core.RapidMVC.impl.BindingCollection@{cpGames.core.RapidMVC.impl.BindingCollection}}
 \subsubsection{\texorpdfstring{FindBinding()}{FindBinding()}}
-{\footnotesize\ttfamily bool cp\+Games.\+core.\+Rapid\+M\+V\+C.\+impl.\+Binding\+Collection.\+Find\+Binding (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_binding_key}{I\+Binding\+Key}}}]{key,  }\item[{out \mbox{\hyperlink{interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_binding}{I\+Binding}}}]{binding,  }\item[{out string}]{error\+Message }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily bool cp\+Games.\+core.\+Rapid\+M\+V\+C.\+impl.\+Binding\+Collection.\+Find\+Binding (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_binding_key}{I\+Binding\+Key}}}]{key,  }\item[{bool}]{include\+Discarded,  }\item[{out \mbox{\hyperlink{interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_binding}{I\+Binding}}}]{binding,  }\item[{out string}]{error\+Message }\end{DoxyParamCaption})}
 
 
 
@@ -139,6 +139,8 @@ Find binding by key. Return false if not found.
 
 \begin{DoxyParams}{Parameters}
 {\em key} & Unique binding key.\\
+\hline
+{\em include\+Discarded} & Search discarded bucket as well.\\
 \hline
 {\em binding} & \mbox{\hyperlink{classcp_games_1_1core_1_1_rapid_m_v_c_1_1impl_1_1_binding}{Binding}} instance if found, otherwise null.\\
 \hline
@@ -150,7 +152,7 @@ True if binding found, otherwise false.
 \end{DoxyReturn}
 
 
-Implements \mbox{\hyperlink{interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_binding_collection_a4ca0c71e4a254531712acbbf86e24a00}{cp\+Games.\+core.\+Rapid\+M\+V\+C.\+I\+Binding\+Collection}}.
+Implements \mbox{\hyperlink{interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_binding_collection_a38fe8a92150b2901ed27abeacef14b2e}{cp\+Games.\+core.\+Rapid\+M\+V\+C.\+I\+Binding\+Collection}}.
 
 \mbox{\Hypertarget{classcp_games_1_1core_1_1_rapid_m_v_c_1_1impl_1_1_binding_collection_a86fc516a730e0862d18c5a9cfb561f3c}\label{classcp_games_1_1core_1_1_rapid_m_v_c_1_1impl_1_1_binding_collection_a86fc516a730e0862d18c5a9cfb561f3c}} 
 \index{cpGames.core.RapidMVC.impl.BindingCollection@{cpGames.core.RapidMVC.impl.BindingCollection}!Unbind@{Unbind}}

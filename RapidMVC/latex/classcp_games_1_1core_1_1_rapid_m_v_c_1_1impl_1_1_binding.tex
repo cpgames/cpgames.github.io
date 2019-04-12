@@ -11,14 +11,14 @@ Inheritance diagram for cp\+Games.\+core.\+Rapid\+M\+V\+C.\+impl.\+Binding\+:\be
 \item 
 \mbox{\hyperlink{classcp_games_1_1core_1_1_rapid_m_v_c_1_1impl_1_1_binding_aa53ebf2d17f246c0af5c6e4e4383ba54}{Binding}} (\mbox{\hyperlink{interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_binding_key}{I\+Binding\+Key}} key)
 \item 
-bool \mbox{\hyperlink{classcp_games_1_1core_1_1_rapid_m_v_c_1_1impl_1_1_binding_a3cfd038fdadb7a25cd3e37413c083049}{Register\+View\+Property}} (\mbox{\hyperlink{interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_view}{I\+View}} view, Property\+Info property, out string error\+Message)
+bool \mbox{\hyperlink{classcp_games_1_1core_1_1_rapid_m_v_c_1_1impl_1_1_binding_a151e86bcc928830e09f9f55197b88487}{Subscribe}} (\mbox{\hyperlink{interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_view}{I\+View}} view, Property\+Info property, out string error\+Message)
 \begin{DoxyCompactList}\small\item\em Register a property belonging to a view with this binding. \end{DoxyCompactList}\item 
-bool \mbox{\hyperlink{classcp_games_1_1core_1_1_rapid_m_v_c_1_1impl_1_1_binding_ad7209adda2ba56a242f1016c877d0883}{Unregister\+View}} (\mbox{\hyperlink{interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_view}{I\+View}} view, out string error\+Message)
+bool \mbox{\hyperlink{classcp_games_1_1core_1_1_rapid_m_v_c_1_1impl_1_1_binding_a3e96a5bc762f4b4c5ffbc9298da1dfb9}{Unsubscribe}} (\mbox{\hyperlink{interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_view}{I\+View}} view, out string error\+Message)
 \begin{DoxyCompactList}\small\item\em Unregister view. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
-bool \mbox{\hyperlink{classcp_games_1_1core_1_1_rapid_m_v_c_1_1impl_1_1_binding_a746307581d56690c0e5234f6cb3f04a5}{Empty}} =$>$ \mbox{\hyperlink{classcp_games_1_1core_1_1_rapid_m_v_c_1_1impl_1_1_binding_a2475a9fdd0df65b35b71437974c5d116}{Value}} == null
+bool \mbox{\hyperlink{classcp_games_1_1core_1_1_rapid_m_v_c_1_1impl_1_1_binding_a746307581d56690c0e5234f6cb3f04a5}{Empty}} =$>$ \+\_\+subscribers.\+Count == 0
 \end{DoxyCompactItemize}
 \subsection*{Properties}
 \begin{DoxyCompactItemize}
@@ -30,6 +30,8 @@ object \mbox{\hyperlink{classcp_games_1_1core_1_1_rapid_m_v_c_1_1impl_1_1_bindin
 \mbox{\hyperlink{classcp_games_1_1core_1_1_rapid_m_v_c_1_1_signal}{Signal}} \mbox{\hyperlink{classcp_games_1_1core_1_1_rapid_m_v_c_1_1impl_1_1_binding_a250ddde1caae1342223d266a15cac94a}{Removed\+Signal}} = new \mbox{\hyperlink{classcp_games_1_1core_1_1_rapid_m_v_c_1_1_signal}{Signal}}()\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
 \item 
 \mbox{\hyperlink{classcp_games_1_1core_1_1_rapid_m_v_c_1_1_signal}{Signal}} \mbox{\hyperlink{classcp_games_1_1core_1_1_rapid_m_v_c_1_1impl_1_1_binding_a5111c5c62f8b0f061c2f21ff67bfe561}{Value\+Updated\+Signal}} = new \mbox{\hyperlink{classcp_games_1_1core_1_1_rapid_m_v_c_1_1_signal}{Signal}}()\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+bool \mbox{\hyperlink{classcp_games_1_1core_1_1_rapid_m_v_c_1_1impl_1_1_binding_a1a24103db604d631562af41e8fc28db8}{Discarded}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
 \end{DoxyCompactItemize}
 
 
@@ -43,11 +45,11 @@ object \mbox{\hyperlink{classcp_games_1_1core_1_1_rapid_m_v_c_1_1impl_1_1_bindin
 
 
 \subsection{Member Function Documentation}
-\mbox{\Hypertarget{classcp_games_1_1core_1_1_rapid_m_v_c_1_1impl_1_1_binding_a3cfd038fdadb7a25cd3e37413c083049}\label{classcp_games_1_1core_1_1_rapid_m_v_c_1_1impl_1_1_binding_a3cfd038fdadb7a25cd3e37413c083049}} 
-\index{cpGames.core.RapidMVC.impl.Binding@{cpGames.core.RapidMVC.impl.Binding}!RegisterViewProperty@{RegisterViewProperty}}
-\index{RegisterViewProperty@{RegisterViewProperty}!cpGames.core.RapidMVC.impl.Binding@{cpGames.core.RapidMVC.impl.Binding}}
-\subsubsection{\texorpdfstring{RegisterViewProperty()}{RegisterViewProperty()}}
-{\footnotesize\ttfamily bool cp\+Games.\+core.\+Rapid\+M\+V\+C.\+impl.\+Binding.\+Register\+View\+Property (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_view}{I\+View}}}]{view,  }\item[{Property\+Info}]{property,  }\item[{out string}]{error\+Message }\end{DoxyParamCaption})}
+\mbox{\Hypertarget{classcp_games_1_1core_1_1_rapid_m_v_c_1_1impl_1_1_binding_a151e86bcc928830e09f9f55197b88487}\label{classcp_games_1_1core_1_1_rapid_m_v_c_1_1impl_1_1_binding_a151e86bcc928830e09f9f55197b88487}} 
+\index{cpGames.core.RapidMVC.impl.Binding@{cpGames.core.RapidMVC.impl.Binding}!Subscribe@{Subscribe}}
+\index{Subscribe@{Subscribe}!cpGames.core.RapidMVC.impl.Binding@{cpGames.core.RapidMVC.impl.Binding}}
+\subsubsection{\texorpdfstring{Subscribe()}{Subscribe()}}
+{\footnotesize\ttfamily bool cp\+Games.\+core.\+Rapid\+M\+V\+C.\+impl.\+Binding.\+Subscribe (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_view}{I\+View}}}]{view,  }\item[{Property\+Info}]{property,  }\item[{out string}]{error\+Message }\end{DoxyParamCaption})}
 
 
 
@@ -67,13 +69,13 @@ False if view instance was already binded, otherwise true.
 \end{DoxyReturn}
 
 
-Implements \mbox{\hyperlink{interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_binding_a600504a6b8ba86a81e02ef03c4dc9e53}{cp\+Games.\+core.\+Rapid\+M\+V\+C.\+I\+Binding}}.
+Implements \mbox{\hyperlink{interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_binding_a6137a570057c5f4cce62ac96d1bb83e2}{cp\+Games.\+core.\+Rapid\+M\+V\+C.\+I\+Binding}}.
 
-\mbox{\Hypertarget{classcp_games_1_1core_1_1_rapid_m_v_c_1_1impl_1_1_binding_ad7209adda2ba56a242f1016c877d0883}\label{classcp_games_1_1core_1_1_rapid_m_v_c_1_1impl_1_1_binding_ad7209adda2ba56a242f1016c877d0883}} 
-\index{cpGames.core.RapidMVC.impl.Binding@{cpGames.core.RapidMVC.impl.Binding}!UnregisterView@{UnregisterView}}
-\index{UnregisterView@{UnregisterView}!cpGames.core.RapidMVC.impl.Binding@{cpGames.core.RapidMVC.impl.Binding}}
-\subsubsection{\texorpdfstring{UnregisterView()}{UnregisterView()}}
-{\footnotesize\ttfamily bool cp\+Games.\+core.\+Rapid\+M\+V\+C.\+impl.\+Binding.\+Unregister\+View (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_view}{I\+View}}}]{view,  }\item[{out string}]{error\+Message }\end{DoxyParamCaption})}
+\mbox{\Hypertarget{classcp_games_1_1core_1_1_rapid_m_v_c_1_1impl_1_1_binding_a3e96a5bc762f4b4c5ffbc9298da1dfb9}\label{classcp_games_1_1core_1_1_rapid_m_v_c_1_1impl_1_1_binding_a3e96a5bc762f4b4c5ffbc9298da1dfb9}} 
+\index{cpGames.core.RapidMVC.impl.Binding@{cpGames.core.RapidMVC.impl.Binding}!Unsubscribe@{Unsubscribe}}
+\index{Unsubscribe@{Unsubscribe}!cpGames.core.RapidMVC.impl.Binding@{cpGames.core.RapidMVC.impl.Binding}}
+\subsubsection{\texorpdfstring{Unsubscribe()}{Unsubscribe()}}
+{\footnotesize\ttfamily bool cp\+Games.\+core.\+Rapid\+M\+V\+C.\+impl.\+Binding.\+Unsubscribe (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_view}{I\+View}}}]{view,  }\item[{out string}]{error\+Message }\end{DoxyParamCaption})}
 
 
 
@@ -91,7 +93,7 @@ False if view instance was not registered, otherwise true.
 \end{DoxyReturn}
 
 
-Implements \mbox{\hyperlink{interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_binding_ab36c868f3a9163935a650c30663f7a97}{cp\+Games.\+core.\+Rapid\+M\+V\+C.\+I\+Binding}}.
+Implements \mbox{\hyperlink{interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_binding_a3b7f2243923ce6e478be289326468cfa}{cp\+Games.\+core.\+Rapid\+M\+V\+C.\+I\+Binding}}.
 
 
 
@@ -100,11 +102,17 @@ Implements \mbox{\hyperlink{interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_bind
 \index{cpGames.core.RapidMVC.impl.Binding@{cpGames.core.RapidMVC.impl.Binding}!Empty@{Empty}}
 \index{Empty@{Empty}!cpGames.core.RapidMVC.impl.Binding@{cpGames.core.RapidMVC.impl.Binding}}
 \subsubsection{\texorpdfstring{Empty}{Empty}}
-{\footnotesize\ttfamily bool cp\+Games.\+core.\+Rapid\+M\+V\+C.\+impl.\+Binding.\+Empty =$>$ \mbox{\hyperlink{classcp_games_1_1core_1_1_rapid_m_v_c_1_1impl_1_1_binding_a2475a9fdd0df65b35b71437974c5d116}{Value}} == null}
+{\footnotesize\ttfamily bool cp\+Games.\+core.\+Rapid\+M\+V\+C.\+impl.\+Binding.\+Empty =$>$ \+\_\+subscribers.\+Count == 0}
 
 
 
 \subsection{Property Documentation}
+\mbox{\Hypertarget{classcp_games_1_1core_1_1_rapid_m_v_c_1_1impl_1_1_binding_a1a24103db604d631562af41e8fc28db8}\label{classcp_games_1_1core_1_1_rapid_m_v_c_1_1impl_1_1_binding_a1a24103db604d631562af41e8fc28db8}} 
+\index{cpGames.core.RapidMVC.impl.Binding@{cpGames.core.RapidMVC.impl.Binding}!Discarded@{Discarded}}
+\index{Discarded@{Discarded}!cpGames.core.RapidMVC.impl.Binding@{cpGames.core.RapidMVC.impl.Binding}}
+\subsubsection{\texorpdfstring{Discarded}{Discarded}}
+{\footnotesize\ttfamily bool cp\+Games.\+core.\+Rapid\+M\+V\+C.\+impl.\+Binding.\+Discarded\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
 \mbox{\Hypertarget{classcp_games_1_1core_1_1_rapid_m_v_c_1_1impl_1_1_binding_a6c75caa9e8810b2bf42aa41ee05122af}\label{classcp_games_1_1core_1_1_rapid_m_v_c_1_1impl_1_1_binding_a6c75caa9e8810b2bf42aa41ee05122af}} 
 \index{cpGames.core.RapidMVC.impl.Binding@{cpGames.core.RapidMVC.impl.Binding}!Key@{Key}}
 \index{Key@{Key}!cpGames.core.RapidMVC.impl.Binding@{cpGames.core.RapidMVC.impl.Binding}}
