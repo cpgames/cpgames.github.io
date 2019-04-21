@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['injectattribute',['InjectAttribute',['../classcp_games_1_1core_1_1_rapid_m_v_c_1_1_inject_attribute.html#a0c4bfc820f7eb0089bbff9b2ab45c7d0',1,'cpGames.core.RapidMVC.InjectAttribute.InjectAttribute()'],['../classcp_games_1_1core_1_1_rapid_m_v_c_1_1_inject_attribute.html#af731787df83cc1c0e664c2f97c97170c',1,'cpGames.core.RapidMVC.InjectAttribute.InjectAttribute(object key)']]]
+  ['subscribe',['Subscribe',['../interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_binding.html#a6137a570057c5f4cce62ac96d1bb83e2',1,'cpGames.core.RapidMVC.IBinding.Subscribe()'],['../classcp_games_1_1core_1_1_rapid_m_v_c_1_1impl_1_1_binding.html#a151e86bcc928830e09f9f55197b88487',1,'cpGames.core.RapidMVC.impl.Binding.Subscribe()']]]
 ];

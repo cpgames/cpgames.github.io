@@ -9,14 +9,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-  $(document).ready(initResizable);
-/* @license-end */</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -31,6 +23,7 @@
   <td id="projectlogo"><img alt="Logo" src="Chill_Pill_Games_Logo_64.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">RapidMVC
+   &#160;<span id="projectnumber">1.4.0</span>
    </div>
    <div id="projectbrief">Light IoC/MVC framework for game developers.</div>
   </td>
@@ -55,23 +48,6 @@ $(function() {
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-$(document).ready(function(){initNavTree('classcp_games_1_1core_1_1_rapid_m_v_c_1_1_view.html','');});
-/* @license-end */
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -86,10 +62,14 @@ $(document).ready(function(){initNavTree('classcp_games_1_1core_1_1_rapid_m_v_c_
 </iframe>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespacecp_games.html">cpGames</a></li><li class="navelem"><a class="el" href="namespacecp_games_1_1core.html">core</a></li><li class="navelem"><a class="el" href="namespacecp_games_1_1core_1_1_rapid_m_v_c.html">RapidMVC</a></li><li class="navelem"><a class="el" href="classcp_games_1_1core_1_1_rapid_m_v_c_1_1_view.html">View</a></li>  </ul>
+</div>
+</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#properties">Properties</a> &#124;
 <a href="classcp_games_1_1core_1_1_rapid_m_v_c_1_1_view-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -115,58 +95,53 @@ Inheritance diagram for cpGames.core.RapidMVC.View:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:ad4d70ed7d6e76b1906a8a05cd953f13e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcp_games_1_1core_1_1_rapid_m_v_c_1_1_view.html#ad4d70ed7d6e76b1906a8a05cd953f13e">RegisterWithContext</a> ()</td></tr>
+<tr class="memdesc:ad4d70ed7d6e76b1906a8a05cd953f13e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register view with context, call this whenever view is created or initialized.  <a href="#ad4d70ed7d6e76b1906a8a05cd953f13e">More...</a><br /></td></tr>
+<tr class="separator:ad4d70ed7d6e76b1906a8a05cd953f13e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4b7e26a0ea011dac7cf83be10645db4d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcp_games_1_1core_1_1_rapid_m_v_c_1_1_view.html#a4b7e26a0ea011dac7cf83be10645db4d">UnregisterFromContext</a> ()</td></tr>
 <tr class="memdesc:a4b7e26a0ea011dac7cf83be10645db4d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unregister view from context, call this whenever view is destroyed.  <a href="#a4b7e26a0ea011dac7cf83be10645db4d">More...</a><br /></td></tr>
 <tr class="separator:a4b7e26a0ea011dac7cf83be10645db4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
-Protected Member Functions</h2></td></tr>
-<tr class="memitem:a40db8f93a7952a91c90183ded2f44640"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcp_games_1_1core_1_1_rapid_m_v_c_1_1_view.html#a40db8f93a7952a91c90183ded2f44640">View</a> ()</td></tr>
-<tr class="separator:a40db8f93a7952a91c90183ded2f44640"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
 Properties</h2></td></tr>
-<tr class="memitem:ab8e01d990df4516ff4591df6277edf63"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classcp_games_1_1core_1_1_rapid_m_v_c_1_1_signal.html">Signal</a>&lt; <a class="el" href="interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_binding_key.html">IBindingKey</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcp_games_1_1core_1_1_rapid_m_v_c_1_1_view.html#ab8e01d990df4516ff4591df6277edf63">PropertyUpdatedSignal</a> = new <a class="el" href="classcp_games_1_1core_1_1_rapid_m_v_c_1_1_signal.html">Signal</a>&lt;<a class="el" href="interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_binding_key.html">IBindingKey</a>&gt;()<code> [get]</code></td></tr>
-<tr class="separator:ab8e01d990df4516ff4591df6277edf63"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a70d45752cc44bbac2011ea458ee01230"><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1impl_1_1_i_signal_mapping.html">ISignalMapping</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcp_games_1_1core_1_1_rapid_m_v_c_1_1_view.html#a70d45752cc44bbac2011ea458ee01230">SignalMappings</a> = new List&lt;<a class="el" href="interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1impl_1_1_i_signal_mapping.html">ISignalMapping</a>&gt;()<code> [get]</code></td></tr>
+<tr class="memitem:ab8485954a3151a79ad5b643a5e13787f"><td class="memItemLeft" align="right" valign="top"><a id="ab8485954a3151a79ad5b643a5e13787f"></a>
+abstract string&#160;</td><td class="memItemRight" valign="bottom"><b>ContextName</b><code> [get]</code></td></tr>
+<tr class="separator:ab8485954a3151a79ad5b643a5e13787f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70d45752cc44bbac2011ea458ee01230"><td class="memItemLeft" align="right" valign="top"><a id="a70d45752cc44bbac2011ea458ee01230"></a>
+List&lt; <a class="el" href="interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1impl_1_1_i_signal_mapping.html">ISignalMapping</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>SignalMappings</b> = new List&lt;<a class="el" href="interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1impl_1_1_i_signal_mapping.html">ISignalMapping</a>&gt;()<code> [get]</code></td></tr>
 <tr class="separator:a70d45752cc44bbac2011ea458ee01230"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header properties_interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_view"><td colspan="2" onclick="javascript:toggleInherit('properties_interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_view')"><img src="closed.png" alt="-"/>&#160;Properties inherited from <a class="el" href="interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_view.html">cpGames.core.RapidMVC.IView</a></td></tr>
-<tr class="memitem:ae21e2d124f1e977c79babb40c3e991e8 inherit properties_interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_view"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classcp_games_1_1core_1_1_rapid_m_v_c_1_1_signal.html">Signal</a>&lt; <a class="el" href="interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_binding_key.html">IBindingKey</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_view.html#ae21e2d124f1e977c79babb40c3e991e8">PropertyUpdatedSignal</a><code> [get]</code></td></tr>
-<tr class="memdesc:ae21e2d124f1e977c79babb40c3e991e8 inherit properties_interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_view"><td class="mdescLeft">&#160;</td><td class="mdescRight">A property belonging to this view with specific key was updated.  <a href="interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_view.html#ae21e2d124f1e977c79babb40c3e991e8">More...</a><br /></td></tr>
-<tr class="separator:ae21e2d124f1e977c79babb40c3e991e8 inherit properties_interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_view"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63c78a8add6ad1851a0e4244c11549cd inherit properties_interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_view"><td class="memItemLeft" align="right" valign="top"><a id="a63c78a8add6ad1851a0e4244c11549cd"></a>
+string&#160;</td><td class="memItemRight" valign="bottom"><b>ContextName</b><code> [get]</code></td></tr>
+<tr class="separator:a63c78a8add6ad1851a0e4244c11549cd inherit properties_interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_view"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5bd50e4d816c545fd092c59ed14fcbf0 inherit properties_interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_view"><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1impl_1_1_i_signal_mapping.html">ISignalMapping</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_view.html#a5bd50e4d816c545fd092c59ed14fcbf0">SignalMappings</a><code> [get]</code></td></tr>
 <tr class="memdesc:a5bd50e4d816c545fd092c59ed14fcbf0 inherit properties_interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_view"><td class="mdescLeft">&#160;</td><td class="mdescRight">Automatically mapped signals to listeners. Used for internal use.  <a href="interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_view.html#a5bd50e4d816c545fd092c59ed14fcbf0">More...</a><br /></td></tr>
 <tr class="separator:a5bd50e4d816c545fd092c59ed14fcbf0 inherit properties_interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_view"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Default <a class="el" href="classcp_games_1_1core_1_1_rapid_m_v_c_1_1_view.html" title="Default View">View</a> </p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a40db8f93a7952a91c90183ded2f44640"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a40db8f93a7952a91c90183ded2f44640">&#9670;&nbsp;</a></span>View()</h2>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="ad4d70ed7d6e76b1906a8a05cd953f13e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad4d70ed7d6e76b1906a8a05cd953f13e">&#9670;&nbsp;</a></span>RegisterWithContext()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">cpGames.core.RapidMVC.View.View </td>
+          <td class="memname">void cpGames.core.RapidMVC.View.RegisterWithContext </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
+
+<p>Register view with context, call this whenever view is created or initialized. </p>
+
+<p>Implements <a class="el" href="interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_view.html#a4e8029fdb4d1dc698589391f54818660">cpGames.core.RapidMVC.IView</a>.</p>
 
 </div>
 </div>
-<h2 class="groupheader">Member Function Documentation</h2>
 <a id="a4b7e26a0ea011dac7cf83be10645db4d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4b7e26a0ea011dac7cf83be10645db4d">&#9670;&nbsp;</a></span>UnregisterFromContext()</h2>
 
@@ -188,64 +163,15 @@ Properties</h2></td></tr>
 
 </div>
 </div>
-<h2 class="groupheader">Property Documentation</h2>
-<a id="ab8e01d990df4516ff4591df6277edf63"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab8e01d990df4516ff4591df6277edf63">&#9670;&nbsp;</a></span>PropertyUpdatedSignal</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classcp_games_1_1core_1_1_rapid_m_v_c_1_1_signal.html">Signal</a>&lt;<a class="el" href="interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_binding_key.html">IBindingKey</a>&gt; cpGames.core.RapidMVC.View.PropertyUpdatedSignal = new <a class="el" href="classcp_games_1_1core_1_1_rapid_m_v_c_1_1_signal.html">Signal</a>&lt;<a class="el" href="interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_binding_key.html">IBindingKey</a>&gt;()</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">get</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a70d45752cc44bbac2011ea458ee01230"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a70d45752cc44bbac2011ea458ee01230">&#9670;&nbsp;</a></span>SignalMappings</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">List&lt;<a class="el" href="interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1impl_1_1_i_signal_mapping.html">ISignalMapping</a>&gt; cpGames.core.RapidMVC.View.SignalMappings = new List&lt;<a class="el" href="interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1impl_1_1_i_signal_mapping.html">ISignalMapping</a>&gt;()</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">get</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li><a class="el" href="_view_8cs.html">View.cs</a></li>
+<li>RapidMVC/api/view/View.cs</li>
 </ul>
 </div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="navelem"><a class="el" href="namespacecp_games.html">cpGames</a></li><li class="navelem"><a class="el" href="namespacecp_games_1_1core.html">core</a></li><li class="navelem"><a class="el" href="namespacecp_games_1_1core_1_1_rapid_m_v_c.html">RapidMVC</a></li><li class="navelem"><a class="el" href="classcp_games_1_1core_1_1_rapid_m_v_c_1_1_view.html">View</a></li>
-    <li class="footer">Generated by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.15 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.15
+</small></address>
 </body>
 </html>

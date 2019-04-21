@@ -9,14 +9,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-  $(document).ready(initResizable);
-/* @license-end */</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -31,6 +23,7 @@
   <td id="projectlogo"><img alt="Logo" src="Chill_Pill_Games_Logo_64.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">RapidMVC
+   &#160;<span id="projectnumber">1.4.0</span>
    </div>
    <div id="projectbrief">Light IoC/MVC framework for game developers.</div>
   </td>
@@ -56,22 +49,6 @@ $(function() {
 /* @license-end */</script>
 <div id="main-nav"></div>
 </div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-$(document).ready(function(){initNavTree('functions_prop.html','');});
-/* @license-end */
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -87,129 +64,60 @@ $(document).ready(function(){initNavTree('functions_prop.html','');});
 </div>
 
 <div class="contents">
-&#160;
-
-<h3><a id="index_b"></a>- b -</h3><ul>
+&#160;<ul>
 <li>BindingCount
 : <a class="el" href="interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_binding_collection.html#ae64df704d272c94fcb9fb16e896bc66b">cpGames.core.RapidMVC.IBindingCollection</a>
 </li>
-</ul>
-
-
-<h3><a id="index_c"></a>- c -</h3><ul>
 <li>Contexts
 : <a class="el" href="interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_context_collection.html#abac0a1b73a4c00c78860d5b246ba50be">cpGames.core.RapidMVC.IContextCollection</a>
 </li>
 <li>Count
 : <a class="el" href="interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_context_collection.html#a3567007696dbd07fa6bd839d4c82fb6b">cpGames.core.RapidMVC.IContextCollection</a>
 </li>
-</ul>
-
-
-<h3><a id="index_d"></a>- d -</h3><ul>
 <li>DestroyedSignal
 : <a class="el" href="interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_context.html#a59f314929b2f01751bdf6f2a00586e80">cpGames.core.RapidMVC.IContext</a>
-, <a class="el" href="classcp_games_1_1core_1_1_rapid_m_v_c_1_1impl_1_1_context.html#a9faf69788cd735330d4e4ff57bcadbe7">cpGames.core.RapidMVC.impl.Context</a>
 </li>
 <li>Discarded
 : <a class="el" href="interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_binding.html#ae17bd243bf029b3d59f58d48c582737d">cpGames.core.RapidMVC.IBinding</a>
-, <a class="el" href="classcp_games_1_1core_1_1_rapid_m_v_c_1_1impl_1_1_binding.html#a1a24103db604d631562af41e8fc28db8">cpGames.core.RapidMVC.impl.Binding</a>
 </li>
-</ul>
-
-
-<h3><a id="index_e"></a>- e -</h3><ul>
 <li>Empty
 : <a class="el" href="interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_binding.html#ad4ea0596cb7a0ef820717785e1e5a4ef">cpGames.core.RapidMVC.IBinding</a>
 </li>
-</ul>
-
-
-<h3><a id="index_i"></a>- i -</h3><ul>
 <li>IsRoot
 : <a class="el" href="interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_context.html#ac7e05700419090786a56b92d64a35728">cpGames.core.RapidMVC.IContext</a>
 </li>
-</ul>
-
-
-<h3><a id="index_k"></a>- k -</h3><ul>
 <li>Key
-: <a class="el" href="interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_binding.html#aa61ee9cd1b44e221f1ae28f9552792c7">cpGames.core.RapidMVC.IBinding</a>
-, <a class="el" href="classcp_games_1_1core_1_1_rapid_m_v_c_1_1impl_1_1_binding.html#a6c75caa9e8810b2bf42aa41ee05122af">cpGames.core.RapidMVC.impl.Binding</a>
+: <a class="el" href="interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_binding.html#ac5b8075cb648151c0dbd62dbc8a1552e">cpGames.core.RapidMVC.IBinding</a>
 , <a class="el" href="classcp_games_1_1core_1_1_rapid_m_v_c_1_1_inject_attribute.html#a31cad4210e35805fc8443756c8e268e1">cpGames.core.RapidMVC.InjectAttribute</a>
 </li>
-</ul>
-
-
-<h3><a id="index_n"></a>- n -</h3><ul>
 <li>Name
-: <a class="el" href="classcp_games_1_1core_1_1_rapid_m_v_c_1_1_context_attribute.html#aeeb0490378fbdbaedbc5c3e0d5200c87">cpGames.core.RapidMVC.ContextAttribute</a>
-, <a class="el" href="interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_context.html#a75d949e147b0c638729e455a99d361bc">cpGames.core.RapidMVC.IContext</a>
-, <a class="el" href="classcp_games_1_1core_1_1_rapid_m_v_c_1_1impl_1_1_context.html#a01651ef919129bf3f518ec88311e978f">cpGames.core.RapidMVC.impl.Context</a>
-, <a class="el" href="interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1impl_1_1_i_signal_mapping.html#adac75cc2cc5dbba4ed7af9c52f1f7a68">cpGames.core.RapidMVC.impl.ISignalMapping</a>
-, <a class="el" href="classcp_games_1_1core_1_1_rapid_m_v_c_1_1impl_1_1_name_binding_key.html#a844aa34461f42cbc7b77ab9505bdef12">cpGames.core.RapidMVC.impl.NameBindingKey</a>
-, <a class="el" href="classcp_games_1_1core_1_1_rapid_m_v_c_1_1impl_1_1_signal_map.html#a48694ad57272bd6a7728decf79d971f6">cpGames.core.RapidMVC.impl.SignalMap&lt; T1, T2 &gt;</a>
+: <a class="el" href="interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_context.html#a75d949e147b0c638729e455a99d361bc">cpGames.core.RapidMVC.IContext</a>
 </li>
-</ul>
-
-
-<h3><a id="index_p"></a>- p -</h3><ul>
-<li>PropertyUpdatedSignal
-: <a class="el" href="interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_view.html#ae21e2d124f1e977c79babb40c3e991e8">cpGames.core.RapidMVC.IView</a>
-, <a class="el" href="classcp_games_1_1core_1_1_rapid_m_v_c_1_1_view.html#ab8e01d990df4516ff4591df6277edf63">cpGames.core.RapidMVC.View</a>
-</li>
-</ul>
-
-
-<h3><a id="index_r"></a>- r -</h3><ul>
 <li>RemovedSignal
 : <a class="el" href="interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_binding.html#afc250797ed507d05b9b611f4d63cd345">cpGames.core.RapidMVC.IBinding</a>
-, <a class="el" href="classcp_games_1_1core_1_1_rapid_m_v_c_1_1impl_1_1_binding.html#a250ddde1caae1342223d266a15cac94a">cpGames.core.RapidMVC.impl.Binding</a>
 </li>
 <li>Root
 : <a class="el" href="interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_context_collection.html#a995731ffa92565a90f8b176596a5658a">cpGames.core.RapidMVC.IContextCollection</a>
-, <a class="el" href="classcp_games_1_1core_1_1_rapid_m_v_c_1_1impl_1_1_context_collection.html#aa7ccaf9a5b00706a684a475c21928560">cpGames.core.RapidMVC.impl.ContextCollection</a>
 </li>
-</ul>
-
-
-<h3><a id="index_s"></a>- s -</h3><ul>
 <li>SignalMappings
 : <a class="el" href="interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_view.html#a5bd50e4d816c545fd092c59ed14fcbf0">cpGames.core.RapidMVC.IView</a>
-, <a class="el" href="classcp_games_1_1core_1_1_rapid_m_v_c_1_1_view.html#a70d45752cc44bbac2011ea458ee01230">cpGames.core.RapidMVC.View</a>
 </li>
-</ul>
-
-
-<h3><a id="index_t"></a>- t -</h3><ul>
-<li>Type
-: <a class="el" href="classcp_games_1_1core_1_1_rapid_m_v_c_1_1_type_binding_key.html#a2607ca6b5f825138867c84fb68fb159e">cpGames.core.RapidMVC.TypeBindingKey</a>
-</li>
-</ul>
-
-
-<h3><a id="index_v"></a>- v -</h3><ul>
 <li>Value
 : <a class="el" href="interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_binding.html#a7ec4a6dc07e378d9ffd775b4d6b387f7">cpGames.core.RapidMVC.IBinding</a>
-, <a class="el" href="classcp_games_1_1core_1_1_rapid_m_v_c_1_1impl_1_1_binding.html#a2475a9fdd0df65b35b71437974c5d116">cpGames.core.RapidMVC.impl.Binding</a>
 </li>
 <li>ValueUpdatedSignal
 : <a class="el" href="interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_binding.html#a24032f62e91ba7f08581be9afd09b2c7">cpGames.core.RapidMVC.IBinding</a>
-, <a class="el" href="classcp_games_1_1core_1_1_rapid_m_v_c_1_1impl_1_1_binding.html#a5111c5c62f8b0f061c2f21ff67bfe561">cpGames.core.RapidMVC.impl.Binding</a>
 </li>
 <li>ViewCount
 : <a class="el" href="interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_view_collection.html#a9946bcf9c5c23283b3f21fea41689aca">cpGames.core.RapidMVC.IViewCollection</a>
 </li>
 </ul>
 </div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="footer">Generated by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.15 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.15
+</small></address>
 </body>
 </html>

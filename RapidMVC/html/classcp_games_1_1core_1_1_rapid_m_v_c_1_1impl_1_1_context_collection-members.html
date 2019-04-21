@@ -9,14 +9,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-  $(document).ready(initResizable);
-/* @license-end */</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -31,6 +23,7 @@
   <td id="projectlogo"><img alt="Logo" src="Chill_Pill_Games_Logo_64.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">RapidMVC
+   &#160;<span id="projectnumber">1.4.0</span>
    </div>
    <div id="projectbrief">Light IoC/MVC framework for game developers.</div>
   </td>
@@ -55,23 +48,6 @@ $(function() {
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-$(document).ready(function(){initNavTree('classcp_games_1_1core_1_1_rapid_m_v_c_1_1impl_1_1_context_collection.html','');});
-/* @license-end */
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -86,6 +62,11 @@ $(document).ready(function(){initNavTree('classcp_games_1_1core_1_1_rapid_m_v_c_
 </iframe>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespacecp_games.html">cpGames</a></li><li class="navelem"><a class="el" href="namespacecp_games_1_1core.html">core</a></li><li class="navelem"><a class="el" href="namespacecp_games_1_1core_1_1_rapid_m_v_c.html">RapidMVC</a></li><li class="navelem"><a class="el" href="namespacecp_games_1_1core_1_1_rapid_m_v_c_1_1impl.html">impl</a></li><li class="navelem"><a class="el" href="classcp_games_1_1core_1_1_rapid_m_v_c_1_1impl_1_1_context_collection.html">ContextCollection</a></li>  </ul>
+</div>
+</div><!-- top -->
 <div class="header">
   <div class="headertitle">
 <div class="title">cpGames.core.RapidMVC.impl.ContextCollection Member List</div>  </div>
@@ -95,21 +76,18 @@ $(document).ready(function(){initNavTree('classcp_games_1_1core_1_1_rapid_m_v_c_
 <p>This is the complete list of members for <a class="el" href="classcp_games_1_1core_1_1_rapid_m_v_c_1_1impl_1_1_context_collection.html">cpGames.core.RapidMVC.impl.ContextCollection</a>, including all inherited members.</p>
 <table class="directory">
   <tr class="even"><td class="entry"><a class="el" href="classcp_games_1_1core_1_1_rapid_m_v_c_1_1impl_1_1_context_collection.html#a288b7ee5d4388b498e8b213694761b4a">ContextExists</a>(string name)</td><td class="entry"><a class="el" href="classcp_games_1_1core_1_1_rapid_m_v_c_1_1impl_1_1_context_collection.html">cpGames.core.RapidMVC.impl.ContextCollection</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classcp_games_1_1core_1_1_rapid_m_v_c_1_1impl_1_1_context_collection.html#a461c959ddb4568cfb21d2ebc61f4f832">Contexts</a></td><td class="entry"><a class="el" href="classcp_games_1_1core_1_1_rapid_m_v_c_1_1impl_1_1_context_collection.html">cpGames.core.RapidMVC.impl.ContextCollection</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classcp_games_1_1core_1_1_rapid_m_v_c_1_1impl_1_1_context_collection.html#a603190e767ea71b70e6d75435d5aaca1">Count</a></td><td class="entry"><a class="el" href="classcp_games_1_1core_1_1_rapid_m_v_c_1_1impl_1_1_context_collection.html">cpGames.core.RapidMVC.impl.ContextCollection</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0"><td class="entry"><b>Contexts</b> (defined in <a class="el" href="classcp_games_1_1core_1_1_rapid_m_v_c_1_1impl_1_1_context_collection.html">cpGames.core.RapidMVC.impl.ContextCollection</a>)</td><td class="entry"><a class="el" href="classcp_games_1_1core_1_1_rapid_m_v_c_1_1impl_1_1_context_collection.html">cpGames.core.RapidMVC.impl.ContextCollection</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>Count</b> (defined in <a class="el" href="classcp_games_1_1core_1_1_rapid_m_v_c_1_1impl_1_1_context_collection.html">cpGames.core.RapidMVC.impl.ContextCollection</a>)</td><td class="entry"><a class="el" href="classcp_games_1_1core_1_1_rapid_m_v_c_1_1impl_1_1_context_collection.html">cpGames.core.RapidMVC.impl.ContextCollection</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="classcp_games_1_1core_1_1_rapid_m_v_c_1_1impl_1_1_context_collection.html#a718fdd345d5be5c3c5386bf2c3eee534">FindContext</a>(string name, out IContext context, out string errorMessage)</td><td class="entry"><a class="el" href="classcp_games_1_1core_1_1_rapid_m_v_c_1_1impl_1_1_context_collection.html">cpGames.core.RapidMVC.impl.ContextCollection</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classcp_games_1_1core_1_1_rapid_m_v_c_1_1impl_1_1_context_collection.html#abea4cb0d9ab2aad732b862b8f2a9dd2a">FindOrCreateContext</a>(string name, out IContext context, out string errorMessage)</td><td class="entry"><a class="el" href="classcp_games_1_1core_1_1_rapid_m_v_c_1_1impl_1_1_context_collection.html">cpGames.core.RapidMVC.impl.ContextCollection</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classcp_games_1_1core_1_1_rapid_m_v_c_1_1impl_1_1_context_collection.html#aa7ccaf9a5b00706a684a475c21928560">Root</a></td><td class="entry"><a class="el" href="classcp_games_1_1core_1_1_rapid_m_v_c_1_1impl_1_1_context_collection.html">cpGames.core.RapidMVC.impl.ContextCollection</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classcp_games_1_1core_1_1_rapid_m_v_c_1_1impl_1_1_context_collection.html#a86300874483a67e28fba243d52f6e05a">ROOT_CONTEXT_NAME</a></td><td class="entry"><a class="el" href="classcp_games_1_1core_1_1_rapid_m_v_c_1_1impl_1_1_context_collection.html">cpGames.core.RapidMVC.impl.ContextCollection</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr bgcolor="#f0f0f0"><td class="entry"><b>Root</b> (defined in <a class="el" href="classcp_games_1_1core_1_1_rapid_m_v_c_1_1impl_1_1_context_collection.html">cpGames.core.RapidMVC.impl.ContextCollection</a>)</td><td class="entry"><a class="el" href="classcp_games_1_1core_1_1_rapid_m_v_c_1_1impl_1_1_context_collection.html">cpGames.core.RapidMVC.impl.ContextCollection</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>ROOT_CONTEXT_NAME</b> (defined in <a class="el" href="classcp_games_1_1core_1_1_rapid_m_v_c_1_1impl_1_1_context_collection.html">cpGames.core.RapidMVC.impl.ContextCollection</a>)</td><td class="entry"><a class="el" href="classcp_games_1_1core_1_1_rapid_m_v_c_1_1impl_1_1_context_collection.html">cpGames.core.RapidMVC.impl.ContextCollection</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
 </table></div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="footer">Generated by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.15 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.15
+</small></address>
 </body>
 </html>
