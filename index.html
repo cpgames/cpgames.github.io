@@ -7,14 +7,13 @@
         <meta name="description" content="">
         <meta name="author" content="">
         <title>ChillPill Games</title>
-        <!-- Bootstrap core CSS -->
         <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
-        <!-- Custom styles for this template -->
         <link href="carousel.css" rel="stylesheet">
+        <link rel="shortcut icon" href="img/cpicon.png">
     </head>
     <body>
         <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-            <img src="img/icon.png">
+            <img src="img/cpicon.png">
             <a class="navbar-brand" href="#">ChillPill Games</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -25,10 +24,10 @@
                         <a class="nav-link" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html#products">Products</a>
+                        <a class="nav-link" href="#products">Products</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="https://chillpillgames.discussion.community/">Community</a>
+                        <a class="nav-link" href="community.html">Community</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="blog.html">Blog</a>
@@ -52,10 +51,12 @@
                 <div class="active carousel-item">
                     <div class="container">
                         <div class="carousel-caption d-none d-md-block">
-                            <h1>RapidMVC</h1>
-                            <img src="img/RapidMVCLogo.png" width="100" height="100">
-                            <p>Free and open source light MVC/IoC framework for game developers.</p>
-                            <p><a class="btn btn-lg btn-primary" href="rapidmvc.html" role="button">Learn more</a></p> 
+                            <h1>RapidIoC</h1>
+                            <a href="rapidioc.html">
+                                <img src="img/products/rapid/rapidlogo.png" width="100" height="100">
+                            </a>
+                            <p>Free and open source DI framework for game developers.</p>
+                            <p><a class="btn btn-lg btn-primary" href="rapidioc.html" role="button">Learn more</a></p> 
                         </div>
                     </div>
                 </div>                 
@@ -63,10 +64,12 @@
                     <div class="container">
                         <div class="carousel-caption d-none d-md-block">
                             <h1>Mosaic Inspector</h1>
-                            <img src="img/mosaicLogo.png" width="100" height="100">
+                            <a href="minspector.html">
+                                <img src="img/products/minspector/milogo.png" width="100">
+                            </a>
                             <h4>(in development)</h4>
                             <p>Generate dynamic property inspectors on the fly.</p>
-                            <p><a class="btn btn-lg btn-primary" href="mosaicinspector.html" role="button">Learn more</a></p>
+                            <p><a class="btn btn-lg btn-primary" href="minspector.html" role="button">Learn more</a></p>
                         </div>
                     </div>
                 </div>
@@ -74,7 +77,9 @@
                     <div class="container">
                         <div class="carousel-caption d-none d-md-block">
                             <h1>Behavior Designer</h1>
-                            <img src="img/behaviorLogo.png" width="100" height="100">
+                            <a href="btdesigner.html">
+                                <img src="img/products/btdesigner/btdlogo.png" width="100">
+                            </a>
                             <h4>(in development)</h4>
                             <p>Create your own behavior trees in a slick behavior tree designer interface.</p>
                             <p><a class="btn btn-lg btn-primary" href="btdesigner.html" role="button">Learn more</a></p>
@@ -85,9 +90,6 @@
             <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev"> <span class="carousel-control-prev-icon" aria-hidden="true"></span> <span class="sr-only">Previous</span> </a>
             <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next"> <span class="carousel-control-next-icon" aria-hidden="true"></span> <span class="sr-only">Next</span> </a>
         </div>
-        <!-- Marketing messaging and featurettes
-    ================================================== -->
-        <!-- Wrap the rest of the page in another container to center all the content. -->
         <section id="products" class="white">
             <div class="container marketing">
                 <div class="row">
@@ -95,36 +97,44 @@
                         <h1 class="text-center">Our Products</h1>
                     </div>
                 </div>
-                <!-- Three columns of text below the carousel -->
                 <div class="row">
                     <div class="col-lg-4">
-                        <img src="img/RapidMVCLogo.png" alt="Generic placeholder image" width="140" height="140" class="rounded-0">
-                        <h2>RapidMVC</h2>
-                        <p>RapidMVC is light MVC/IoC framework written in C#. It's goal is to improve code quality, provide better encapsulation and decoupling, and in general provide a skeleton for building complex projects. It is heavily inspired by StrangeIoC, but hopefully improves on certain aspects.</p>
+                        <a href="rapidioc.html">
+                            <img src="img/products/rapid/rapidlogo.png" alt="RapidIoC Logo" width="140">
+                        </a>
+                        <h2>RapidIoC</h2>
+                        <p>RapidIoC is a lightweight IoC/DI framework written in C#. Its goal is to improve code quality, simplify code maintenance, and code extendibility. Additionally, its purpose is to provide a solid foundation for architecting more complex projects.</p>
                         <p><a class="btn btn-secondary" href="rapidmvc.html" role="button">View details »</a></p>
                     </div>
-                    <!-- /.col-lg-4 -->
                     <div class="col-lg-4">
-                        <img src="img/mosaicLogo.png" alt="Generic placeholder image" width="140" height="140" class="rounded-0">
+                        <a href="minspector.html">
+                            <img src="img/products/minspector/milogo.png" alt="Mosaic Inspector Logo" width="140">
+                        </a>
                         <h2>Mosaic Inspector</h2>
                         <h4>(in development)</h4>
-                        <p>Mosaic Inspector is a data-driven user interface inspector for Unity3D. It automatically generates complex UI from reflected data.</p>
-                        <p><a class="btn btn-secondary" href="mosaicinspector.html" role="button">View details »</a></p>
+                        <p>Mosaic Inspector is a data-driven property inspector framework for Unity3D. It automatically generates complex UI from reflected data.</p>
+                        <p><a class="btn btn-secondary" href="minspector.html" role="button">View details »</a></p>
                     </div>
-                    <!-- /.col-lg-4 -->
                     <div class="col-lg-4">
-                        <img class="rounded-0" src="img/behaviorLogo.png" alt="Generic placeholder image" width="140" height="140">
+                        <a href="btdesigner.html">
+                            <img src="img/products/btdesigner/btdlogo.png" alt="Behavior Tree Designer Logo" width="140" height="140">
+                        </a>
                         <h2>Behavior Tree Designer</h2>
                         <h4>(in development)</h4>
                         <p>Behavior tree designer (better name coming soon) is a tool for creating behavior trees in Unity3D.</p>
                         <p><a class="btn btn-secondary" href="btdesigner.html" role="button">View details »</a></p>
                     </div>
-                    <!-- /.col-lg-4 -->
+                    <div class="col-lg-4">
+                        <a href="utils.html">
+                            <img src="img/products/utils/utilslogo.png" alt="Utils Logo" width="140" height="140">
+                        </a>
+                        <h2>Extensions and Utilities</h2>
+                        <p>Free code extensions and utilities to make your excruciating programmer life a little easier.</p>
+                        <p><a class="btn btn-secondary" href="utils.html" role="button">View details »</a></p>
+                    </div>
                 </div>
-                <!-- /.row -->
             </div>
         </section>
-        <!-- /.container -->
         <section id="contact" class="white">
             <div class="container">
                 <div class="row">
@@ -133,31 +143,40 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-lg">
-                        <p class="text-center">If you have technical questions, post them on our <a href="community.html">forum</a></p>
-                    </div>
-                </div>
-                <div class="row text-center">
-                    <div class="col-lg">
-                        <a href="mailto:chillpillgames@gmail.com"> 
-                            <img src="img/email.png" class="centertoparent"/>
+                    <div class="col-lg-2">
+                        <a href="community.html"> 
+                            <img src="img/contact/community.png" class="centertoparent"/>
                         </a>
                     </div>
                     <div class="col-lg">
+                        <p style="top: 50%; position: absolute;">If you have technical questions, post them on our <a href="community.html">forum</a>.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-2">
                         <a href="https://github.com/cpgames"> 
-                            <img src="img/github.png" class="centertoparent"/> 
-                        </a>                         
-                    </div>                     
-                </div>                 
+                            <img src="img/contact/github.png" class="centertoparent"/>
+                        </a>
+                    </div>
+                    <div class="col-lg">
+                        <p style="top: 50%; position: absolute;">For an up-to-date list of all our work check out our <a href="https://github.com/cpgames">github</a>.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-2">
+                        <a href="mailto:chillpillgames@gmail.com"> 
+                            <img src="img/contact/email.png" class="centertoparent"/>
+                        </a>
+                    </div>
+                    <div class="col-lg">
+                        <p style="top: 50%; position: absolute;">For all other inquiries send us an email to <a href="https://github.com/cpgames">chillpillgames@gmail.com</a>.</p>
+                    </div>
+                </div>
             </div>
         </section>
-        <!-- Bootstrap core JavaScript
-    ================================================== -->
-        <!-- Placed at the end of the document so the pages load faster -->
         <script src="assets/js/jquery.min.js"></script>
         <script src="assets/js/popper.js"></script>
         <script src="bootstrap/js/bootstrap.min.js"></script>
-        <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
         <script src="assets/js/holder.min.js"></script>
     </body>
 </html>
