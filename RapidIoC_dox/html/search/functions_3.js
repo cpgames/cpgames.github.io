@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['destroycontext',['DestroyContext',['../interfacecp_games_1_1core_1_1_rapid_m_v_c_1_1_i_context.html#ad0fae0753ef27d6972af6cdddabbec0d',1,'cpGames.core.RapidMVC.IContext.DestroyContext()'],['../classcp_games_1_1core_1_1_rapid_m_v_c_1_1impl_1_1_context.html#ab8b1ac2f255993564212c4055944f372',1,'cpGames.core.RapidMVC.impl.Context.DestroyContext()']]]
+  ['destroycontext',['DestroyContext',['../interfacecp_games_1_1core_1_1_rapid_io_c_1_1_i_context.html#afc9f680b1f90ab1f51b9eba7611e3aa8',1,'cpGames.core.RapidIoC.IContext.DestroyContext()'],['../classcp_games_1_1core_1_1_rapid_io_c_1_1impl_1_1_context.html#aca519d06962e09037f2ca699c36bdb97',1,'cpGames.core.RapidIoC.impl.Context.DestroyContext()']]]
 ];
