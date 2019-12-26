@@ -1161,6 +1161,16 @@ function addOnPreRun(cb) {
 function addOnPostRun(cb) {
  __ATPOSTRUN__.unshift(cb);
 }
+function writeStringToMemory(string, buffer, dontAddNull) {
+ warnOnce("writeStringToMemory is deprecated and should not be called! Use stringToUTF8() instead!");
+ var lastChar, end;
+ if (dontAddNull) {
+  end = buffer + lengthBytesUTF8(string);
+  lastChar = HEAP8[end];
+ }
+ stringToUTF8(string, buffer, Infinity);
+ if (dontAddNull) HEAP8[end] = lastChar;
+}
 function writeArrayToMemory(array, buffer) {
  assert(array.length >= 0, "writeArrayToMemory array must have a length (should be an array or typed array)");
  HEAP8.set(array, buffer);
@@ -1502,7 +1512,7 @@ function _emscripten_asm_const_ii(code, a0) {
  return ASM_CONSTS[code](a0);
 }
 STATIC_BASE = GLOBAL_BASE;
-STATICTOP = STATIC_BASE + 3306528;
+STATICTOP = STATIC_BASE + 3311136;
 __ATINIT__.push({
  func: (function() {
   __GLOBAL__sub_I_AccessibilityScriptingClasses_cpp();
@@ -3293,6 +3303,10 @@ __ATINIT__.push({
  })
 }, {
  func: (function() {
+  __GLOBAL__sub_I_Il2CppCodeRegistration_cpp();
+ })
+}, {
+ func: (function() {
   __GLOBAL__sub_I_Lump_libil2cpp_vm_cpp();
  })
 }, {
@@ -3309,14 +3323,10 @@ __ATINIT__.push({
  })
 }, {
  func: (function() {
-  __GLOBAL__sub_I_Il2CppCodeRegistration_cpp();
- })
-}, {
- func: (function() {
   ___emscripten_environ_constructor();
  })
 });
-var STATIC_BUMP = 3306528;
+var STATIC_BUMP = 3311136;
 Module["STATIC_BASE"] = STATIC_BASE;
 Module["STATIC_BUMP"] = STATIC_BUMP;
 var tempDoublePtr = STATICTOP;
@@ -3729,6 +3739,85 @@ function _JS_WebRequest_SetResponseHandler(request, arg, onresponse) {
 }
 function _JS_WebRequest_SetTimeout(request, timeout) {
  wr.requestInstances[request].timeout = timeout;
+}
+var webSocketInstances = [];
+function _SocketClose(socketInstance) {
+ var socket = webSocketInstances[socketInstance];
+ socket.socket.close();
+}
+function _SocketCreate(url, protocols) {
+ var str = Pointer_stringify(url);
+ var prot = Pointer_stringify(protocols);
+ var socket = {
+  socket: new WebSocket(str, [ prot ]),
+  buffer: new Uint8Array(0),
+  error: null,
+  messages: []
+ };
+ socket.socket.binaryType = "arraybuffer";
+ socket.socket.onmessage = (function(e) {
+  if (e.data instanceof ArrayBuffer) {
+   var array = new Uint8Array(e.data);
+   socket.messages.push(array);
+  }
+ });
+ socket.socket.onclose = (function(e) {
+  if (e.code != 1e3) {
+   if (e.reason != null && e.reason.length > 0) socket.error = e.reason; else {
+    switch (e.code) {
+    case 1001:
+     socket.error = "Endpoint going away.";
+     break;
+    case 1002:
+     socket.error = "Protocol error.";
+     break;
+    case 1003:
+     socket.error = "Unsupported message.";
+     break;
+    case 1005:
+     socket.error = "No status.";
+     break;
+    case 1006:
+     socket.error = "Abnormal disconnection.";
+     break;
+    case 1009:
+     socket.error = "Data frame too large.";
+     break;
+    default:
+     socket.error = "Error " + e.code;
+    }
+   }
+  }
+ });
+ var instance = webSocketInstances.push(socket) - 1;
+ return instance;
+}
+function _SocketError(socketInstance, ptr, bufsize) {
+ var socket = webSocketInstances[socketInstance];
+ if (socket.error == null) return 0;
+ var str = socket.error.slice(0, Math.max(0, bufsize - 1));
+ writeStringToMemory(str, ptr, false);
+ return 1;
+}
+function _SocketRecv(socketInstance, ptr, length) {
+ var socket = webSocketInstances[socketInstance];
+ if (socket.messages.length == 0) return 0;
+ if (socket.messages[0].length > length) return 0;
+ HEAPU8.set(socket.messages[0], ptr);
+ socket.messages = socket.messages.slice(1);
+}
+function _SocketRecvLength(socketInstance) {
+ var socket = webSocketInstances[socketInstance];
+ if (socket.messages.length == 0) return 0;
+ return socket.messages[0].length;
+}
+function _SocketSend(socketInstance, ptr, length) {
+ var socket = webSocketInstances[socketInstance];
+ socket.socket.send(HEAPU8.buffer.slice(ptr, ptr + length));
+}
+function _SocketState(socketInstance) {
+ var socket = webSocketInstances[socketInstance];
+ return socket.socket.readyState;
 }
 function ___atomic_fetch_add_8(ptr, vall, valh, memmodel) {
  var l = HEAP32[ptr >> 2];
@@ -15397,11 +15486,6 @@ function nullFunc_vidi(x) {
  err("Build with ASSERTIONS=2 for more info.");
  abort(x);
 }
-function nullFunc_vidii(x) {
- err("Invalid function pointer called with signature 'vidii'. Perhaps this is an invalid value (e.g. caused by calling a virtual method on a NULL pointer)? Or calling a function with an incorrect type, which will fail? (it is worth building your source files with -Werror (warnings are errors), as warnings can indicate undefined behavior which can cause this)");
- err("Build with ASSERTIONS=2 for more info.");
- abort(x);
-}
 function nullFunc_vif(x) {
  err("Invalid function pointer called with signature 'vif'. Perhaps this is an invalid value (e.g. caused by calling a virtual method on a NULL pointer)? Or calling a function with an incorrect type, which will fail? (it is worth building your source files with -Werror (warnings are errors), as warnings can indicate undefined behavior which can cause this)");
  err("Build with ASSERTIONS=2 for more info.");
@@ -15872,8 +15956,8 @@ function nullFunc_vjji(x) {
  err("Build with ASSERTIONS=2 for more info.");
  abort(x);
 }
-Module["wasmTableSize"] = 84226;
-Module["wasmMaxTableSize"] = 84226;
+Module["wasmTableSize"] = 84247;
+Module["wasmMaxTableSize"] = 84247;
 function invoke_dd(index, a1) {
  var sp = stackSave();
  try {
@@ -17494,16 +17578,6 @@ function invoke_vidi(index, a1, a2, a3) {
   Module["setThrew"](1, 0);
  }
 }
-function invoke_vidii(index, a1, a2, a3, a4) {
- var sp = stackSave();
- try {
-  Module["dynCall_vidii"](index, a1, a2, a3, a4);
- } catch (e) {
-  stackRestore(sp);
-  if (typeof e !== "number" && e !== "longjmp") throw e;
-  Module["setThrew"](1, 0);
- }
-}
 function invoke_vif(index, a1, a2) {
  var sp = stackSave();
  try {
@@ -18614,7 +18688,6 @@ Module.asmLibraryArg = {
  "nullFunc_vi": nullFunc_vi,
  "nullFunc_vid": nullFunc_vid,
  "nullFunc_vidi": nullFunc_vidi,
- "nullFunc_vidii": nullFunc_vidii,
  "nullFunc_vif": nullFunc_vif,
  "nullFunc_viff": nullFunc_viff,
  "nullFunc_vifff": nullFunc_vifff,
@@ -18871,7 +18944,6 @@ Module.asmLibraryArg = {
  "invoke_vi": invoke_vi,
  "invoke_vid": invoke_vid,
  "invoke_vidi": invoke_vidi,
- "invoke_vidii": invoke_vidii,
  "invoke_vif": invoke_vif,
  "invoke_viff": invoke_viff,
  "invoke_vifff": invoke_vifff,
@@ -19016,6 +19088,13 @@ Module.asmLibraryArg = {
  "_JS_WebRequest_SetRequestHeader": _JS_WebRequest_SetRequestHeader,
  "_JS_WebRequest_SetResponseHandler": _JS_WebRequest_SetResponseHandler,
  "_JS_WebRequest_SetTimeout": _JS_WebRequest_SetTimeout,
+ "_SocketClose": _SocketClose,
+ "_SocketCreate": _SocketCreate,
+ "_SocketError": _SocketError,
+ "_SocketRecv": _SocketRecv,
+ "_SocketRecvLength": _SocketRecvLength,
+ "_SocketSend": _SocketSend,
+ "_SocketState": _SocketState,
  "__ZSt18uncaught_exceptionv": __ZSt18uncaught_exceptionv,
  "___atomic_fetch_add_8": ___atomic_fetch_add_8,
  "___buildEnvironment": ___buildEnvironment,
@@ -25701,11 +25780,6 @@ var dynCall_vidi = Module["dynCall_vidi"] = (function() {
  assert(runtimeInitialized, "you need to wait for the runtime to be ready (e.g. wait for main() to be called)");
  assert(!runtimeExited, "the runtime was exited (use NO_EXIT_RUNTIME to keep it alive after main() exits)");
  return Module["asm"]["dynCall_vidi"].apply(null, arguments);
-});
-var dynCall_vidii = Module["dynCall_vidii"] = (function() {
- assert(runtimeInitialized, "you need to wait for the runtime to be ready (e.g. wait for main() to be called)");
- assert(!runtimeExited, "the runtime was exited (use NO_EXIT_RUNTIME to keep it alive after main() exits)");
- return Module["asm"]["dynCall_vidii"].apply(null, arguments);
 });
 var dynCall_vif = Module["dynCall_vif"] = (function() {
  assert(runtimeInitialized, "you need to wait for the runtime to be ready (e.g. wait for main() to be called)");
