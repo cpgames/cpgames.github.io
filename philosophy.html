@@ -6,13 +6,17 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> 
         <meta name="description" content=""> 
         <meta name="author" content=""> 
-        <title>Community</title>         
+        <title>About</title>         
         <link href="bootstrap/css/bootstrap.css" rel="stylesheet"> 
         <link href="carousel.css" rel="stylesheet"> 
+        <script type="text/javascript" src="https://files.dnr.state.mn.us/javascript/highslide/highslide-full.js"></script>         
+        <script type="text/javascript" src="https://files.dnr.state.mn.us/javascript/photo_enlarge.js"></script>         
+        <link rel="stylesheet" type="text/css" href="https://files.dnr.state.mn.us/javascript/highslide/highslide.css"/> 
+        <link rel="stylesheet" type="text/css" href="https://files.dnr.state.mn.us/javascript/photo_enlarge.css"/> 
         <link rel="shortcut icon" href="img/cpicon.png"> 
     </head>     
     <body> 
-        <nav class="navbar-expand-md fixed-top navbar navbar-dark bg-dark"> 
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark"> 
             <img src="img/cpicon.png"> 
             <a class="navbar-brand" href="#">Chill Pill Games</a> 
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation"> 
@@ -27,7 +31,7 @@
                         <a class="nav-link" href="index.html#products">Products</a> 
                     </li>                     
                     <li class="nav-item"> 
-                        <a class="nav-link active" href="community.html">Community</a> 
+                        <a class="nav-link" href="community.html">Community</a> 
                     </li>                     
                     <li class="nav-item"> 
                         <a class="nav-link" href="blog.html">Blog</a> 
@@ -36,7 +40,7 @@
                         <a class="nav-link" href="about.html">About</a> 
                     </li>
                     <li class="nav-item"> 
-                        <a class="nav-link" href="philosophy.html">Philosophy</a> 
+                        <a class="nav-link active" href="philosophy.html">Philosophy</a> 
                     </li>
                     <li class="nav-item"> 
                         <a class="nav-link" href="index.html#contact">Contact Us</a> 
@@ -44,14 +48,26 @@
                 </ul>                 
             </div>             
         </nav>         
-        <section id="community" style="margin-top:40px"> 
-            <div id="wtEmbedCode"> 
-                <script type="text/javascript" id="embedded_forum" src="https://chillpillgames.discussion.community/js/mb/embed.js"></script>                 
-                <noscript> 
-                    <a href="https://chillpillgames.discussion.community/">Forum</a> 
-                </noscript>                 
+        <div class="container marketing">
+            <hr class="featurette-divider"> 
+            <div class="row"> 
+                <div class="col-md-7"> 
+                    <h2 class="featurette-heading"><p>ChillPill Coding Philosophy</p></h2>
+                    <ul>
+                        <li>Composition over inheritance.</li>
+                        <li>Program to interface, not implementation.</li>
+                        <li>Comment API, not implementation. Keep comments in implementation to the minimum, if implementation needs comments, write cleaner code.</li>
+                        <li>Explicit variable names, no abbreviations. If variable/function/class name is too long, consider shorter alternatives.</li>
+                        <li>Make API as generic and abstract as possible.</li>
+                        <li>API should strive for thin implementation layer.</li>
+                    </ul>                     
+                </div>                 
+                <div class="col-md-5 text-center"> 
+                    <a onclick="return hs.expand(this,{wrapperClassName: 'highslide-image'})" class="highslide" href="img/about/cpoffice.png"> <img alt="thumbnail" src="img/about/cpoffice.png" width="350px"> <br clear="all"> </a>
+                </div>                 
             </div>             
-        </section>         
+            <hr class="featurette-divider">
+        </div>         
         <script src="assets/js/jquery.min.js"></script>         
         <script src="assets/js/popper.js"></script>         
         <script src="bootstrap/js/bootstrap.min.js"></script>         
