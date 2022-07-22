@@ -1,167 +1,328 @@
 <!DOCTYPE html> 
 <html lang="en"> 
     <head> 
-        <meta charset="utf-8"> 
-        <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> 
-        <meta name="description" content=""> 
-        <meta name="author" content=""> 
-        <title>ChillPill Games</title>         
-        <link href="bootstrap/css/bootstrap.css" rel="stylesheet"> 
-        <link href="carousel.css" rel="stylesheet"> 
-        <link rel="shortcut icon" href="img/cpicon.png"> 
+        <!-- META TAGS -->         
+        <meta charset="utf-8"/> 
+        <meta name="author" content="AtypicalThemes"/> 
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/> 
+        <!-- WEBSITE TITLE & DESCRIPTION -->         
+        <title>ChillPillGames</title>         
+        <meta name="description" content="The best template for game developers and small studios"/> 
+        <meta name="keywords" content="game, gaming, videogame, developer, steam, studio, team"/> 
+        <!-- OG meta tags that improve the look of your post on social media -->         
+        <meta property="og:site_name" content=""/>
+        <!--website name-->         
+        <meta property="og:site" content=""/> 
+        <!--website link-->         
+        <meta property="og:title" content=""/> 
+        <!--Post title-->         
+        <meta property="og:description" content=""/> 
+        <!--Post description-->         
+        <meta property="og:image" content=""/>
+        <!-- Image link (jpg only)-->         
+        <meta property="og:url" content=""/> 
+        <!--where do you want your post to link to-->         
+        <meta property="og:type" content="article"/> 
+        <!-- Favicon and Apple Icons -->         
+        <link rel="apple-touch-icon" sizes="57x57" href="images/favicon/apple-icon-57x57.png"/> 
+        <link rel="apple-touch-icon" sizes="60x60" href="images/favicon/apple-icon-60x60.png"/> 
+        <link rel="apple-touch-icon" sizes="72x72" href="images/favicon/apple-icon-72x72.png"/> 
+        <link rel="apple-touch-icon" sizes="76x76" href="images/favicon/apple-icon-76x76.png"/> 
+        <link rel="apple-touch-icon" sizes="114x114" href="images/favicon/apple-icon-114x114.png"/> 
+        <link rel="apple-touch-icon" sizes="120x120" href="images/favicon/apple-icon-120x120.png"/> 
+        <link rel="apple-touch-icon" sizes="144x144" href="images/favicon/apple-icon-144x144.png"/> 
+        <link rel="apple-touch-icon" sizes="152x152" href="images/favicon/apple-icon-152x152.png"/> 
+        <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-icon-180x180.png"/> 
+        <link rel="icon" type="image/png" sizes="192x192" href="images/favicon/android-icon-192x192.png"/> 
+        <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png"/> 
+        <link rel="icon" type="image/png" sizes="96x96" href="images/favicon/favicon-96x96.png"/> 
+        <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png"/> 
+        <!-- STYLES -->         
+        <!-- Bootstrap -->         
+        <link href="css/bootstrap.min.css" rel="stylesheet"/> 
+        <!-- FontAwesome -->         
+        <link href="css/font-awesome.min.css" rel="stylesheet"/> 
+        <!-- Animations -->         
+        <link href="css/animations.css" rel="stylesheet"/> 
+        <!-- Lightbox -->         
+        <link href="css/lightbox.min.css" rel="stylesheet"/> 
+        <!-- Video Lightbox -->         
+        <link href="css/modal-video.min.css" rel="stylesheet"/> 
+        <!-- Main Stylesheet -->         
+        <link href="css/style.css" rel="stylesheet"/> 
     </head>     
     <body> 
-        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark"> 
-            <img src="img/cpicon.png"> 
-            <a class="navbar-brand" href="#">Chill Pill Games</a> 
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation"> 
-                <span class="navbar-toggler-icon"></span> 
-            </button>             
-            <div class="collapse navbar-collapse" id="navbarCollapse"> 
-                <ul class="navbar-nav mr-auto"> 
-                    <li class="nav-item active"> 
-                        <a class="nav-link" href="index.html">Home</a> 
-                    </li>                     
-                    <li class="nav-item"> 
-                        <a class="nav-link" href="#products">Products</a> 
-                    </li>                     
-                    <li class="nav-item"> 
-                        <a class="nav-link" href="community.html">Community</a> 
-                    </li>                     
-                    <li class="nav-item"> 
-                        <a class="nav-link" href="blog.html">Blog</a> 
-                    </li>                     
-                    <li class="nav-item"> 
-                        <a class="nav-link" href="about.html">About</a> 
-                    </li>
-                    <li class="nav-item"> 
-                        <a class="nav-link" href="#contact">Contact Us</a> 
-                    </li>                     
-                </ul>                 
-            </div>             
-        </nav>         
-        <div id="myCarousel" class="carousel slide" data-ride="carousel"> 
-            <ol class="carousel-indicators"> 
-                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>                 
-                <li data-target="#myCarousel" data-slide-to="1"></li>                 
-                <li data-target="#myCarousel" data-slide-to="2"></li>                 
-            </ol>             
-            <div class="carousel-inner"> 
-                <div class="active carousel-item"> 
-                    <div class="container"> 
-                        <div class="carousel-caption d-none d-md-block"> 
-                            <h1>RapidIoC</h1> 
-                            <a href="rapidioc.html"> <img src="img/products/rapid/rapidlogo.png" width="100"> </a> 
-                            <p>Free and open source DI framework for game developers.</p> 
-                            <p><a class="btn btn-lg btn-primary" href="rapidioc.html" role="button">Learn more</a></p> 
-                        </div>                         
-                    </div>                     
-                </div>                 
-                <div class="carousel-item"> 
-                    <div class="container"> 
-                        <div class="carousel-caption d-none d-md-block"> 
-                            <h1>Mosaic Inspector</h1> 
-                            <a href="minspector.html"> <img src="img/products/minspector/milogo.png" width="100"> </a> 
-                            <h4>(in development)</h4> 
-                            <p>Generate dynamic property inspectors on the fly.</p> 
-                            <p><a class="btn btn-lg btn-primary" href="minspector.html" role="button">Learn more</a></p> 
-                        </div>                         
-                    </div>                     
-                </div>                 
-                <div class="carousel-item"> 
-                    <div class="container"> 
-                        <div class="carousel-caption d-none d-md-block"> 
-                            <h1>Behavior Designer</h1> 
-                            <a href="btdesigner.html"> <img src="img/products/btdesigner/btdlogo.png" width="100"> </a> 
-                            <h4>(in development)</h4> 
-                            <p>Create your own behavior trees in a slick behavior tree designer interface.</p> 
-                            <p><a class="btn btn-lg btn-primary" href="btdesigner.html" role="button">Learn more</a></p> 
-                        </div>                         
-                    </div>                     
-                </div>                 
-            </div>             
-            <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev"> <span class="carousel-control-prev-icon" aria-hidden="true"></span> <span class="sr-only">Previous</span> </a> 
-            <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next"> <span class="carousel-control-next-icon" aria-hidden="true"></span> <span class="sr-only">Next</span> </a> 
+        <!-- Loading Screen -->         
+        <div id="loader-wrapper"> 
+            <h1 class="loader-logo"><img class="img-fluid" src="images/cplogo.png" alt="site logo"/><span class="colored"> C</span>hill<span class="colored">P</span>ill<span class="colored">G</span>ames</h1> 
+            <div id="progress"></div>             
+            <h3 class="loader-text">LOADING</h3> 
         </div>         
-        <section id="news"> 
-            <div class="container marketing"> 
-                <div class="row"> 
-                    <div class="col-lg"> 
-                        <h1 class="text-center">News</h1> 
+        <!-- //// HEADER //// -->         
+        <header id="main-header"> 
+            <nav class="navbar fixed-top navbar-expand-lg navbar-dark"> 
+                <div class="container"> 
+                    <!-- Site Logo -->                     <a id="logo" class="navbar-brand" href="#"><img class="img-fluid" src="images/cplogo.png" alt="site logo"/><span class="colored"> C</span>hill<span class="colored">P</span>ill<span class="colored">G</span>ames</a> 
+                    <!-- Dropdown Button -->                     
+                    <button id="hamburger" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> 
+                    </button>                     
+                    <!-- Navigation Links -->                     
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent"> 
+                        <ul class="navbar-nav ml-auto"> 
+                            <li class="nav-item active"> <a class="nav-link" href="#about">About</a> 
+                            </li>                             
+                            <li class="nav-item"> <a class="nav-link" href="#games">Projects</a> 
+                            </li>                             
+                            <li class="nav-item"> <a class="nav-link" href="#other">Other</a> 
+                            </li>                             
+                            <li class="nav-item"> <a class="nav-link" href="#contact">Contact</a> 
+                            </li>                             
+                        </ul>                         
                     </div>                     
                 </div>                 
-                <div class="row news"> 
-                    <div class="tumblr-post" data-href="https://embed.tumblr.com/embed/post/_1qFhu3qdRXwm1DS1HEPCg/188478537562" data-did="e0fd31fa05eb3c3feb9dd66aa5ecad97ef26b869">
-                        <a href="https://chillpillgames.tumblr.com/post/188478537562/mosaic-inspector-released">https://chillpillgames.tumblr.com/post/188478537562/mosaic-inspector-released</a>
-                    </div>                     
-                    <script async src="https://assets.tumblr.com/post.js"></script>                     
-                </div>                 
-            </div>             
-        </section>         
-        <section id="products"> 
-            <div class="container marketing"> 
-                <div class="row"> 
-                    <div class="col-lg"> 
-                        <h1 class="text-center">Our Products</h1> 
-                    </div>                     
-                </div>                 
-                <div class="row"> 
-                    <div class="col-lg-4"> 
-                        <a href="rapidioc.html"> <img src="img/products/rapid/rapidlogo.png" alt="RapidIoC Logo" width="140"> </a> 
-                        <h2>RapidIoC</h2> 
-                        <p>RapidIoC is a lightweight IoC/DI framework written in C#. Its goal is to improve code quality, simplify code maintenance, and code extendibility. Additionally, its purpose is to provide a solid foundation for architecting more complex projects.</p> 
-                        <p><a class="btn btn-secondary" href="rapidioc.html" role="button">View details »</a></p> 
-                    </div>                     
-                    <div class="col-lg-4"> 
-                        <a href="minspector.html"> <img src="img/products/minspector/milogo.png" alt="Mosaic Inspector Logo" width="140"> </a> 
-                        <h2>Mosaic Inspector</h2> 
-                        <h4>(in development)</h4> 
-                        <p>Mosaic Inspector is a data-driven property inspector framework for Unity3D. It automatically generates complex UI from reflected data.</p> 
-                        <p><a class="btn btn-secondary" href="minspector.html" role="button">View details »</a></p> 
-                    </div>                     
-                    <div class="col-lg-4"> 
-                        <a href="btdesigner.html"> <img src="img/products/btdesigner/btdlogo.png" alt="Behavior Tree Designer Logo" width="140" height="140"> </a> 
-                        <h2>Behavior Tree Designer</h2> 
-                        <h4>(in development)</h4> 
-                        <p>Behavior tree designer (better name coming soon) is a tool for creating behavior trees in Unity3D.</p> 
-                        <p><a class="btn btn-secondary" href="btdesigner.html" role="button">View details »</a></p> 
-                    </div>                     
-                    <div class="col-lg-4"> 
-                        <a href="utils.html"> <img src="img/products/utils/utilslogo.png" alt="Utils Logo" width="140" height="140"> </a> 
-                        <h2>Extensions and Utilities</h2> 
-                        <p>Free code extensions and utilities to make your excruciating programmer life a little easier.</p> 
-                        <p><a class="btn btn-secondary" href="utils.html" role="button">View details »</a></p> 
+            </nav>             
+        </header>
+        <!-- Header End -->         
+        <!-- /// HERO SECTION /// -->         
+        <div id="hero-section" class="small-margin"> 
+            <div id="particles-web"></div>             
+            <div class="row hero-unit"> 
+                <div class="container"> 
+                    <div class="hero-caption">
+                        <!-- Main Tagline -->                         
+                        <h1>I Make <span class="colored">Games</span> for Awesome Gamers</h1>
+                        <h1>and <span class="colored">Tools</span> for Awesome Developers</h1> 
                     </div>                     
                 </div>                 
             </div>             
-        </section>         
-        <section id="contact" class="white"> 
-            <div class="container marketing"> 
-                <div class="row"> 
-                    <div class="col-lg"> 
-                        <h1 class="text-center">Contact Us</h1> 
+        </div>
+        <!-- Hero Section End -->         
+        <!-- /// Main Container /// -->         
+        <div class="container"> 
+            <!-- /// ABOUT SECTION /// -->             
+            <div id="about" class="large-margin"> <a href="about"></a>
+                <!-- Nav Anchor -->                 
+                <div class="row heading tiny-margin"> 
+                    <div class="col-md-auto"> 
+                        <h1 class="animation-element slide-down">ABOUT <span class="colored">Me</span></h1> 
+                    </div>                     
+                    <div class="col"> 
+                        <hr class="animation-element extend"/> 
                     </div>                     
                 </div>                 
                 <div class="row"> 
-                    <div class="col-lg-4"> 
-                        <a href="community.html"> <img src="img/contact/community.png" class="centertoparent"/> </a> 
-                        <p>If you have technical questions, post them on our <a href="community.html">forum</a>.</p> 
+                    <div class="col-md-6"> 
+                        <p class="small-margin">I am an experienced software developer who loves building video games and tools that make game development easier. I've worked for Disney, Electronic Arts, Zynga, and Amazon on several big budget projects including Club Penguin, Empires & Allies, New World, and O3DE, but I never lost exitement for indie game development as I truly believe this is the future of gaming. This website includes many of my own projects.</p> 
                     </div>                     
-                    <div class="col-lg-4"> 
-                        <a href="https://github.com/cpgames"> <img src="img/contact/github.png" class="centertoparent"/> </a> 
-                        <p>For an up-to-date list of all our work check out our <a href="https://github.com/cpgames">github</a>.</p> 
-                    </div>                     
-                    <div class="col-lg-4"> 
-                        <a href="mailto:chillpillgames@gmail.com"> <img src="img/contact/email.png" class="centertoparent"/> </a> 
-                        <p>For all other inquiries send us an email to <a href="https://github.com/cpgames">chillpillgames@gmail.com</a>.</p> 
+                    <div class="col-md-6"> 
+                        <img id="support-image" src="images/about/me.png" data-src="images/about/me.png" class="img-fluid b-lazy" alt="digital collage"/> 
                     </div>                     
                 </div>                 
             </div>             
-        </section>         
-        <script src="assets/js/jquery.min.js"></script>         
-        <script src="assets/js/popper.js"></script>         
-        <script src="bootstrap/js/bootstrap.min.js"></script>         
-        <script src="assets/js/holder.min.js"></script>         
+            <!-- /// GAMES SECTION /// -->             
+            <div id="games" class="large-margin"> <a href="games"></a>
+                <!-- Nav Anchor -->                 
+                <div class="row heading tiny-margin"> 
+                    <div class="col-md-auto"> 
+                        <h1 class="animation-element slide-down">MY <span class="colored">PROJECTS</span></h1> 
+                    </div>                     
+                    <div class="col"> 
+                        <hr class="animation-element extend"/> 
+                    </div>                     
+                </div>                 
+                <div class="row "> 
+                    <div class="col-md-11 small-margin"> 
+                        <p>Below are soome of my most awesome projects.</p> 
+                    </div>                     
+                </div>                 
+                <div class="games-portfolio "> 
+                    <!-- Game Card Video -->                     
+                    <div class="row game-card pc new"> 
+                        <div class="col-lg-12 col-xl-5 game-card-left"> 
+                            <img class="img-fluid" src="images/products/refactorGraph/logo.png" alt="screenshot"/> <br/> 
+                        </div>                         
+                        <div class="col-lg-12 col-xl-7 game-card-right"> 
+                            <h2 class="short-hr-left">Refactor Graph</h2> 
+                            <p class="tags"><span class="subtle">Tools</span> </p> 
+                            <p class="game-description">Refactor Graph is a free and open-source node-based code refactoring tool for Visual Studio. This is an absolute must-have if you are trying to refactor large amounts of code. <span class="expand colored strong" data-toggle="modal" data-target="#game1">Read More</span></p>
+                            <a href="https://marketplace.visualstudio.com/items?itemName=ChillPillGames.RefactorGraph1" class="button-store" target="_blank"> <p>Available on<br/><span class="strong">VS Marketplace</span></p> </a> <a href="https://github.com/cpgames/RefactorGraph" class="button-store" target="_blank"> <i class="fa fa-github fa-2x"></i> <p>View on<br/><span class="strong">GitHub</span></p> </a> 
+                        </div>                         
+                        <!-- Modal -->                         
+                        <div class="modal fade game-modal" id="game1" tabindex="-1" role="dialog" aria-labelledby="scales" aria-hidden="true"> 
+                            <div class="modal-dialog modal-lg" role="document"> 
+                                <div class="modal-content"> 
+                                    <div class="modal-header"> 
+                                        <h1 class="modal-title" id="scales">REFACTOR GRAPH</h1> 
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> 
+                                        </button>                                         
+                                    </div>                                     
+                                    <div class="modal-body"> 
+                                        <img class="img-fluid" src="https://user-images.githubusercontent.com/49317353/175891778-9c9d7a1b-8472-4485-b62c-5b14873fc685.png" alt="screenshot"/> <br/> 
+                                        <h2 class="short-hr-left">DETAILS</h2> 
+                                        <p>The source document gets partitioned into data chunks using regex, partitions are connected via doubly linked list. Then each partition can be worked on individually: either partitioned further, modified, or swapped with another partition. Finally you don't need to manually "put the document back together", as simply traversing the linked list gives the final result.</p> 
+                                        <img class="img-fluid" src="https://user-images.githubusercontent.com/49317353/175238323-a6287e3a-1afe-4d93-87ee-de55f2479cbb.png" alt="screenshot"/> <br/> 
+                                        <h2 class="short-hr-left">BRIEF INTRO</h2> 
+                                        <p>This video covers the basics of using Refactor Graph. Note: some of the nodes may have changed, but the concept is still the same.</p> 
+                                        <iframe class="modal-vid" src="https://www.youtube.com/embed/uCBUt6PwqXU?rel=0&amp;showinfo=0" allowfullscreen></iframe>
+                                    </div>                                     
+                                    <div class="modal-footer"> 
+                                        <button type="button" class="button secondary" data-dismiss="modal">Close</button>                                         
+                                    </div>                                     
+                                </div>                                 
+                            </div>                             
+                        </div>                         
+                    </div>
+                    <!-- Game Card End -->                     
+                    <!-- Game Card Video -->                     
+                    <div class="row game-card mobile new"> 
+                        <div class="col-lg-12 col-xl-5 game-card-left"> 
+                            <img class="img-fluid" src="images/products/rapid/rapidlogoLg.png" alt="screenshot"/> <br/> 
+                        </div>                         
+                        <div class="col-lg-12 col-xl-7 game-card-right"> 
+                            <h2 class="short-hr-left">RapidIoC</h2> 
+                            <p class="tags"><span class="subtle">Framework</span> </p> 
+                            <p class="game-description">RapidIoC is a lightweight IoC/DI framework written in C#. Its goal is to improve code quality, simplify code maintenance and code extendibility. Additionally, its purpose is to provide a solid foundation for architecting more complex projects. The framework is written with game developers in mind, specifically Unity3D. However the barebones version can be used in any C# project. <span class="expand colored strong" data-toggle="modal" data-target="#game2">Read More</span></p> <a href="https://github.com/cpgames/RefactorGraph" class="button-store" target="_blank"> <i class="fa fa-github fa-2x"></i> <p>View on<br/><span class="strong">GitHub</span></p> </a> 
+                        </div>                         
+                        <!-- Modal -->                         
+                        <div class="modal fade game-modal" id="game2" tabindex="-1" role="dialog" aria-labelledby="bedlam" aria-hidden="true"> 
+                            <div class="modal-dialog modal-lg" role="document"> 
+                                <div class="modal-content"> 
+                                    <div class="modal-header"> 
+                                        <h1 class="modal-title" id="bedlam">RAPID IOC</h1> 
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> 
+                                        </button>                                         
+                                    </div>                                     
+                                    <div class="modal-body"> 
+                                        <h2 class="short-hr-left">DETAILS</h2> 
+                                        <p>RapidIoC is a lightweight IoC (Inversion of Control)/DI (Dependency Injection) framework written in C#. Its goal is to improve code quality, simplify code maintenance and code extendibility. Additionally, its purpose is to provide a solid foundation for architecting more complex projects. The framework is written with Unity3D developers in mind, see <a href="www.github.com/cpgames/RefactorGraph" hov target="_blank"> RapidIoC for Unity3D</a> (although can easily be used for other applications as well).</p> 
+                                        <img class="img-fluid" src="images/products/rapid/rapidIoCDiag.png" alt="screenshot"/> <br/> 
+                                        <p>While developing RapidIoC, I've tried to accomplish the following:</p> 
+                                        <ul> 
+                                            <li> <b>Fast integration and development</b> (hence name "Rapid"). Given the limited time game programmers have to refactor and clean their code and the need to prototype and iterate fast, RapidIoC provides quick and easy solutions for both prototyping, and development.
+                                            </li>                                             
+                                            <li> <b>Easy to learn</b>. If you are familiar with <a href="www.github.com/strangeioc/strangeioc">StrangeIoC</a>, then this should be a no-brainer, as it inherits core concepts from the former. However, in my opinion RapidIoC improves over StrangeIoC's steep learning curve by reducing amount of setup required, provides better starting platform (see <a href="www.github.com/cpgames/RapidIoCUnity">RapidIoC for Unity</a>), improves on error/exception output, and removes several unnecessary/rarely used (in my personal opinion) APIs which made StrangeIoC somewhat confusing to beginners.
+                                            </li>                                             
+                                            <li> <b>Lightweight</b>. RapidIoC does not rely on any 3rd party code, it is under 600 lines of code, and it produces only 3 dlls which can be imported into your project.
+                                            </li>                                             
+                                            <li> <b>Free and open-source</b>. Code is well documented, and can be modified to your specific needs.
+                                            </li>                                             
+                                        </ul>                                         
+                                        <p>What is Inversion of Control and Dependency Injection, and how it can benefit you, read <a href="www.tutorialsteacher.com/ioc/inversion-of-control">here</a>.</p> 
+                                        <p>RapidIoC is inspired by <a href="www.strangeioc.github.io/strangeioc/exec.html">StrangeIoC</a> (they also have good explanation of IoC concepts).</p> 
+                                        <p>RapidIoC core git repository: <a href="www.github.com/cpgames/RapidIoC">here</a>, documentation <a href="www.github.com/cpgames/RapidIoC/wiki">here</a>, doxygen docs  <a href="RapidIoC_dox/html/index.html">here</a>.</p> 
+                                        <p>RapidIoC for Unity3D <a href="www.github.com/cpgames/RapidIoCUnity">here</a>, Unity tutorial <a href="www.github.com/cpgames/RapidIoCUnity/wiki/Getting-Started-Tutorial">here</a>.</p>
+                                    </div>                                     
+                                    <div class="modal-footer"> 
+                                        <button type="button" class="button secondary" data-dismiss="modal">Close</button>                                         
+                                    </div>                                     
+                                </div>                                 
+                            </div>                             
+                        </div>                         
+                    </div>
+                    <!-- Game Card End -->                     
+                </div>                 
+            </div>             
+            <!-- /// OTHER SECTION /// -->             
+            <div id="other" class="large-margin"> <a href="other"></a>
+                <!-- Nav Anchor -->                 
+                <div class="row heading tiny-margin"> 
+                    <div class="col-md-auto"> 
+                        <h1 class="animation-element slide-down">OTHER <span class="colored">PROJECTS</span></h1> 
+                    </div>                     
+                    <div class="col"> 
+                        <hr class="animation-element extend"/> 
+                    </div>                     
+                </div>                 
+                <div class="row medium-margin"> 
+                    <div class="col-md-11 tiny-margin"> 
+                        <p>Small but still useful tools and utilities.</p> 
+                    </div>                     
+                    <div id="full-row" class="row text-center"> 
+                        <div class="col-md-3 team-card"> 
+                            <figure> 
+                                <img src="images/products/utils/utilslogo.png" data-src="images/products/utils/utilslogo.png" class="img-fluid b-lazy" alt="tool"/>
+                            </figure>                             
+                            <p class="colored strong"><a href="www.github.com/cpgames/CpReflection" target="_blank">CpReflection</a></p> 
+                            <p class="subtle">Super useful extension for C# reflection functions. If you need to do things like finding all derived types or enumerating attributes - check this out!</p> 
+                        </div>                         
+                        <div class="col-md-3 team-card"> 
+                            <figure> 
+                                <img src="images/products/utils/utilslogo.png" data-src="images/products/utils/utilslogo.png" class="img-fluid b-lazy" alt="tool"/>
+                            </figure>                             
+                            <p class="colored strong"><a href="www.github.com/cpgames/CpCodeExtensions" target="_blank">CpCodeExtensions</a> </p> 
+                            <p class="subtle">C# code extensions. Includes UidGenerator, Encryption extensions, Singleton pattern template, and string and list extensions.</p> 
+                        </div>                         
+                        <div class="col-md-3 team-card"> 
+                            <figure> 
+                                <img src="images/products/utils/utilslogo.png" data-src="images/products/utils/utilslogo.png" class="img-fluid b-lazy" alt="tool"/>
+                            </figure>                             
+                            <p class="colored strong"><a href="www.github.com/cpgames/CpUnityExtensions" target="_blank">CpUnityExtensions</a> </p> 
+                            <p class="subtle">Unity-specific extensions. Some helpful extensions functions for Unity-specific data types.</p> 
+                        </div>                         
+                        <div class="col-md-3 team-card"> 
+                            <figure> 
+                                <img src="images/products/utils/utilslogo.png" data-src="images/products/utils/utilslogo.png" class="img-fluid b-lazy" alt="tool"/>
+                            </figure>                             
+                            <p class="colored strong"><a href="www.github.com/cpgames/CpTweening" target="_blank">CpTweening</a> </p> 
+                            <p class="subtle">Custom tweening framework for Unity. Animate anything: color, size, position, particles settings, and much more. Can easily be extended to your own needs.</p> 
+                        </div>                         
+                    </div>                     
+                </div>                 
+            </div>             
+            <!-- /// CONTACT SECTION /// -->             
+            <div id="contact" class="large-margin"> <a href="contact"></a>
+                <!-- Nav Anchor -->                 
+                <div class="row heading tiny-margin"> 
+                    <div class="col-md-auto"> 
+                        <h1 class="animation-element slide-down">GET IN <span class="colored">TOUCH</span></h1> 
+                    </div>                     
+                    <div class="col"> 
+                        <hr class="animation-element extend"/> 
+                    </div>                     
+                </div>                 
+                <div class=""> 
+                    <div class="row small-margin"> 
+                        <div class="col-md-11"> 
+                            <p>I would love to hear from you!</p> 
+                        </div>                         
+                    </div>                     
+                    <div class="row"> 
+                        <div class="col-md-6"> 
+                            <h2 class="short-hr-left">MY DETAILS</h2> 
+                            <div id="contact-info"> 
+                                <ul> 
+                                    <li><i class="fa fa-envelope"></i>
+                                        <p>Email: <span class="colored"><a href="mailto:chillpillgames@gmail.com">chillpillgames@gmail.com</a></span></p>
+                                    </li>                                     
+                                    <li><i class="fa fa-globe"></i>
+                                        <p>Website: <span class="colored"><a href="www.chillpillgames.com" target="_blank">www.chillpillgames.com</a></span></p>
+                                    </li>                                     
+                                    <li><i class="fa fa-map-marker"></i>
+                                        <p>Address: <span class="colored">Austin, TX</span></p>
+                                    </li>                                     
+                                </ul>                                 
+                            </div>                             
+                            <!-- Google Map -->                             
+                            <div id="map-canvas"></div>                             
+                        </div>                         
+                    </div>                     
+                </div>                 
+            </div>             
+        </div>
+        <!-- Main Container End -->         
+        <!-- /// FOOTER /// -->         
+        <!-- Footer End -->         
+        <!-- //// SCRIPTS //// -->         
+        <script src="js/jquery-3.2.1.min.js"></script>         
+        <script src="js/popper.min.js"></script>         
+        <script src="js/bootstrap.min.js"></script>         
+        <script src="js/blazy.min.js"></script>         
+        <script src="js/particles.js"></script>         
+        <script src="js/isotope.pkgd.min.js"></script>         
+        <script src="js/lightbox.min.js"></script>         
+        <script src="js/jquery-modal-video.min.js"></script>         
+        <script src="js/validator.min.js"></script>         
+        <script src="js/strider.js"></script>         
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB64kJJiSynOc9ZqkNMOyl94cvsw5Z2uno"></script>         
     </body>     
 </html>
